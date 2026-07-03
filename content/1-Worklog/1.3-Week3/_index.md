@@ -5,53 +5,45 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+### Week 3 Objectives
 
+* Explore Amazon EC2 in greater depth and understand application deployment on AWS.
+* Practice deploying applications on both Linux and Windows EC2 environments.
+* Learn the fundamentals of Amazon Relational Database Service (RDS).
+* Practice creating and managing databases on AWS.
+* Understand backup and restore mechanisms for cloud databases.
 
-### Week 3 Objectives:
+### Activities Completed During This Week
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+| Day | Tasks | Start Date | Completion Date | References |
+|------|---------|-------------|----------------|------------|
+| Monday | **Advanced Amazon EC2:** <br> • Studied EC2 Instance Types and AMIs <br> • Explored different EC2 connection methods <br> • Learned about Windows Server and Amazon Linux environments | 25/05/2026 | 25/05/2026 | https://000004.awsstudygroup.com/ |
+| Tuesday | **Application Deployment on EC2:** <br> • Launched EC2 instances <br> • Practiced deploying a sample application on Linux EC2 <br> • Learned the basic application deployment workflow on AWS | 26/05/2026 | 26/05/2026 | https://000004.awsstudygroup.com/ |
+| Wednesday | **Amazon RDS:** <br> • Studied Amazon Relational Database Service (RDS) <br> • Learned managed database concepts on AWS <br> • Created an RDS Database Instance | 27/05/2026 | 27/05/2026 | https://000005.awsstudygroup.com/ |
+| Thursday | **Application and Database Integration:** <br> • Connected EC2 instances to RDS <br> • Learned the Application Server and Database Server architecture <br> • Tested database connectivity | 28/05/2026 | 28/05/2026 | https://000005.awsstudygroup.com/ |
+| Friday | **Backup and Restore:** <br> • Studied AWS backup concepts <br> • Practiced database backup and restore operations <br> • Reviewed EC2 and RDS topics | 29/05/2026 | 29/05/2026 | https://000005.awsstudygroup.com/ |
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Week 3 Achievements
 
+* Developed a deeper understanding of Amazon EC2 and its deployment capabilities.
 
-### Week 3 Achievements:
+* Practiced deploying applications in Amazon EC2 environments.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Learned key concepts related to:
+  * Amazon Machine Images (AMI)
+  * Instance Types
+  * Security Configuration
+  * Application Deployment
 
-* Successfully created and configured an AWS Free Tier account.
+* Understood the role of Amazon RDS in cloud database management.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully created and configured an RDS Database Instance.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Learned the architecture of connecting application servers with database servers.
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully performed:
+  * Database creation
+  * Backup operations
+  * Restore operations
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Gained an overall understanding of system architectures that combine Amazon EC2 and Amazon RDS services.

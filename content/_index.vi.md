@@ -7,21 +7,21 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+&emsp; **Họ và tên:** Nguyễn Hưng Thái
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0941204082
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** hungthai1804@gmail.com
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+&emsp; **Trường:** Đại học FPT TP.HCM
 
-&emsp; **Ngành:** Công nghệ thông tin
+&emsp; **Ngành:** Kỹ thuật phần mềm
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Lớp:** SE190044
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
+&emsp; **Công ty thực tập:** Amazon Web Services Vietnam Co., Ltd.
 
-&emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
+&emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
 &emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
 

@@ -5,55 +5,46 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu tuần 4
 
+* Tìm hiểu các giải pháp mở rộng và tối ưu hệ thống trên AWS.
+* Làm quen với các công cụ giám sát và quản lý chi phí trên nền tảng AWS.
+* Tìm hiểu dịch vụ Route 53 và cơ chế phân giải DNS trong môi trường Hybrid Cloud.
+* Thực hành quản lý tài nguyên AWS bằng AWS CLI.
+* Trao đổi và định hướng ý tưởng cho dự án nhóm.
 
-### Mục tiêu tuần 4:
+### Các công việc thực hiện trong tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|------|-----------|-------------|----------------|---------------|
+| 2 | **Mở rộng hệ thống trên AWS:** <br> • Tìm hiểu Elastic Load Balancer (ELB) <br> • Tìm hiểu Auto Scaling Group (ASG) <br> • Thực hành cấu hình hệ thống tự động mở rộng | 01/06/2026 | 01/06/2026 | https://000006.awsstudygroup.com/ |
+| 3 | **Giám sát hệ thống:** <br> • Tìm hiểu Amazon CloudWatch <br> • Làm quen với CloudWatch Metrics và Logs <br> • Thực hành tạo Alarm và Dashboard theo dõi tài nguyên | 02/06/2026 | 02/06/2026 | https://000008.awsstudygroup.com/ |
+| 4 | **Quản lý chi phí:** <br> • Tìm hiểu AWS Budget <br> • Thiết lập cảnh báo chi phí <br> • Theo dõi và đánh giá mức sử dụng tài nguyên AWS | 03/06/2026 | 03/06/2026 | https://000007.awsstudygroup.com/ |
+| 5 | **Route 53 và Hybrid DNS:** <br> • Tìm hiểu Amazon Route 53 <br> • Tìm hiểu cơ chế DNS trong môi trường Hybrid Cloud <br> • Làm quen với Route 53 Resolver | 04/06/2026 | 04/06/2026 | https://000010.awsstudygroup.com/ |
+| 6 | **AWS CLI và định hướng dự án:** <br> • Thực hành sử dụng AWS CLI để quản lý tài nguyên AWS <br> • Tìm hiểu các lệnh AWS CLI cơ bản <br> • Trao đổi ý tưởng và định hướng ban đầu cho dự án nhóm | 05/06/2026 | 05/06/2026 | https://000011.awsstudygroup.com/ |
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được
 
+* Hiểu được vai trò của Elastic Load Balancer và Auto Scaling Group trong việc xây dựng hệ thống có khả năng mở rộng.
 
-### Kết quả đạt được tuần 4:
+* Làm quen với các cơ chế tự động mở rộng tài nguyên dựa trên nhu cầu sử dụng.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Nắm được các chức năng cơ bản của Amazon CloudWatch:
+  * Metrics
+  * Logs
+  * Alarms
+  * Dashboards
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thiết lập và theo dõi các chỉ số hoạt động của tài nguyên AWS.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hiểu được cách sử dụng AWS Budget để theo dõi và kiểm soát chi phí dịch vụ.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Tìm hiểu cơ chế hoạt động của DNS trên AWS thông qua Amazon Route 53 và Route 53 Resolver.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Thực hành các thao tác quản lý tài nguyên AWS bằng AWS CLI.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Bắt đầu nghiên cứu các ý tưởng và dịch vụ AWS có thể áp dụng cho dự án nhóm.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Có cái nhìn tổng quan hơn về việc vận hành, giám sát và tối ưu hệ thống trên nền tảng AWS.
 
 

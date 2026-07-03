@@ -13,21 +13,21 @@ chapter: false
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Nguyen Hung Thai
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0941204082 
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** hungthai1804@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** FPT University Campus HCM
 
-&emsp; **Major:** Information Technology
+&emsp; **Major:** Software Engineering
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** SE190044
 
-&emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
+&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
-&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+&emsp; **Internship Position:** FCJ Cloud Intern
 
 &emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
 

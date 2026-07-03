@@ -5,55 +5,47 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu tuần 3
 
+* Tìm hiểu sâu hơn về Amazon EC2 và các mô hình triển khai ứng dụng trên AWS.
+* Thực hành triển khai ứng dụng trên môi trường Linux và Windows EC2.
+* Tìm hiểu Amazon Relational Database Service (RDS).
+* Thực hành tạo và quản lý cơ sở dữ liệu trên AWS.
+* Làm quen với các cơ chế sao lưu và khôi phục dữ liệu.
 
-### Mục tiêu tuần 3:
+### Các công việc thực hiện trong tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|------|-----------|-------------|----------------|---------------|
+| 2 | **Amazon EC2 nâng cao:** <br> • Tìm hiểu Instance Types và AMI <br> • Tìm hiểu các phương thức kết nối tới EC2 <br> • Làm quen với môi trường Windows Server và Amazon Linux | 25/05/2026 | 25/05/2026 | https://000004.awsstudygroup.com/ |
+| 3 | **Triển khai ứng dụng trên EC2:** <br> • Khởi tạo EC2 Instance <br> • Thực hành triển khai ứng dụng mẫu trên Linux EC2 <br> • Tìm hiểu quy trình vận hành ứng dụng trên máy chủ AWS | 26/05/2026 | 26/05/2026 | https://000004.awsstudygroup.com/ |
+| 4 | **Amazon RDS:** <br> • Tìm hiểu Amazon Relational Database Service (RDS) <br> • Tìm hiểu các thành phần của hệ quản trị cơ sở dữ liệu được quản lý trên AWS <br> • Tạo RDS Database Instance | 27/05/2026 | 27/05/2026 | https://000005.awsstudygroup.com/ |
+| 5 | **Kết nối ứng dụng với cơ sở dữ liệu:** <br> • Thực hành kết nối EC2 với RDS <br> • Tìm hiểu mô hình Application Server và Database Server <br> • Kiểm tra khả năng truy cập dữ liệu | 28/05/2026 | 28/05/2026 | https://000005.awsstudygroup.com/ |
+| 6 | **Backup và Restore:** <br> • Tìm hiểu cơ chế sao lưu dữ liệu trên AWS <br> • Thực hành Backup và Restore cơ sở dữ liệu <br> • Ôn tập kiến thức EC2 và RDS | 29/05/2026 | 29/05/2026 | https://000005.awsstudygroup.com/ |
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được
 
+* Hiểu rõ hơn về Amazon EC2 và các thành phần quan trọng trong quá trình triển khai máy chủ trên AWS.
 
-### Kết quả đạt được tuần 3:
+* Thực hành triển khai ứng dụng trên môi trường Amazon EC2.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Nắm được các khái niệm cơ bản liên quan đến:
+  * Amazon Machine Image (AMI)
+  * Instance Types
+  * Security Configuration
+  * Application Deployment
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hiểu được vai trò của Amazon RDS trong việc quản lý cơ sở dữ liệu trên nền tảng đám mây.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Tạo thành công RDS Database Instance phục vụ mục đích thực hành.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hiểu được mô hình kết nối giữa Application Server và Database Server.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Thực hiện thành công các thao tác:
+  * Tạo cơ sở dữ liệu
+  * Backup dữ liệu
+  * Restore dữ liệu
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Có cái nhìn tổng quan về kiến trúc hệ thống sử dụng EC2 kết hợp với RDS trên AWS.
 
 
