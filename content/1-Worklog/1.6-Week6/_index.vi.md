@@ -5,54 +5,37 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu tuần 6
 
+* Hiểu kiến trúc và các trường hợp sử dụng của AWS Transit Gateway.
+* Tìm hiểu cách kết nối nhiều VPC thông qua mô hình mạng tập trung.
+* Thực hành cấu hình Transit Gateway, Attachments và Route Tables.
+* Tiếp tục thảo luận và thiết kế kiến trúc dự án cùng các thành viên trong nhóm.
 
-### Mục tiêu tuần 6:
+### Các công việc thực hiện trong tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu kiến trúc và nguyên lý hoạt động của AWS Transit Gateway <br> - So sánh Transit Gateway với VPC Peering | 15/06/2026 | 15/06/2026 | AWS Study Group Lab 20 |
+| 3 | - Thực hiện các bước chuẩn bị môi trường triển khai Transit Gateway | 16/06/2026 | 16/06/2026 | AWS Study Group Lab 20 |
+| 4 | - Tạo AWS Transit Gateway <br> - Nghiên cứu mô hình kết nối mạng tập trung | 17/06/2026 | 17/06/2026 | AWS Study Group Lab 20 |
+| 5 | - Tạo Transit Gateway Attachments cho các VPC | 18/06/2026 | 18/06/2026 | AWS Study Group Lab 20 |
+| 6 | - Cấu hình Transit Gateway Route Tables <br> - Thêm Transit Gateway Routes vào VPC Route Tables | 19/06/2026 | 19/06/2026 | AWS Study Group Lab 20 |
+| 7 | - Họp nhóm thảo luận kiến trúc dự án <br> - Xác định các dịch vụ AWS phù hợp với dự án <br> - Xây dựng sơ đồ kiến trúc hệ thống ban đầu | 20/06/2026 | 20/06/2026 | Họp nhóm nội bộ |
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được tuần 6
 
+* Triển khai và cấu hình thành công AWS Transit Gateway.
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Kết nối nhiều VPC thông qua Transit Gateway Attachments.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Cấu hình Transit Gateway Route Tables và các tuyến định tuyến giữa các VPC.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hiểu được lợi ích của Transit Gateway trong việc quản lý mạng quy mô lớn so với việc sử dụng nhiều kết nối VPC Peering.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Nâng cao kiến thức về kiến trúc mạng trên AWS.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Tham gia các buổi thảo luận dự án cùng nhóm.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+* Xác định các dịch vụ AWS có thể áp dụng cho dự án và hoàn thành bản thiết kế kiến trúc hệ thống ban đầu.
 

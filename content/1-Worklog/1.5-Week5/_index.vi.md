@@ -5,55 +5,40 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu tuần 5
 
+* Hiểu cơ chế hoạt động của VPC Peering và kết nối giữa nhiều VPC trên AWS.
+* Thực hành cấu hình các thành phần mạng như Route Table, Security Group, Network ACL và DNS Resolution.
+* Làm quen với việc triển khai hạ tầng bằng CloudFormation.
+* Tham gia thảo luận dự án nhóm và nghiên cứu các dịch vụ AWS phù hợp với dự án.
 
-### Mục tiêu tuần 5:
+### Các công việc thực hiện trong tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu khái niệm VPC Peering và kiến trúc kết nối giữa các VPC <br> - Nghiên cứu các trường hợp ứng dụng thực tế của VPC Peering | 08/06/2026 | 08/06/2026 | AWS Study Group Lab 19 |
+| 3 | - Khởi tạo CloudFormation Template <br> - Tạo Security Group phục vụ kết nối mạng | 09/06/2026 | 09/06/2026 | AWS Study Group Lab 19 |
+| 4 | - Tạo EC2 Instance trên các VPC khác nhau <br> - Kiểm tra khả năng kết nối giữa các tài nguyên | 10/06/2026 | 10/06/2026 | AWS Study Group Lab 19 |
+| 5 | - Cấu hình Network ACL <br> - Tạo VPC Peering Connection | 11/06/2026 | 11/06/2026 | AWS Study Group Lab 19 |
+| 6 | - Cấu hình Route Table <br> - Kích hoạt Cross-Peer DNS Resolution | 12/06/2026 | 12/06/2026 | AWS Study Group Lab 19 |
+| 7 | - Tham gia họp nhóm dự án <br> - Phân tích yêu cầu hệ thống <br> - Nghiên cứu các dịch vụ AWS phù hợp với dự án | 13/06/2026 | 13/06/2026 | Họp nhóm nội bộ |
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được tuần 5
 
+* Thiết lập thành công kết nối VPC Peering giữa hai VPC trên AWS.
 
-### Kết quả đạt được tuần 5:
+* Cấu hình Route Table, Security Group và Network ACL để đảm bảo khả năng giao tiếp an toàn giữa các mạng.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Triển khai EC2 Instance và kiểm tra kết nối giữa các VPC thông qua Peering Connection.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Kích hoạt Cross-Peer DNS Resolution nhằm hỗ trợ truy cập tài nguyên bằng tên miền nội bộ.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hiểu rõ hơn về kiến trúc mạng AWS và quy trình triển khai hạ tầng bằng CloudFormation.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Tham gia các buổi thảo luận dự án cùng nhóm.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Phân tích yêu cầu hệ thống và nghiên cứu các dịch vụ AWS có thể áp dụng cho dự án trong các giai đoạn tiếp theo.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Hoàn thành việc dọn dẹp tài nguyên AWS sau khi thực hành nhằm tối ưu chi phí sử dụng dịch vụ.
 
 

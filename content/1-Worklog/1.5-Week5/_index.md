@@ -5,53 +5,38 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+### Week 5 Objectives
 
+* Understand the concept of VPC Peering and communication between multiple VPCs.
+* Practice configuring AWS networking services including Route Tables, Security Groups, Network ACLs, and DNS Resolution.
+* Gain hands-on experience deploying infrastructure using CloudFormation.
+* Participate in project discussions and research AWS services suitable for the project.
 
-### Week 5 Objectives:
+### Tasks Completed During the Week
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+| Day | Activities | Start Date | Completion Date | References |
+| --- | --- | --- | --- | --- |
+| Mon | - Review VPC Peering concepts and architecture <br> - Learn common VPC Peering use cases | 08/06/2026 | 08/06/2026 | AWS Study Group Lab 19 |
+| Tue | - Initialize CloudFormation templates <br> - Create Security Groups for network communication | 09/06/2026 | 09/06/2026 | AWS Study Group Lab 19 |
+| Wed | - Launch EC2 instances in different VPCs <br> - Test connectivity between resources | 10/06/2026 | 10/06/2026 | AWS Study Group Lab 19 |
+| Thu | - Configure Network ACLs <br> - Create a VPC Peering Connection | 11/06/2026 | 11/06/2026 | AWS Study Group Lab 19 |
+| Fri | - Configure Route Tables <br> - Enable Cross-Peer DNS Resolution | 12/06/2026 | 12/06/2026 | AWS Study Group Lab 19 |
+| Sat | - Participate in project discussions <br> - Analyze project requirements <br> - Research AWS services suitable for the project | 13/06/2026 | 13/06/2026 | Team Meeting |
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Week 5 Achievements
 
+* Successfully established a VPC Peering connection between two VPCs.
 
-### Week 5 Achievements:
+* Configured Route Tables, Security Groups, and Network ACLs to enable secure communication between network environments.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Deployed EC2 instances and verified connectivity across peered VPCs.
 
-* Successfully created and configured an AWS Free Tier account.
+* Enabled Cross-Peer DNS Resolution to simplify resource access between VPCs.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Improved understanding of AWS networking architecture and infrastructure deployment using CloudFormation.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Participated in project planning discussions with team members.
 
-* Used AWS CLI to perform basic operations such as:
+* Analyzed project requirements and explored AWS services that could be integrated into the future project implementation.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed all lab resources cleanup procedures to avoid unnecessary AWS charges.
