@@ -5,53 +5,41 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 8 Objectives
 
-### Week 8 Objectives:
+* Learn AWS managed file storage solutions.
+* Understand security monitoring and assessment services on AWS.
+* Explore infrastructure automation using AWS Lambda.
+* Continue contributing to the Snaptics project development.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks Completed During the Week
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Activities | Start Date | Completion Date | References |
+| --- | --- | --- | --- | --- |
+| Mon | • Learn Amazon FSx for Windows File Server <br> • Create SSD Multi-AZ and HDD Multi-AZ file systems <br> • Explore managed file storage architectures on AWS | 29/06/2026 | 29/06/2026 | https://000025.awsstudygroup.com/ |
+| Tue | • Create and manage file shares <br> • Test storage performance <br> • Monitor file system performance metrics | 30/06/2026 | 30/06/2026 | https://000025.awsstudygroup.com/ |
+| Wed | • Explore data deduplication and shadow copies <br> • Manage user sessions and open files <br> • Configure storage quotas and capacity scaling | 01/07/2026 | 01/07/2026 | https://000025.awsstudygroup.com/ |
+| Thu | • Enable AWS Security Hub <br> • Review security findings and security scores <br> • Learn AWS security monitoring concepts | 02/07/2026 | 02/07/2026 | https://000018.awsstudygroup.com/ |
+| Fri | • Create VPC, Security Groups and EC2 instances <br> • Explore infrastructure automation concepts using AWS Lambda <br> • Review AWS resource management practices | 03/07/2026 | 03/07/2026 | https://000022.awsstudygroup.com/ |
+| Sat | • Create IAM Roles for Lambda <br> • Implement Lambda functions for automated EC2 operations <br> • Continue backend development activities <br> • Review and improve existing project modules <br> • Perform testing and progress evaluation | 04/07/2026 | 04/07/2026 | |
 
+### Week 8 Achievements
 
-### Week 8 Achievements:
+* Learned how Amazon FSx provides managed file storage services on AWS.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Practiced creating and managing file shares, monitoring performance, and scaling storage resources.
 
-* Successfully created and configured an AWS Free Tier account.
+* Explored storage optimization features such as data deduplication and shadow copies.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Gained hands-on experience with AWS Security Hub and security assessment concepts.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Improved understanding of AWS security monitoring and compliance recommendations.
 
-* Used AWS CLI to perform basic operations such as:
+* Practiced creating networking resources including VPCs, Security Groups, and EC2 instances.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Learned how AWS Lambda can be used to automate infrastructure management tasks.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Continued contributing to backend development, testing, and improvement activities for the Snaptics project.
+
+* Expanded knowledge of AWS storage, security, and automation services.

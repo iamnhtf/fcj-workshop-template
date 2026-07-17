@@ -1,59 +1,37 @@
----
-title: "Worklog Tuần 7"
-date: 2024-01-01
-weight: 1
-chapter: false
-pre: " <b> 1.7. </b> "
----
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu tuần 7
 
+* Tìm hiểu các dịch vụ sao lưu và khôi phục dữ liệu trên AWS.
+* Khám phá các giải pháp lưu trữ lai thông qua AWS Storage Gateway.
+* Thực hành các tính năng của Amazon S3, Static Website Hosting và CloudFront.
+* Tiếp tục tham gia phát triển dự án Snaptics.
 
-### Mục tiêu tuần 7:
+### Công việc thực hiện trong tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| Thứ Hai | • Tìm hiểu các khái niệm về AWS Backup <br> • Triển khai hạ tầng sao lưu <br> • Tạo Backup Plans | 22/06/2026 | 22/06/2026 | https://000013.awsstudygroup.com/ |
+| Thứ Ba | • Thực hiện kiểm thử khôi phục dữ liệu <br> • Tìm hiểu quy trình quản lý sao lưu <br> • Dọn dẹp tài nguyên sau khi hoàn thành thực hành | 23/06/2026 | 23/06/2026 | https://000013.awsstudygroup.com/ |
+| Thứ Tư | • Tạo S3 Bucket cho Storage Gateway <br> • Triển khai EC2 phục vụ Storage Gateway <br> • Cấu hình AWS Storage Gateway | 24/06/2026 | 24/06/2026 | https://000024.awsstudygroup.com/ |
+| Thứ Năm | • Cấu hình File Shares thông qua Storage Gateway <br> • Tìm hiểu kiến trúc lưu trữ lai giữa AWS và hệ thống nội bộ <br> • Tiếp tục phát triển các chức năng Backend của dự án <br> • Rà soát các module hỗ trợ và luồng xử lý của hệ thống <br> • Kiểm thử và đánh giá các chức năng hiện có | 25/06/2026 | 25/06/2026 | |
+| Thứ Sáu | • Tạo và quản lý Amazon S3 Buckets <br> • Tải lên và tổ chức dữ liệu trên S3 <br> • Tìm hiểu các tính năng quản lý lưu trữ của S3 | 26/06/2026 | 26/06/2026 | https://000057.awsstudygroup.com/ |
+| Thứ Bảy | • Cấu hình Static Website Hosting trên Amazon S3 <br> • Tìm hiểu Amazon CloudFront <br> • Nghiên cứu Bucket Versioning và Replication | 27/06/2026 | 27/06/2026 | https://000057.awsstudygroup.com/ |
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được trong tuần
 
+* Nắm được các khái niệm cơ bản về AWS Backup và chiến lược sao lưu dữ liệu.
 
-### Kết quả đạt được tuần 7:
+* Thực hành kiểm thử khôi phục dữ liệu và quy trình quản lý sao lưu.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu được kiến trúc và các trường hợp sử dụng của AWS Storage Gateway.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Cấu hình Storage Gateway và File Shares tích hợp với Amazon S3.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Có kinh nghiệm thực hành với việc quản lý Amazon S3 Buckets.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Tìm hiểu cách triển khai Static Website Hosting bằng Amazon S3 và CloudFront.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Nghiên cứu các tính năng Versioning, Replication và quản lý dữ liệu trên S3.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Tiếp tục tham gia phát triển, rà soát và kiểm thử các chức năng Backend của dự án Snaptics.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Mở rộng kiến thức về các dịch vụ sao lưu, lưu trữ và phân phối nội dung trên AWS.

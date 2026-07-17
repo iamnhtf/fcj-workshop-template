@@ -1,59 +1,37 @@
----
-title: "Worklog Tuần 8"
-date: 2024-01-01
-weight: 1
-chapter: false
-pre: " <b> 1.8. </b> "
----
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu tuần 8
 
+* Tìm hiểu các giải pháp lưu trữ tệp được quản lý trên AWS.
+* Tìm hiểu các dịch vụ giám sát và đánh giá bảo mật trên AWS.
+* Khám phá khả năng tự động hóa hạ tầng bằng AWS Lambda.
+* Tiếp tục tham gia phát triển dự án Snaptics.
 
-### Mục tiêu tuần 8:
+### Công việc thực hiện trong tuần
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| Thứ Hai | • Tìm hiểu Amazon FSx for Windows File Server <br> • Tạo SSD Multi-AZ và HDD Multi-AZ File Systems <br> • Tìm hiểu kiến trúc lưu trữ tệp được quản lý trên AWS | 29/06/2026 | 29/06/2026 | https://000025.awsstudygroup.com/ |
+| Thứ Ba | • Tạo và quản lý File Shares <br> • Kiểm thử hiệu năng lưu trữ <br> • Theo dõi các chỉ số hiệu năng của hệ thống tệp | 30/06/2026 | 30/06/2026 | https://000025.awsstudygroup.com/ |
+| Thứ Tư | • Tìm hiểu Data Deduplication và Shadow Copies <br> • Quản lý User Sessions và Open Files <br> • Cấu hình Storage Quotas và mở rộng dung lượng lưu trữ | 01/07/2026 | 01/07/2026 | https://000025.awsstudygroup.com/ |
+| Thứ Năm | • Kích hoạt AWS Security Hub <br> • Xem xét Security Findings và Security Scores <br> • Tìm hiểu các khái niệm giám sát bảo mật trên AWS | 02/07/2026 | 02/07/2026 | https://000018.awsstudygroup.com/ |
+| Thứ Sáu | • Tạo VPC, Security Groups và EC2 Instances <br> • Tìm hiểu các khái niệm tự động hóa hạ tầng bằng AWS Lambda <br> • Ôn tập quy trình quản lý tài nguyên AWS | 03/07/2026 | 03/07/2026 | https://000022.awsstudygroup.com/ |
+| Thứ Bảy | • Tạo IAM Roles cho Lambda <br> • Xây dựng các Lambda Functions phục vụ tự động hóa EC2 <br> • Tiếp tục phát triển các chức năng Backend <br> • Rà soát, cải thiện các module hiện có và đánh giá tiến độ thực hiện dự án | 04/07/2026 | 04/07/2026 | |
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được trong tuần
 
+* Hiểu được cách Amazon FSx cung cấp dịch vụ lưu trữ tệp được quản lý trên AWS.
 
-### Kết quả đạt được tuần 8:
+* Thực hành tạo và quản lý File Shares, theo dõi hiệu năng và mở rộng tài nguyên lưu trữ.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Tìm hiểu các tính năng tối ưu hóa lưu trữ như Data Deduplication và Shadow Copies.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Có kinh nghiệm thực hành với AWS Security Hub và các khái niệm đánh giá bảo mật.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Nâng cao hiểu biết về giám sát bảo mật và các khuyến nghị tuân thủ trên AWS.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Thực hành tạo các tài nguyên mạng bao gồm VPC, Security Groups và EC2 Instances.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Tìm hiểu cách AWS Lambda được sử dụng để tự động hóa các tác vụ quản lý hạ tầng.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Tiếp tục tham gia phát triển, cải thiện và kiểm thử các chức năng Backend của dự án Snaptics.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Mở rộng kiến thức về các dịch vụ lưu trữ, bảo mật và tự động hóa trên AWS.
