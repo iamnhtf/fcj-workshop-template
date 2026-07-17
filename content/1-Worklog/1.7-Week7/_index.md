@@ -5,53 +5,41 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 7 Objectives
 
-### Week 7 Objectives:
+* Learn AWS data backup and recovery services.
+* Explore hybrid storage solutions using AWS Storage Gateway.
+* Practice Amazon S3 features, static website hosting, and CloudFront.
+* Continue contributing to the Snaptics project development.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks Completed During the Week
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Activities | Start Date | Completion Date | References |
+| --- | --- | --- | --- | --- |
+| Mon | • Learn AWS Backup concepts <br> • Deploy backup infrastructure <br> • Create Backup Plans | 22/06/2026 | 22/06/2026 | https://000013.awsstudygroup.com/ |
+| Tue | • Test backup restore procedures <br> • Review backup management workflows <br> • Clean up backup resources | 23/06/2026 | 23/06/2026 | https://000013.awsstudygroup.com/ |
+| Wed | • Create S3 Bucket for Storage Gateway <br> • Deploy EC2 instance for Storage Gateway <br> • Configure AWS Storage Gateway | 24/06/2026 | 24/06/2026 | https://000024.awsstudygroup.com/ |
+| Thu | • Configure File Shares through Storage Gateway <br> • Review hybrid storage architecture <br> • Continue backend development activities <br> • Refine application workflows and supporting modules <br> • Perform testing and review existing functionalities | 25/06/2026 | 25/06/2026 | |
+| Fri | • Create and manage Amazon S3 buckets <br> • Upload and organize objects <br> • Explore S3 storage management features | 26/06/2026 | 26/06/2026 | https://000057.awsstudygroup.com/ |
+| Sat | • Configure Static Website Hosting on Amazon S3 <br> • Explore CloudFront distribution <br> • Learn bucket versioning and replication concepts | 27/06/2026 | 27/06/2026 | https://000057.awsstudygroup.com/ |
 
+### Week 7 Achievements
 
-### Week 7 Achievements:
+* Learned AWS Backup concepts and backup planning strategies.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Practiced restore testing and backup management workflows.
 
-* Successfully created and configured an AWS Free Tier account.
+* Understood the architecture and use cases of AWS Storage Gateway.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Configured Storage Gateway and File Shares integrated with Amazon S3.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Gained hands-on experience with Amazon S3 bucket management.
 
-* Used AWS CLI to perform basic operations such as:
+* Learned static website hosting using Amazon S3 and CloudFront.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Explored bucket versioning, replication, and storage management features.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Continued contributing to backend development, testing, and review activities for the Snaptics project.
+
+* Expanded knowledge of AWS backup, storage, and content delivery services.

@@ -5,38 +5,33 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
+
 ### Week 5 Objectives
 
 * Understand the concept of VPC Peering and communication between multiple VPCs.
-* Practice configuring AWS networking services including Route Tables, Security Groups, Network ACLs, and DNS Resolution.
-* Gain hands-on experience deploying infrastructure using CloudFormation.
-* Participate in project discussions and research AWS services suitable for the project.
+* Learn AWS networking components including Route Tables, Security Groups, Network ACLs, and DNS Resolution.
+* Explore AWS Transit Gateway architecture and use cases.
+* Continue contributing to the development of the Snaptics project.
 
-### Tasks Completed During the Week
+### Activities Completed During This Week
 
-| Day | Activities | Start Date | Completion Date | References |
-| --- | --- | --- | --- | --- |
-| Mon | - Review VPC Peering concepts and architecture <br> - Learn common VPC Peering use cases | 08/06/2026 | 08/06/2026 | AWS Study Group Lab 19 |
-| Tue | - Initialize CloudFormation templates <br> - Create Security Groups for network communication | 09/06/2026 | 09/06/2026 | AWS Study Group Lab 19 |
-| Wed | - Launch EC2 instances in different VPCs <br> - Test connectivity between resources | 10/06/2026 | 10/06/2026 | AWS Study Group Lab 19 |
-| Thu | - Configure Network ACLs <br> - Create a VPC Peering Connection | 11/06/2026 | 11/06/2026 | AWS Study Group Lab 19 |
-| Fri | - Configure Route Tables <br> - Enable Cross-Peer DNS Resolution | 12/06/2026 | 12/06/2026 | AWS Study Group Lab 19 |
-| Sat | - Participate in project discussions <br> - Analyze project requirements <br> - Research AWS services suitable for the project | 13/06/2026 | 13/06/2026 | Team Meeting |
+| Day | Tasks | Start Date | Completion Date | References |
+|------|---------|-------------|----------------|------------|
+| Monday | **VPC Peering Fundamentals:** <br> • Learn VPC Peering concepts and architecture <br> • Explore communication between multiple VPCs <br> • Review common VPC Peering use cases | 08/06/2026 | 08/06/2026 | https://000019.awsstudygroup.com/ |
+| Tuesday | **Network Configuration:** <br> • Configure Security Groups <br> • Review Route Tables <br> • Understand DNS Resolution between VPCs | 09/06/2026 | 09/06/2026 | https://000019.awsstudygroup.com/ |
+| Wednesday | **Project Development:** <br> • Continue backend development for the Snaptics project <br> • Update APIs and supporting configurations | 10/06/2026 | 10/06/2026 | |
+| Thursday | **Project Development:** <br> • Review system configurations <br> • Improve backend functionalities and integration components | 11/06/2026 | 11/06/2026 | |
+| Friday | **Transit Gateway Introduction:** <br> • Learn AWS Transit Gateway concepts <br> • Compare Transit Gateway and VPC Peering <br> • Review large-scale networking architectures | 12/06/2026 | 12/06/2026 | https://000020.awsstudygroup.com/ |
+| Saturday | **Transit Gateway Preparation:** <br> • Explore deployment requirements <br> • Review networking design considerations <br> • Prepare for Transit Gateway implementation | 13/06/2026 | 13/06/2026 | https://000020.awsstudygroup.com/ |
 
 ### Week 5 Achievements
 
-* Successfully established a VPC Peering connection between two VPCs.
+* Understood how VPC Peering enables communication between multiple VPCs.
 
-* Configured Route Tables, Security Groups, and Network ACLs to enable secure communication between network environments.
+* Learned the roles of Route Tables, Security Groups, and DNS Resolution in AWS networking.
 
-* Deployed EC2 instances and verified connectivity across peered VPCs.
+* Gained foundational knowledge of AWS Transit Gateway and its advantages in large-scale network environments.
 
-* Enabled Cross-Peer DNS Resolution to simplify resource access between VPCs.
+* Continued contributing to backend development activities for the Snaptics project.
 
-* Improved understanding of AWS networking architecture and infrastructure deployment using CloudFormation.
-
-* Participated in project planning discussions with team members.
-
-* Analyzed project requirements and explored AWS services that could be integrated into the future project implementation.
-
-* Completed all lab resources cleanup procedures to avoid unnecessary AWS charges.
+* Improved understanding of AWS networking architectures and connectivity solutions.

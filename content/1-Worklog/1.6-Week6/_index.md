@@ -5,23 +5,24 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
+
 ### Week 6 Objectives
 
 * Understand the architecture and use cases of AWS Transit Gateway.
-* Learn how to connect multiple VPCs through a centralized networking solution.
-* Practice configuring Transit Gateway, attachments, and route tables.
-* Continue project planning and design activities with team members.
+* Learn how to connect multiple VPCs through a centralized networking model.
+* Practice configuring Transit Gateway, Attachments, and Route Tables.
+* Continue backend development and improve project functionalities for Snaptics.
 
-### Tasks Completed During the Week
+### Activities Completed During This Week
 
-| Day | Activities | Start Date | Completion Date | References |
+| Day | Tasks | Start Date | Completion Date | References |
 | --- | --- | --- | --- | --- |
-| Mon | - Learn Transit Gateway concepts and architecture <br> - Explore use cases compared to VPC Peering | 15/06/2026 | 15/06/2026 | AWS Study Group Lab 20 |
-| Tue | - Complete preparation steps for Transit Gateway deployment | 16/06/2026 | 16/06/2026 | AWS Study Group Lab 20 |
-| Wed | - Create AWS Transit Gateway <br> - Review network connectivity design | 17/06/2026 | 17/06/2026 | AWS Study Group Lab 20 |
-| Thu | - Create Transit Gateway Attachments for VPCs | 18/06/2026 | 18/06/2026 | AWS Study Group Lab 20 |
-| Fri | - Configure Transit Gateway Route Tables <br> - Add Transit Gateway Routes to VPC Route Tables | 19/06/2026 | 19/06/2026 | AWS Study Group Lab 20 |
-| Sat | - Team discussion on project architecture <br> - Identify AWS services suitable for the project <br> - Draft system architecture diagram | 20/06/2026 | 20/06/2026 | Team Meeting |
+| Monday | • Learn the architecture and operating principles of AWS Transit Gateway <br> • Compare Transit Gateway with VPC Peering | 15/06/2026 | 15/06/2026 | https://000020.awsstudygroup.com/ |
+| Tuesday | • Explore how multiple VPCs can be connected through Transit Gateway <br> • Study Transit Gateway Attachments and Route Tables <br> • Prepare the environment for deployment | 16/06/2026 | 16/06/2026 | https://000020.awsstudygroup.com/ |
+| Wednesday | • Create AWS Transit Gateway <br> • Review network connectivity design between VPCs | 17/06/2026 | 17/06/2026 | https://000020.awsstudygroup.com/ |
+| Thursday | • Create Transit Gateway Attachments for VPCs <br> • Continue backend development for the project <br> • Enhance supporting modules and service integrations <br> • Review and refine application workflows | 18/06/2026 | 18/06/2026 | |
+| Friday | • Configure Transit Gateway Route Tables <br> • Add routes between Transit Gateway and VPCs <br> • Verify network connectivity across VPCs | 19/06/2026 | 19/06/2026 | https://000020.awsstudygroup.com/ |
+| Saturday | • Summarize key Transit Gateway concepts learned during the week <br> • Review project progress <br> • Plan upcoming development activities | 20/06/2026 | 20/06/2026 | |
 
 ### Week 6 Achievements
 
@@ -31,10 +32,10 @@ pre: " <b> 1.6. </b> "
 
 * Configured Transit Gateway Route Tables and routing rules between VPCs.
 
-* Understood the advantages of Transit Gateway compared to managing multiple VPC Peering connections.
+* Improved understanding of large-scale networking architecture on AWS.
 
-* Improved understanding of large-scale AWS networking architecture.
+* Continued contributing to backend development for the Snaptics project.
 
-* Participated in project planning sessions and discussed system architecture with team members.
+* Enhanced supporting modules, service integrations, and application workflows.
 
-* Identified AWS services that could be integrated into the project and completed an initial architecture design.
+* Completed the study and practice of core AWS Transit Gateway components.
