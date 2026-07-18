@@ -5,53 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 9 Objectives
 
-### Week 9 Objectives:
+* Learn how AWS Resource Tags improve cloud resource organization and management.
+* Understand how AWS Resource Groups simplify resource management.
+* Learn the fundamentals of AWS Identity and Access Management (IAM).
+* Practice creating IAM Users, IAM Policies, IAM Roles, and switching between roles.
+* Continue contributing to the Snaptics group project.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks Completed During the Week
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Activities | Start Date | Completion Date | References |
+|------|-----------|-------------|----------------|-----------|
+| 2 | **Managing AWS Resources with Resource Tags:** <br> • Create Amazon EC2 instances with Resource Tags <br> • Learn how to create and manage Resource Tags <br> • Practice updating tags for AWS resources | 06/07/2026 | 06/07/2026 | https://000027.awsstudygroup.com/ |
+| 3 | **Managing Resource Tags:** <br> • Filter AWS resources using Resource Tags <br> • Practice managing tags using AWS CLI <br> • Explore resource organization strategies using tags | 07/07/2026 | 07/07/2026 | https://000027.awsstudygroup.com/ |
+| 4 | **AWS Resource Groups:** <br> • Create Resource Groups <br> • Organize AWS resources using Resource Tags <br> • Explore centralized resource management methods | 08/07/2026 | 08/07/2026 | https://000027.awsstudygroup.com/ |
+| 5 | **AWS Identity and Access Management (IAM):** <br> • Create IAM Users <br> • Create IAM Policies <br> • Learn AWS permission management concepts | 09/07/2026 | 09/07/2026 | https://000028.awsstudygroup.com/ |
+| 6 | **Access Management:** <br> • Create IAM Roles <br> • Practice switching IAM Roles <br> • Verify permission management between IAM Roles | 10/07/2026 | 10/07/2026 | https://000028.awsstudygroup.com/ |
+| 7 | **Testing and Project Development:** <br> • Test tag-based access control policies <br> • Verify IAM Policy behavior <br> • Continue backend development for the Snaptics project <br> • Perform API testing and fix identified issues | 11/07/2026 | 11/07/2026 | |
 
+### Achievements
 
-### Week 9 Achievements:
+* Understood the role of AWS Resource Tags in organizing and managing AWS resources.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Learned how AWS Resource Groups simplify centralized resource management.
 
-* Successfully created and configured an AWS Free Tier account.
+* Gained an understanding of the core components of AWS Identity and Access Management (IAM):
+  * IAM User
+  * IAM Policy
+  * IAM Role
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Practiced creating and configuring IAM Users, IAM Policies, and IAM Roles.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Understood role switching and AWS access management mechanisms.
 
-* Used AWS CLI to perform basic operations such as:
+* Practiced testing tag-based access control using IAM Policies.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Continued contributing to backend development, API testing, and feature improvements for the Snaptics project.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully completed hands-on laboratories related to Resource Tags, Resource Groups, and AWS Identity and Access Management.

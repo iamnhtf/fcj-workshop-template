@@ -5,55 +5,40 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 10
 
-### Mục tiêu tuần 10:
+* Tìm hiểu cơ chế giới hạn quyền truy cập bằng IAM Policy trên AWS.
+* Thực hành tạo người dùng với quyền hạn giới hạn (Limited User).
+* Tìm hiểu các dịch vụ bảo mật trên AWS như AWS Key Management Service (AWS KMS) và AWS CloudTrail.
+* Tìm hiểu cơ chế mã hóa dữ liệu trên Amazon S3.
+* Tiếp tục phát triển dự án nhóm Snaptics với chức năng quản lý nguồn thu nhập và xử lý thu nhập định kỳ.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc thực hiện trong tuần
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|------|-----------|-------------|----------------|---------------|
+| 2 | **Giới hạn quyền truy cập:** <br> • Tìm hiểu Restriction Policy <br> • Tạo IAM User với quyền hạn giới hạn <br> • Kiểm tra quyền truy cập thông qua IAM Policy | 13/07/2026 | 13/07/2026 | https://000030.awsstudygroup.com/ |
+| 3 | **Bảo mật dữ liệu trên AWS:** <br> • Tìm hiểu AWS Key Management Service (AWS KMS) <br> • Tìm hiểu cơ chế mã hóa dữ liệu trên Amazon S3 <br> • Thực hành các tùy chọn mã hóa dữ liệu | 14/07/2026 | 14/07/2026 | https://000033.awsstudygroup.com/ |
+| 4 | **Phát triển chức năng quản lý nguồn thu nhập:** <br> • Thiết kế và xây dựng module Income Source <br> • Xây dựng API quản lý Income Source <br> • Tạo Entity, DTO, Repository, Service và Controller <br> • Thực hiện Migration bổ sung Income Module <br> • Xây dựng chức năng xử lý Recurring Monthly Income | 15/07/2026 | 15/07/2026 | |
+| 5 | **Giám sát hoạt động trên AWS:** <br> • Tìm hiểu AWS CloudTrail <br> • Theo dõi và phân tích các sự kiện trên tài khoản AWS <br> • Tìm hiểu vai trò của CloudTrail trong kiểm toán và giám sát hệ thống | 16/07/2026 | 16/07/2026 | https://000033.awsstudygroup.com/ |
+| 6 | **Kiểm thử và hoàn thiện chức năng:** <br> • Kiểm thử API Income Source <br> • Kiểm tra chức năng xử lý thu nhập định kỳ <br> • Khắc phục lỗi và hoàn thiện chức năng | 17/07/2026 | 17/07/2026 | |
+| 7 | **Đánh giá kết quả:** <br> • Rà soát các chức năng đã triển khai <br> • Đánh giá kết quả các bài thực hành AWS <br> • Tổng hợp tiến độ phát triển dự án | 18/07/2026 | 18/07/2026 | |
 
+### Kết quả đạt được
 
-### Kết quả đạt được tuần 10:
+* Hiểu được cách sử dụng IAM Policy để giới hạn quyền truy cập trên AWS.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Thực hành tạo và kiểm thử tài khoản IAM với quyền hạn giới hạn.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Nắm được vai trò của AWS Key Management Service (AWS KMS) trong việc quản lý khóa mã hóa và bảo vệ dữ liệu.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hiểu được cách AWS CloudTrail ghi nhận và theo dõi các hoạt động trên tài khoản AWS.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hiểu được cơ chế mã hóa dữ liệu trên Amazon S3.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Hoàn thành chức năng quản lý nguồn thu nhập (Income Source) cho dự án Snaptics.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Xây dựng chức năng xử lý thu nhập định kỳ hàng tháng (Recurring Monthly Income).
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành kiểm thử và cải thiện các chức năng liên quan đến Income Source và Recurring Monthly Income.

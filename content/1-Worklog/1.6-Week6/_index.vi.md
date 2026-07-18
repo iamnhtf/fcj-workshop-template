@@ -7,14 +7,14 @@
 
 ### Công việc thực hiện trong tuần
 
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ Hai | • Tìm hiểu kiến trúc và nguyên lý hoạt động của Transit Gateway <br> • So sánh Transit Gateway với VPC Peering | 15/06/2026 | 15/06/2026 | https://000020.awsstudygroup.com/ |
-| Thứ Ba | • Tìm hiểu mô hình kết nối nhiều VPC thông qua Transit Gateway <br> • Nghiên cứu Transit Gateway Attachments và Route Tables <br> • Chuẩn bị môi trường cho việc triển khai | 16/06/2026 | 16/06/2026 | https://000020.awsstudygroup.com/ |
-| Thứ Tư | • Tạo AWS Transit Gateway <br> • Xem xét thiết kế kết nối mạng giữa các VPC | 17/06/2026 | 17/06/2026 | https://000020.awsstudygroup.com/ |
-| Thứ Năm | • Tạo Transit Gateway Attachments cho các VPC <br> • Tiếp tục phát triển Backend cho dự án <br> • Cải thiện các module hỗ trợ và thành phần tích hợp của hệ thống <br> • Rà soát và tinh chỉnh luồng xử lý của ứng dụng | 18/06/2026 | 18/06/2026 | |
-| Thứ Sáu | • Cấu hình Transit Gateway Route Tables <br> • Thêm các tuyến định tuyến giữa Transit Gateway và VPC <br> • Kiểm tra khả năng kết nối giữa các VPC | 19/06/2026 | 19/06/2026 | https://000020.awsstudygroup.com/ |
-| Thứ Bảy | • Tổng kết các nội dung đã học về Transit Gateway <br> • Rà soát tiến độ phát triển dự án <br> • Lập kế hoạch cho các công việc tuần tiếp theo | 20/06/2026 | 20/06/2026 | |
+| 2 | • Tìm hiểu kiến trúc và nguyên lý hoạt động của Transit Gateway <br> • So sánh Transit Gateway với VPC Peering | 15/06/2026 | 15/06/2026 | https://000020.awsstudygroup.com/ |
+| 3 | • Tìm hiểu mô hình kết nối nhiều VPC thông qua Transit Gateway <br> • Nghiên cứu Transit Gateway Attachments và Route Tables <br> • Chuẩn bị môi trường cho việc triển khai | 16/06/2026 | 16/06/2026 | https://000020.awsstudygroup.com/ |
+| 4 | • Tạo AWS Transit Gateway <br> • Xem xét thiết kế kết nối mạng giữa các VPC | 17/06/2026 | 17/06/2026 | https://000020.awsstudygroup.com/ |
+| 5 | • Tạo Transit Gateway Attachments cho các VPC <br> • Tiếp tục phát triển Backend cho dự án <br> • Cải thiện các module hỗ trợ và thành phần tích hợp của hệ thống <br> • Rà soát và tinh chỉnh luồng xử lý của ứng dụng | 18/06/2026 | 18/06/2026 | |
+| 6 | • Cấu hình Transit Gateway Route Tables <br> • Thêm các tuyến định tuyến giữa Transit Gateway và VPC <br> • Kiểm tra khả năng kết nối giữa các VPC | 19/06/2026 | 19/06/2026 | https://000020.awsstudygroup.com/ |
+| 7 | • Tổng kết các nội dung đã học về Transit Gateway <br> • Rà soát tiến độ phát triển dự án <br> • Lập kế hoạch cho các công việc tuần tiếp theo | 20/06/2026 | 20/06/2026 | |
 
 ### Kết quả đạt được trong tuần
 

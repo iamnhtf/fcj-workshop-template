@@ -5,53 +5,40 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 10 Objectives
 
-### Week 10 Objectives:
+* Learn how IAM Policies can be used to restrict access to AWS resources.
+* Practice creating IAM users with limited permissions.
+* Explore AWS security services, including AWS Key Management Service (AWS KMS) and AWS CloudTrail.
+* Learn how data encryption works on Amazon S3.
+* Continue contributing to the Snaptics project by developing the Income Source and Recurring Monthly Income features.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks Completed During the Week
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Activities | Start Date | Completion Date | References |
+|------|-----------|-------------|----------------|-----------|
+| 2 | **Access Restriction:** <br> • Learn Restriction Policies <br> • Create IAM users with limited permissions <br> • Verify access permissions using IAM Policies | 13/07/2026 | 13/07/2026 | https://000030.awsstudygroup.com/ |
+| 3 | **AWS Data Security:** <br> • Learn AWS Key Management Service (AWS KMS) <br> • Explore Amazon S3 data encryption <br> • Practice data encryption options | 14/07/2026 | 14/07/2026 | https://000033.awsstudygroup.com/ |
+| 4 | **Income Management Development:** <br> • Design and implement the Income Source module <br> • Develop APIs for Income Source management <br> • Create Entity, DTO, Repository, Service and Controller <br> • Add the Income Module database migration <br> • Implement recurring monthly income processing | 15/07/2026 | 15/07/2026 | |
+| 5 | **AWS Activity Monitoring:** <br> • Learn AWS CloudTrail <br> • Explore account activity logging <br> • Understand the role of CloudTrail in auditing and monitoring AWS resources | 16/07/2026 | 16/07/2026 | https://000033.awsstudygroup.com/ |
+| 6 | **Testing and Feature Completion:** <br> • Test Income Source APIs <br> • Verify recurring monthly income processing <br> • Fix identified issues and finalize the implementation | 17/07/2026 | 17/07/2026 | |
+| 7 | **Project Review:** <br> • Review completed project features <br> • Evaluate AWS laboratory results <br> • Summarize the project development progress | 18/07/2026 | 18/07/2026 | |
 
+### Achievements
 
-### Week 10 Achievements:
+* Understood how IAM Policies can be used to restrict access to AWS resources.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Practiced creating IAM users with limited permissions.
 
-* Successfully created and configured an AWS Free Tier account.
+* Learned the role of AWS Key Management Service (AWS KMS) in protecting encryption keys and securing data.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Understood how AWS CloudTrail records and monitors activities within an AWS account.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Learned the fundamentals of Amazon S3 data encryption.
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully implemented the Income Source module for the Snaptics project.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Developed recurring monthly income processing for the system.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed testing and refinement of the Income Source and Recurring Monthly Income features.

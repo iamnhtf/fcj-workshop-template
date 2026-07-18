@@ -7,14 +7,14 @@
 
 ### Công việc thực hiện trong tuần
 
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |------|-----------|-------------|----------------|-------------------|
-| Thứ Hai | **Kiến thức cơ bản về VPC Peering:** <br> • Tìm hiểu khái niệm và kiến trúc VPC Peering <br> • Khám phá cơ chế giao tiếp giữa nhiều VPC <br> • Tìm hiểu các trường hợp sử dụng phổ biến của VPC Peering | 08/06/2026 | 08/06/2026 | https://000019.awsstudygroup.com/ |
-| Thứ Ba | **Cấu hình mạng:** <br> • Cấu hình Security Groups <br> • Tìm hiểu Route Tables <br> • Nghiên cứu DNS Resolution giữa các VPC | 09/06/2026 | 09/06/2026 | https://000019.awsstudygroup.com/ |
-| Thứ Tư | **Phát triển dự án:** <br> • Tiếp tục phát triển Backend cho dự án Snaptics <br> • Cập nhật API và các cấu hình hỗ trợ | 10/06/2026 | 10/06/2026 | |
-| Thứ Năm | **Phát triển dự án:** <br> • Rà soát cấu hình hệ thống <br> • Cải thiện các chức năng Backend và thành phần tích hợp | 11/06/2026 | 11/06/2026 | |
-| Thứ Sáu | **Giới thiệu AWS Transit Gateway:** <br> • Tìm hiểu khái niệm AWS Transit Gateway <br> • So sánh Transit Gateway với VPC Peering <br> • Nghiên cứu kiến trúc mạng quy mô lớn | 12/06/2026 | 12/06/2026 | https://000020.awsstudygroup.com/ |
-| Thứ Bảy | **Chuẩn bị triển khai Transit Gateway:** <br> • Tìm hiểu các yêu cầu triển khai <br> • Xem xét thiết kế mạng và định tuyến <br> • Chuẩn bị cho việc thực hành Transit Gateway | 13/06/2026 | 13/06/2026 | https://000020.awsstudygroup.com/ |
+| 2 | **Kiến thức cơ bản về VPC Peering:** <br> • Tìm hiểu khái niệm và kiến trúc VPC Peering <br> • Khám phá cơ chế giao tiếp giữa nhiều VPC <br> • Tìm hiểu các trường hợp sử dụng phổ biến của VPC Peering | 08/06/2026 | 08/06/2026 | https://000019.awsstudygroup.com/ |
+| 3 | **Cấu hình mạng:** <br> • Cấu hình Security Groups <br> • Tìm hiểu Route Tables <br> • Nghiên cứu DNS Resolution giữa các VPC | 09/06/2026 | 09/06/2026 | https://000019.awsstudygroup.com/ |
+| 4 | **Phát triển dự án:** <br> • Tiếp tục phát triển Backend cho dự án Snaptics <br> • Cập nhật API và các cấu hình hỗ trợ | 10/06/2026 | 10/06/2026 | |
+| 5 | **Phát triển dự án:** <br> • Rà soát cấu hình hệ thống <br> • Cải thiện các chức năng Backend và thành phần tích hợp | 11/06/2026 | 11/06/2026 | |
+| 6 | **Giới thiệu AWS Transit Gateway:** <br> • Tìm hiểu khái niệm AWS Transit Gateway <br> • So sánh Transit Gateway với VPC Peering <br> • Nghiên cứu kiến trúc mạng quy mô lớn | 12/06/2026 | 12/06/2026 | https://000020.awsstudygroup.com/ |
+| 7 | **Chuẩn bị triển khai Transit Gateway:** <br> • Tìm hiểu các yêu cầu triển khai <br> • Xem xét thiết kế mạng và định tuyến <br> • Chuẩn bị cho việc thực hành Transit Gateway | 13/06/2026 | 13/06/2026 | https://000020.awsstudygroup.com/ |
 
 ### Kết quả đạt được trong tuần
 

@@ -8,13 +8,13 @@
 
 ### Công việc thực hiện trong tuần
 
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 |------|-----------|-------------|----------------|-------------------|
-| Thứ Hai | **Khả năng mở rộng trên AWS:** <br> • Tìm hiểu Elastic Load Balancer (ELB) <br> • Nghiên cứu Auto Scaling Group (ASG) <br> • Tìm hiểu cơ chế tự động mở rộng tài nguyên trên AWS | 01/06/2026 | 01/06/2026 | https://000006.awsstudygroup.com/ |
-| Thứ Ba | **Giám sát hệ thống:** <br> • Tìm hiểu Amazon CloudWatch <br> • Nghiên cứu Metrics, Logs và Alarms <br> • Thực hành giám sát tài nguyên AWS | 02/06/2026 | 02/06/2026 | https://000008.awsstudygroup.com/ |
-| Thứ Tư | **Quản lý chi phí:** <br> • Tìm hiểu AWS Budget <br> • Thiết lập theo dõi ngân sách và cảnh báo <br> • Tìm hiểu các phương pháp quản lý chi phí trên AWS | 03/06/2026 | 03/06/2026 | https://000007.awsstudygroup.com/ |
-| Thứ Năm | **Phát triển dự án:** <br> • Bắt đầu phát triển Backend cho dự án Snaptics <br> • Xây dựng và tổ chức các module Backend ban đầu cùng các thành phần hỗ trợ | 04/06/2026 | 04/06/2026 | |
-| Thứ Sáu | **Route 53 và AWS CLI:** <br> • Tìm hiểu Amazon Route 53 và DNS <br> • Thực hành các lệnh AWS CLI <br> • Ôn tập quy trình quản lý tài nguyên AWS | 05/06/2026 | 05/06/2026 | https://000010.awsstudygroup.com/ <br> https://000011.awsstudygroup.com/ |
+| 2 | **Khả năng mở rộng trên AWS:** <br> • Tìm hiểu Elastic Load Balancer (ELB) <br> • Nghiên cứu Auto Scaling Group (ASG) <br> • Tìm hiểu cơ chế tự động mở rộng tài nguyên trên AWS | 01/06/2026 | 01/06/2026 | https://000006.awsstudygroup.com/ |
+| 3 | **Giám sát hệ thống:** <br> • Tìm hiểu Amazon CloudWatch <br> • Nghiên cứu Metrics, Logs và Alarms <br> • Thực hành giám sát tài nguyên AWS | 02/06/2026 | 02/06/2026 | https://000008.awsstudygroup.com/ |
+| 4 | **Quản lý chi phí:** <br> • Tìm hiểu AWS Budget <br> • Thiết lập theo dõi ngân sách và cảnh báo <br> • Tìm hiểu các phương pháp quản lý chi phí trên AWS | 03/06/2026 | 03/06/2026 | https://000007.awsstudygroup.com/ |
+| 5 | **Phát triển dự án:** <br> • Bắt đầu phát triển Backend cho dự án Snaptics <br> • Xây dựng và tổ chức các module Backend ban đầu cùng các thành phần hỗ trợ | 04/06/2026 | 04/06/2026 | |
+| 6 | **Route 53 và AWS CLI:** <br> • Tìm hiểu Amazon Route 53 và DNS <br> • Thực hành các lệnh AWS CLI <br> • Ôn tập quy trình quản lý tài nguyên AWS | 05/06/2026 | 05/06/2026 | https://000010.awsstudygroup.com/ <br> https://000011.awsstudygroup.com/ |
 
 ### Kết quả đạt được trong tuần
 

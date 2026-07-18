@@ -5,55 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 9
 
-### Mục tiêu tuần 9:
+* Tìm hiểu cách sử dụng AWS Resource Tag để quản lý và tổ chức tài nguyên trên nền tảng AWS.
+* Hiểu cách quản lý tài nguyên thông qua AWS Resource Groups.
+* Nắm được cơ chế quản lý danh tính và phân quyền với AWS Identity and Access Management (IAM).
+* Thực hành tạo IAM User, IAM Policy, IAM Role và cơ chế chuyển đổi Role.
+* Tiếp tục tham gia phát triển dự án nhóm Snaptics.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc thực hiện trong tuần
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|------|-----------|-------------|----------------|---------------|
+| 2 | **Quản lý tài nguyên bằng Resource Tag:** <br> • Tạo Amazon EC2 Instance kèm Resource Tag <br> • Tìm hiểu cách tạo và quản lý Resource Tag trên AWS <br> • Thực hành cập nhật Tag cho các tài nguyên | 06/07/2026 | 06/07/2026 | https://000027.awsstudygroup.com/ |
+| 3 | **Quản lý Resource Tag:** <br> • Lọc tài nguyên dựa trên Resource Tag <br> • Thực hành quản lý Tag bằng AWS CLI <br> • Tìm hiểu cách tổ chức tài nguyên trên AWS thông qua Tag | 07/07/2026 | 07/07/2026 | https://000027.awsstudygroup.com/ |
+| 4 | **AWS Resource Groups:** <br> • Tạo Resource Group <br> • Quản lý tài nguyên theo Resource Tag <br> • Tìm hiểu phương pháp quản lý tập trung các tài nguyên AWS | 08/07/2026 | 08/07/2026 | https://000027.awsstudygroup.com/ |
+| 5 | **AWS Identity and Access Management (IAM):** <br> • Tạo IAM User <br> • Tạo IAM Policy <br> • Tìm hiểu cơ chế cấp quyền truy cập trên AWS | 09/07/2026 | 09/07/2026 | https://000028.awsstudygroup.com/ |
+| 6 | **Quản lý quyền truy cập:** <br> • Tạo IAM Role <br> • Thực hành chuyển đổi IAM Role (Switch Role) <br> • Kiểm tra cơ chế phân quyền giữa các IAM Role | 10/07/2026 | 10/07/2026 | https://000028.awsstudygroup.com/ |
+| 7 | **Kiểm thử và phát triển dự án:** <br> • Kiểm thử cơ chế phân quyền dựa trên Resource Tag <br> • Xác minh hoạt động của IAM Policy <br> • Tiếp tục phát triển các chức năng backend của dự án Snaptics <br> • Kiểm thử API và khắc phục các lỗi phát sinh | 11/07/2026 | 11/07/2026 | |
 
+### Kết quả đạt được
 
-### Kết quả đạt được tuần 9:
+* Hiểu được vai trò của AWS Resource Tag trong việc tổ chức và quản lý tài nguyên trên nền tảng AWS.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Nắm được cách sử dụng AWS Resource Groups để quản lý tập trung các tài nguyên có liên quan.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hiểu được các thành phần quan trọng của AWS Identity and Access Management (IAM):
+  * IAM User
+  * IAM Policy
+  * IAM Role
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Thực hành tạo và cấu hình IAM User, IAM Policy và IAM Role.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hiểu được cơ chế chuyển đổi IAM Role và quản lý quyền truy cập trên AWS.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Thực hành kiểm thử cơ chế phân quyền dựa trên Resource Tag và IAM Policy.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Tiếp tục tham gia phát triển backend, kiểm thử API và cải thiện các chức năng của dự án Snaptics.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành các bài thực hành liên quan đến Resource Tag, Resource Groups và AWS Identity and Access Management.
