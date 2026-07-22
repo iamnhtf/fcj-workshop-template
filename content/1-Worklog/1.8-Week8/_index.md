@@ -8,38 +8,38 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Objectives
 
-* Learn AWS managed file storage solutions.
-* Understand security monitoring and assessment services on AWS.
+* Learn about managed file storage solutions on AWS.
+* Learn about AWS security monitoring and assessment services.
 * Explore infrastructure automation using AWS Lambda.
-* Continue contributing to the Snaptics project development.
+* Continue participating in the development of the Snaptics project.
 
-### Tasks Completed During the Week
+### Activities Completed During This Week
 
-| Day | Activities | Start Date | Completion Date | References |
+| Day | Tasks | Start Date | Completion Date | References |
 | --- | --- | --- | --- | --- |
-| Mon | • Learn Amazon FSx for Windows File Server <br> • Create SSD Multi-AZ and HDD Multi-AZ file systems <br> • Explore managed file storage architectures on AWS | 29/06/2026 | 29/06/2026 | https://000025.awsstudygroup.com/ |
-| Tue | • Create and manage file shares <br> • Test storage performance <br> • Monitor file system performance metrics | 30/06/2026 | 30/06/2026 | https://000025.awsstudygroup.com/ |
-| Wed | • Explore data deduplication and shadow copies <br> • Manage user sessions and open files <br> • Configure storage quotas and capacity scaling | 01/07/2026 | 01/07/2026 | https://000025.awsstudygroup.com/ |
-| Thu | • Enable AWS Security Hub <br> • Review security findings and security scores <br> • Learn AWS security monitoring concepts | 02/07/2026 | 02/07/2026 | https://000018.awsstudygroup.com/ |
-| Fri | • Create VPC, Security Groups and EC2 instances <br> • Explore infrastructure automation concepts using AWS Lambda <br> • Review AWS resource management practices | 03/07/2026 | 03/07/2026 | https://000022.awsstudygroup.com/ |
-| Sat | • Create IAM Roles for Lambda <br> • Implement Lambda functions for automated EC2 operations <br> • Continue backend development activities <br> • Review and improve existing project modules <br> • Perform testing and progress evaluation | 04/07/2026 | 04/07/2026 | |
+| 2 | • Learn about Amazon FSx for Windows File Server <br> • Create SSD Multi-AZ and HDD Multi-AZ File Systems <br> • Explore managed file storage architecture on AWS | 29/06/2026 | 29/06/2026 | https://000025.awsstudygroup.com/ |
+| 3 | • Create and manage File Shares <br> • Perform storage performance testing <br> • Monitor file system performance metrics | 30/06/2026 | 30/06/2026 | https://000025.awsstudygroup.com/ |
+| 4 | • Learn about Data Deduplication and Shadow Copies <br> • Manage User Sessions and Open Files <br> • Configure Storage Quotas and expand storage capacity | 01/07/2026 | 01/07/2026 | https://000025.awsstudygroup.com/ |
+| 5 | • Enable AWS Security Hub <br> • Review Security Findings and Security Scores <br> • Learn the concepts of security monitoring on AWS | 02/07/2026 | 02/07/2026 | https://000018.awsstudygroup.com/ |
+| 6 | • Create VPCs, Security Groups, and EC2 Instances <br> • Learn the concepts of infrastructure automation using AWS Lambda <br> • Review AWS resource management workflows | 03/07/2026 | 03/07/2026 | https://000022.awsstudygroup.com/ |
+| 7 | • Create IAM Roles for AWS Lambda <br> • Develop Lambda Functions for EC2 automation <br> • Continue backend development <br> • Review and improve existing modules while evaluating project progress | 04/07/2026 | 04/07/2026 | |
 
 ### Week 8 Achievements
 
-* Learned how Amazon FSx provides managed file storage services on AWS.
+* Understood how Amazon FSx provides managed file storage services on AWS.
 
-* Practiced creating and managing file shares, monitoring performance, and scaling storage resources.
+* Gained hands-on experience in creating and managing File Shares, monitoring performance, and expanding storage resources.
 
-* Explored storage optimization features such as data deduplication and shadow copies.
+* Learned storage optimization features such as Data Deduplication and Shadow Copies.
 
-* Gained hands-on experience with AWS Security Hub and security assessment concepts.
+* Gained practical experience with AWS Security Hub and security assessment concepts.
 
-* Improved understanding of AWS security monitoring and compliance recommendations.
+* Improved understanding of security monitoring and compliance recommendations on AWS.
 
-* Practiced creating networking resources including VPCs, Security Groups, and EC2 instances.
+* Practiced creating networking resources, including VPCs, Security Groups, and EC2 Instances.
 
 * Learned how AWS Lambda can be used to automate infrastructure management tasks.
 
-* Continued contributing to backend development, testing, and improvement activities for the Snaptics project.
+* Continued participating in the development, improvement, and testing of backend functionalities for the Snaptics project.
 
 * Expanded knowledge of AWS storage, security, and automation services.

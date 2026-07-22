@@ -1,3 +1,11 @@
+---
+title: "Worklog tuần 7"
+date: 2024-01-01
+weight: 1
+chapter: false
+pre: " <b> 1.7. </b> "
+---
+
 ### Mục tiêu tuần 7
 
 * Tìm hiểu các dịch vụ sao lưu và khôi phục dữ liệu trên AWS.

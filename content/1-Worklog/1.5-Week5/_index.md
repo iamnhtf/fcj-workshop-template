@@ -8,30 +8,30 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Objectives
 
-* Understand the concept of VPC Peering and communication between multiple VPCs.
-* Learn AWS networking components including Route Tables, Security Groups, Network ACLs, and DNS Resolution.
-* Explore AWS Transit Gateway architecture and use cases.
-* Continue contributing to the development of the Snaptics project.
+* Learn the concepts of VPC Peering and communication between multiple VPCs.
+* Explore AWS networking components, including Route Tables, Security Groups, Network ACLs, and DNS Resolution.
+* Explore the architecture and use cases of AWS Transit Gateway.
+* Continue participating in the development of the Snaptics project.
 
 ### Activities Completed During This Week
 
 | Day | Tasks | Start Date | Completion Date | References |
 |------|---------|-------------|----------------|------------|
-| Monday | **VPC Peering Fundamentals:** <br> • Learn VPC Peering concepts and architecture <br> • Explore communication between multiple VPCs <br> • Review common VPC Peering use cases | 08/06/2026 | 08/06/2026 | https://000019.awsstudygroup.com/ |
-| Tuesday | **Network Configuration:** <br> • Configure Security Groups <br> • Review Route Tables <br> • Understand DNS Resolution between VPCs | 09/06/2026 | 09/06/2026 | https://000019.awsstudygroup.com/ |
-| Wednesday | **Project Development:** <br> • Continue backend development for the Snaptics project <br> • Update APIs and supporting configurations | 10/06/2026 | 10/06/2026 | |
-| Thursday | **Project Development:** <br> • Review system configurations <br> • Improve backend functionalities and integration components | 11/06/2026 | 11/06/2026 | |
-| Friday | **Transit Gateway Introduction:** <br> • Learn AWS Transit Gateway concepts <br> • Compare Transit Gateway and VPC Peering <br> • Review large-scale networking architectures | 12/06/2026 | 12/06/2026 | https://000020.awsstudygroup.com/ |
-| Saturday | **Transit Gateway Preparation:** <br> • Explore deployment requirements <br> • Review networking design considerations <br> • Prepare for Transit Gateway implementation | 13/06/2026 | 13/06/2026 | https://000020.awsstudygroup.com/ |
+| 2 | **VPC Peering Fundamentals:** <br> • Learn the concepts and architecture of VPC Peering <br> • Explore communication between multiple VPCs <br> • Study common use cases of VPC Peering | 08/06/2026 | 08/06/2026 | https://000019.awsstudygroup.com/ |
+| 3 | **Network Configuration:** <br> • Configure Security Groups <br> • Learn about Route Tables <br> • Study DNS Resolution between VPCs | 09/06/2026 | 09/06/2026 | https://000019.awsstudygroup.com/ |
+| 4 | **Project Development:** <br> • Continue backend development for the Snaptics project <br> • Update APIs and supporting configurations | 10/06/2026 | 10/06/2026 | |
+| 5 | **Project Development:** <br> • Review system configurations <br> • Improve backend functionalities and integration components | 11/06/2026 | 11/06/2026 | |
+| 6 | **Introduction to AWS Transit Gateway:** <br> • Learn the concepts of AWS Transit Gateway <br> • Compare Transit Gateway with VPC Peering <br> • Study large-scale network architecture | 12/06/2026 | 12/06/2026 | https://000020.awsstudygroup.com/ |
+| 7 | **Preparing for Transit Gateway Deployment:** <br> • Learn the deployment requirements <br> • Review network design and routing <br> • Prepare for hands-on practice with AWS Transit Gateway | 13/06/2026 | 13/06/2026 | https://000020.awsstudygroup.com/ |
 
 ### Week 5 Achievements
 
-* Understood how VPC Peering enables communication between multiple VPCs.
+* Understood how VPC Peering enables communication between multiple VPCs on AWS.
 
 * Learned the roles of Route Tables, Security Groups, and DNS Resolution in AWS networking.
 
-* Gained foundational knowledge of AWS Transit Gateway and its advantages in large-scale network environments.
+* Gained foundational knowledge of AWS Transit Gateway and its benefits in large-scale network environments.
 
-* Continued contributing to backend development activities for the Snaptics project.
+* Continued developing backend functionalities for the Snaptics project.
 
-* Improved understanding of AWS networking architectures and connectivity solutions.
+* Expanded knowledge of AWS networking architecture and connectivity solutions.

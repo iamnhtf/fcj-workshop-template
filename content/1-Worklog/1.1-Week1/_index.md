@@ -17,11 +17,11 @@ pre: " <b> 1.1. </b> "
 
 | Day | Tasks | Start Date | Completion Date | References |
 |------|---------|-------------|----------------|------------|
-| Monday | - Reviewed internship regulations and FCAJ learning roadmap | 11/05/2026 | 11/05/2026 | |
-| Tuesday | - Learned AWS and Cloud Computing fundamentals <br> - Studied AWS service categories: Compute, Storage, Database, and Networking <br> - Explored AWS Global Infrastructure | 12/05/2026 | 12/05/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Wednesday | - Learned AWS Free Tier and AWS Credit concepts <br> - Created an AWS Account <br> - Configured Virtual MFA | 13/05/2026 | 13/05/2026 | https://000001.awsstudygroup.com/ |
-| Thursday | - Studied AWS IAM <br> - Created IAM Users and IAM Groups <br> - Learned IAM Policies and permission management | 14/05/2026 | 14/05/2026 | https://000002.awsstudygroup.com/ |
-| Friday | - Learned IAM Roles <br> - Practiced Switch Role <br> - Cleaned up lab resources and reviewed weekly knowledge | 15/05/2026 | 15/05/2026 | https://000002.awsstudygroup.com/ |
+| 2 | - Reviewed internship regulations and FCAJ learning roadmap | 11/05/2026 | 11/05/2026 | |
+| 3 | - Learned AWS and Cloud Computing fundamentals <br> - Studied AWS service categories: Compute, Storage, Database, and Networking <br> - Explored AWS Global Infrastructure | 12/05/2026 | 12/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Learned AWS Free Tier and AWS Credit concepts <br> - Created an AWS Account <br> - Configured Virtual MFA | 13/05/2026 | 13/05/2026 | https://000001.awsstudygroup.com/ |
+| 5 | - Studied AWS IAM <br> - Created IAM Users and IAM Groups <br> - Learned IAM Policies and permission management | 14/05/2026 | 14/05/2026 | https://000002.awsstudygroup.com/ |
+| 6 | - Learned IAM Roles <br> - Practiced Switch Role <br> - Cleaned up lab resources and reviewed weekly knowledge | 15/05/2026 | 15/05/2026 | https://000002.awsstudygroup.com/ |
 
 ### Week 1 Achievements
 

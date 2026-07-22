@@ -1,3 +1,11 @@
+---
+title: "Worklog tuần 6"
+date: 2024-01-01
+weight: 1
+chapter: false
+pre: " <b> 1.6. </b> "
+---
+
 ### Mục tiêu tuần 6
 
 * Tìm hiểu kiến trúc và các trường hợp sử dụng của AWS Transit Gateway.

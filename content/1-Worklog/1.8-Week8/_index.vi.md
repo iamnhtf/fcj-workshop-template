@@ -1,3 +1,11 @@
+---
+title: "Worklog tuần 8"
+date: 2024-01-01
+weight: 1
+chapter: false
+pre: " <b> 1.8. </b> "
+---
+
 ### Mục tiêu tuần 8
 
 * Tìm hiểu các giải pháp lưu trữ tệp được quản lý trên AWS.
