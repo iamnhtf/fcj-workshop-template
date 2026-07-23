@@ -8,82 +8,91 @@ pre: " <b> 3.1. </b> "
 
 # AWS Đã Nâng Cấp Amazon Cognito Với Mức Gián Đoạn Gần Như Bằng 0
 
-Authentication là một trong những thành phần quan trọng nhất của các hệ thống hiện đại. Chỉ cần dịch vụ xác thực gặp sự cố trong vài phút cũng có thể khiến người dùng không thể đăng nhập, đặt lại mật khẩu hoặc truy cập ứng dụng.
+Authentication là một trong những thành phần quan trọng nhất của các ứng dụng hiện đại. Chỉ cần hệ thống xác thực gặp sự cố trong vài phút cũng có thể khiến người dùng không thể đăng nhập, đặt lại mật khẩu hoặc truy cập các dịch vụ cần thiết. Vì vậy, việc nâng cấp hạ tầng của một dịch vụ quản lý danh tính như Amazon Cognito đòi hỏi phải được thực hiện cẩn thận nhằm tránh ảnh hưởng đến hàng triệu người dùng.
 
-Gần đây, AWS đã chia sẻ cách Amazon Cognito được nâng cấp lên hạ tầng thế hệ mới với nhiều tính năng nổi bật như khả năng mở rộng tốt hơn, hỗ trợ mã hóa bằng khóa do khách hàng quản lý và đồng bộ dữ liệu đa Region, trong khi quá trình migration diễn ra với mức gián đoạn gần như bằng 0.
+Gần đây, AWS đã chia sẻ cách Amazon Cognito được chuyển sang hạ tầng thế hệ mới, mang đến nhiều tính năng mới trong khi vẫn duy trì khả năng tương thích ngược (backward compatibility) và giảm thiểu tối đa thời gian gián đoạn dịch vụ.
 
-### Những điểm nổi bật
+### Những tính năng mới
 
-Sau khi nâng cấp, Amazon Cognito mang đến nhiều cải tiến đáng chú ý:
+Hạ tầng mới của Amazon Cognito mang đến nhiều cải tiến đáng chú ý:
 
 - **Hiệu năng cao (High-throughput Performance)**
   - Hỗ trợ hàng chục triệu người dùng trong một User Pool.
   - Xử lý hàng nghìn giao dịch mỗi giây (TPS).
   - Giảm độ trễ trong quá trình xác thực.
 
-- **Customer-managed Keys (CMK)**
+- **Customer-managed Encryption Keys (CMK)**
   - Tích hợp với AWS KMS.
   - Cho phép doanh nghiệp tự quản lý khóa mã hóa.
-  - Đáp ứng tốt hơn các yêu cầu về bảo mật và tuân thủ.
+  - Tăng cường khả năng bảo mật và đáp ứng các yêu cầu về tuân thủ.
 
 - **Multi-Region Replication**
   - Đồng bộ User Profile, Password, User Attributes và Configuration giữa nhiều AWS Region.
-  - Tăng khả năng sẵn sàng và hỗ trợ khôi phục sau sự cố.
+  - Nâng cao tính sẵn sàng và khả năng khôi phục sau sự cố của hệ thống xác thực.
 
-### Những thay đổi trong kiến trúc
+### Những cải tiến trong kiến trúc
 
-AWS đã thiết kế lại Cognito dựa trên một số nguyên tắc quan trọng:
+AWS đã thiết kế lại Amazon Cognito dựa trên một số nguyên tắc quan trọng:
 
 - **Identity-first Design**
-  - Tập trung tối ưu cho bài toán quản lý danh tính thay vì hoạt động như một hệ thống lưu trữ dữ liệu tổng quát.
-  - Giúp hệ thống mở rộng và vận hành hiệu quả hơn.
+  - Tập trung tối ưu cho bài toán quản lý danh tính thay vì hoạt động như một hệ thống lưu trữ dữ liệu đa mục đích.
+  - Giúp hệ thống có khả năng mở rộng và vận hành hiệu quả hơn.
 
 - **Backward Compatibility**
-  - Việc thay đổi hạ tầng không làm ảnh hưởng đến ứng dụng của khách hàng.
-  - Các API và hành vi xác thực vẫn được duy trì tương thích.
+  - Việc thay đổi hạ tầng không yêu cầu khách hàng phải chỉnh sửa ứng dụng hiện có.
+  - Hành vi xác thực vẫn được giữ nguyên để đảm bảo tính tương thích.
 
 - **Avoid One-way Doors**
-  - Kiến trúc được thiết kế để dễ dàng mở rộng và thay đổi trong tương lai mà không tạo ra các quyết định khó đảo ngược.
+  - Kiến trúc được thiết kế để có thể tiếp tục mở rộng và cải tiến trong tương lai mà không tạo ra những quyết định khó thay đổi.
 
 ### Chiến lược Migration
 
-Điều ấn tượng nhất trong bài viết là cách AWS thực hiện migration cho hàng trăm triệu hồ sơ người dùng mà gần như không gây gián đoạn dịch vụ.
+Một trong những điểm ấn tượng nhất của bài viết là cách AWS thực hiện migration cho hàng trăm triệu hồ sơ người dùng với mức gián đoạn gần như bằng không.
 
-Các kỹ thuật được áp dụng bao gồm:
+Quá trình migration bao gồm nhiều kỹ thuật khác nhau:
 
 - **Shadow Mode Validation**
-  - Chạy đồng thời request trên cả hệ thống cũ và hệ thống mới.
-  - So sánh response, status code và hành vi xử lý trước khi chuyển hoàn toàn sang hạ tầng mới.
+  - Các request được xử lý đồng thời trên cả hệ thống cũ và hệ thống mới.
+  - Response, Status Code và hành vi xử lý được liên tục so sánh trước khi chuyển hoàn toàn lưu lượng sang hạ tầng mới.
 
 - **Dual-write Architecture**
-  - Trong quá trình migration, dữ liệu được ghi đồng thời vào cả hai hệ thống.
-  - Nếu hệ thống mới gặp lỗi, hệ thống cũ vẫn tiếp tục phục vụ người dùng.
+  - Dữ liệu được ghi đồng thời vào cả hai hạ tầng trong suốt quá trình migration.
+  - Nếu hệ thống mới gặp sự cố, hệ thống cũ vẫn tiếp tục phục vụ người dùng.
 
 - **Anti-entropy Validation**
-  - Liên tục đối chiếu dữ liệu giữa hai hệ thống để phát hiện sai lệch.
-  - Hệ thống cũ được sử dụng làm nguồn dữ liệu chuẩn để đồng bộ khi cần thiết.
+  - Dữ liệu giữa hai hệ thống được đối chiếu liên tục để phát hiện sự khác biệt.
+  - Hệ thống cũ đóng vai trò là nguồn dữ liệu chuẩn (Source of Truth) để đồng bộ khi cần thiết.
 
 - **Incremental Rollout & Rollback**
-  - Triển khai theo từng giai đoạn thay vì chuyển đổi toàn bộ cùng lúc.
-  - Luôn duy trì khả năng rollback nếu phát sinh sự cố.
+  - Việc triển khai được thực hiện theo từng giai đoạn thay vì chuyển đổi toàn bộ cùng lúc.
+  - Luôn duy trì khả năng rollback nếu phát sinh sự cố trong quá trình triển khai.
 
-### Kiến thức rút ra
+### Những điều mình học được
 
-Qua bài viết này, mình nhận thấy việc hiện đại hóa hạ tầng không chỉ nhằm bổ sung tính năng mới mà còn phải đảm bảo tính ổn định của hệ thống.
+Qua bài viết này, mình nhận thấy việc hiện đại hóa hạ tầng không chỉ nhằm bổ sung các tính năng mới mà còn phải giảm thiểu rủi ro trong quá trình vận hành.
 
 Một số bài học đáng chú ý gồm:
 
-- Luôn kiểm chứng hệ thống mới trước khi chuyển traffic thực tế.
-- Thiết kế kế hoạch migration có khả năng rollback.
-- Duy trì backward compatibility để tránh ảnh hưởng đến người dùng.
-- Triển khai theo từng giai đoạn nhằm giảm thiểu rủi ro khi thay đổi hạ tầng quy mô lớn.
+- Luôn kiểm chứng hệ thống mới trước khi chuyển lưu lượng thực tế.
+- Thiết kế quy trình migration có khả năng rollback.
+- Ưu tiên duy trì backward compatibility để tránh ảnh hưởng đến người dùng.
+- Thực hiện migration theo từng giai đoạn thay vì chuyển đổi toàn bộ trong một lần.
 
-Những kinh nghiệm này là nguồn tham khảo hữu ích khi xây dựng các hệ thống cloud có yêu cầu cao về tính sẵn sàng và độ tin cậy.
+Những kinh nghiệm này là nguồn tham khảo hữu ích khi xây dựng các ứng dụng Cloud có độ tin cậy cao cũng như triển khai các hệ thống phân tán ở quy mô lớn.
 
 ### Hình minh họa
 
-...Image...
+<div style="text-align: center;">
+    <img src="/images/3-BlogsPosted/3.1-Blog1/blog1.jpg"
+         alt="Amazon Cognito Next-generation Infrastructure"
+         style="width: 800px; height: auto; border-radius: 8px;">
+    <p>Kiến trúc hạ tầng thế hệ mới của Amazon Cognito</p>
+</div>
 
 ### Bài viết tham khảo
 
-...AWS Blog Link...
+Bài viết này được tổng hợp và phát triển dựa trên bài viết của **AWS Security Blog**:
+
+- **Amazon Cognito unlocks advanced capabilities with next-generation infrastructure**
+
+https://aws.amazon.com/blogs/security/amazon-cognito-unlocks-advanced-capabilities-with-next-generation-infrastructure/
