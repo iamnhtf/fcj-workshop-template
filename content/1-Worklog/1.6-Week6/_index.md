@@ -8,34 +8,29 @@ pre: " <b> 1.6. </b> "
 
 ### Week 6 Objectives
 
-* Learn the architecture and use cases of AWS Transit Gateway.
-* Learn how to connect multiple VPCs using a centralized networking model.
-* Practice configuring Transit Gateway, Transit Gateway Attachments, and Route Tables.
-* Continue backend development and enhance the functionalities of the Snaptics project.
+* Learn how AWS Transit Gateway simplifies connectivity between multiple VPCs.
+* Practice configuring Transit Gateway components, including Attachments and Route Tables.
+* Understand routing and communication in a centralized AWS networking architecture.
+* Continue contributing to backend development for the Snaptics project.
 
 ### Activities Completed During This Week
 
 | Day | Tasks | Start Date | Completion Date | References |
-| --- | --- | --- | --- | --- |
-| 2 | • Learn the architecture and operating principles of AWS Transit Gateway <br> • Compare Transit Gateway with VPC Peering | 15/06/2026 | 15/06/2026 | https://000020.awsstudygroup.com/ |
-| 3 | • Learn the architecture for connecting multiple VPCs using Transit Gateway <br> • Study Transit Gateway Attachments and Route Tables <br> • Prepare the environment for deployment | 16/06/2026 | 16/06/2026 | https://000020.awsstudygroup.com/ |
-| 4 | • Create an AWS Transit Gateway <br> • Review the network connectivity design between VPCs | 17/06/2026 | 17/06/2026 | https://000020.awsstudygroup.com/ |
-| 5 | • Create Transit Gateway Attachments for VPCs <br> • Continue backend development for the project <br> • Improve supporting modules and system integration components <br> • Review and refine the application workflow | 18/06/2026 | 18/06/2026 | |
-| 6 | • Configure Transit Gateway Route Tables <br> • Add routing rules between Transit Gateway and VPCs <br> • Test connectivity between VPCs | 19/06/2026 | 19/06/2026 | https://000020.awsstudygroup.com/ |
-| 7 | • Review the topics learned about AWS Transit Gateway <br> • Review the project development progress <br> • Plan the tasks for the following week | 20/06/2026 | 20/06/2026 | |
+|------|---------|-------------|----------------|------------|
+| 2 | **AWS Transit Gateway Architecture:** <br> • Review the architecture and operating principles of AWS Transit Gateway <br> • Understand centralized networking using the hub-and-spoke model <br> • Compare Transit Gateway with VPC Peering | 15/06/2026 | 15/06/2026 | https://000020.awsstudygroup.com/ |
+| 3 | **Transit Gateway Attachments:** <br> • Learn how to connect multiple VPCs using Transit Gateway Attachments <br> • Study attachment configuration and routing concepts <br> • Prepare the networking environment for deployment | 16/06/2026 | 16/06/2026 | https://000020.awsstudygroup.com/ |
+| 4 | **Transit Gateway Route Tables:** <br> • Configure Transit Gateway Route Tables <br> • Learn Route Propagation and route associations <br> • Understand traffic flow between connected VPCs | 17/06/2026 | 17/06/2026 | https://000020.awsstudygroup.com/ |
+| 5 | **Transit Gateway Deployment and Testing:** <br> • Deploy AWS Transit Gateway in a practice environment <br> • Configure routing between VPCs <br> • Verify network connectivity and communication | 18/06/2026 | 18/06/2026 | https://000020.awsstudygroup.com/ |
+| 6 | **Snaptics Project Development:** <br> • Continue backend development for the Snaptics project <br> • Review API implementation and supporting modules <br> • Improve project structure and integration components | 19/06/2026 | 19/06/2026 | |
 
 ### Week 6 Achievements
 
-* Successfully deployed and configured AWS Transit Gateway.
+* Understood the architecture and operating principles of AWS Transit Gateway.
 
-* Connected multiple VPCs through Transit Gateway Attachments.
+* Learned how Transit Gateway simplifies connectivity between multiple VPCs.
 
-* Configured Transit Gateway Route Tables and routing rules between VPCs.
+* Configured Transit Gateway Attachments and Route Tables in a practice environment.
 
-* Improved understanding of large-scale network architecture on AWS.
+* Improved understanding of centralized AWS network architecture and routing.
 
-* Continued contributing to backend development for the Snaptics project.
-
-* Enhanced supporting modules, integration components, and the application's processing workflow.
-
-* Completed the study and hands-on practice of the core components of AWS Transit Gateway.
+* Continued contributing to backend development and integration for the Snaptics project.

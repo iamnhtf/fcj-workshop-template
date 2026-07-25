@@ -1,5 +1,5 @@
 ---
-title: "Worklog tuần 6"
+title: "Nhật ký tuần 6"
 date: 2024-01-01
 weight: 1
 chapter: false
@@ -8,34 +8,29 @@ pre: " <b> 1.6. </b> "
 
 ### Mục tiêu tuần 6
 
-* Tìm hiểu kiến trúc và các trường hợp sử dụng của AWS Transit Gateway.
-* Học cách kết nối nhiều VPC thông qua mô hình mạng tập trung.
-* Thực hành cấu hình Transit Gateway, Attachments và Route Tables.
-* Tiếp tục phát triển Backend và hoàn thiện các chức năng của dự án Snaptics.
+* Tìm hiểu cách AWS Transit Gateway giúp kết nối nhiều VPC theo mô hình tập trung.
+* Thực hành cấu hình các thành phần của Transit Gateway như Attachments và Route Tables.
+* Hiểu cách định tuyến và giao tiếp trong kiến trúc mạng tập trung trên AWS.
+* Tiếp tục tham gia phát triển backend cho dự án Snaptics.
 
-### Công việc thực hiện trong tuần
+### Các hoạt động đã thực hiện trong tuần
 
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-| --- | --- | --- | --- | --- |
-| 2 | • Tìm hiểu kiến trúc và nguyên lý hoạt động của Transit Gateway <br> • So sánh Transit Gateway với VPC Peering | 15/06/2026 | 15/06/2026 | https://000020.awsstudygroup.com/ |
-| 3 | • Tìm hiểu mô hình kết nối nhiều VPC thông qua Transit Gateway <br> • Nghiên cứu Transit Gateway Attachments và Route Tables <br> • Chuẩn bị môi trường cho việc triển khai | 16/06/2026 | 16/06/2026 | https://000020.awsstudygroup.com/ |
-| 4 | • Tạo AWS Transit Gateway <br> • Xem xét thiết kế kết nối mạng giữa các VPC | 17/06/2026 | 17/06/2026 | https://000020.awsstudygroup.com/ |
-| 5 | • Tạo Transit Gateway Attachments cho các VPC <br> • Tiếp tục phát triển Backend cho dự án <br> • Cải thiện các module hỗ trợ và thành phần tích hợp của hệ thống <br> • Rà soát và tinh chỉnh luồng xử lý của ứng dụng | 18/06/2026 | 18/06/2026 | |
-| 6 | • Cấu hình Transit Gateway Route Tables <br> • Thêm các tuyến định tuyến giữa Transit Gateway và VPC <br> • Kiểm tra khả năng kết nối giữa các VPC | 19/06/2026 | 19/06/2026 | https://000020.awsstudygroup.com/ |
-| 7 | • Tổng kết các nội dung đã học về Transit Gateway <br> • Rà soát tiến độ phát triển dự án <br> • Lập kế hoạch cho các công việc tuần tiếp theo | 20/06/2026 | 20/06/2026 | |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+|------|-----------|--------------|-----------------|--------------------|
+| 2 | **Kiến trúc AWS Transit Gateway:** <br> • Ôn tập kiến trúc và nguyên lý hoạt động của AWS Transit Gateway <br> • Tìm hiểu mô hình mạng Hub-and-Spoke <br> • So sánh AWS Transit Gateway với VPC Peering | 15/06/2026 | 15/06/2026 | https://000020.awsstudygroup.com/ |
+| 3 | **Transit Gateway Attachments:** <br> • Tìm hiểu cách kết nối nhiều VPC thông qua Transit Gateway Attachments <br> • Nghiên cứu cấu hình Attachments và cơ chế định tuyến <br> • Chuẩn bị môi trường mạng để triển khai | 16/06/2026 | 16/06/2026 | https://000020.awsstudygroup.com/ |
+| 4 | **Transit Gateway Route Tables:** <br> • Cấu hình Transit Gateway Route Tables <br> • Tìm hiểu Route Propagation và Route Associations <br> • Hiểu luồng dữ liệu giữa các VPC được kết nối | 17/06/2026 | 17/06/2026 | https://000020.awsstudygroup.com/ |
+| 5 | **Triển khai và kiểm thử AWS Transit Gateway:** <br> • Triển khai AWS Transit Gateway trên môi trường thực hành <br> • Cấu hình định tuyến giữa các VPC <br> • Kiểm tra khả năng kết nối và giao tiếp giữa các VPC | 18/06/2026 | 18/06/2026 | https://000020.awsstudygroup.com/ |
+| 6 | **Phát triển dự án Snaptics:** <br> • Tiếp tục phát triển backend cho dự án Snaptics <br> • Rà soát việc triển khai API và các module hỗ trợ <br> • Cải thiện cấu trúc dự án và các thành phần tích hợp | 19/06/2026 | 19/06/2026 | |
 
-### Kết quả đạt được trong tuần
+### Kết quả đạt được trong tuần 6
 
-* Triển khai và cấu hình thành công AWS Transit Gateway.
+* Hiểu được kiến trúc và nguyên lý hoạt động của AWS Transit Gateway.
 
-* Kết nối nhiều VPC thông qua Transit Gateway Attachments.
+* Nắm được cách AWS Transit Gateway giúp đơn giản hóa việc kết nối nhiều VPC.
 
-* Cấu hình Transit Gateway Route Tables và các quy tắc định tuyến giữa các VPC.
+* Thực hành cấu hình Transit Gateway Attachments và Route Tables trên môi trường thực hành.
 
-* Nâng cao hiểu biết về kiến trúc mạng quy mô lớn trên AWS.
+* Củng cố kiến thức về kiến trúc mạng tập trung và cơ chế định tuyến trên AWS.
 
-* Tiếp tục tham gia phát triển Backend cho dự án Snaptics.
-
-* Cải thiện các module hỗ trợ, thành phần tích hợp và luồng xử lý của hệ thống.
-
-* Hoàn thiện việc nghiên cứu và thực hành các thành phần chính của AWS Transit Gateway.
+* Tiếp tục đóng góp vào quá trình phát triển backend và tích hợp các thành phần của dự án Snaptics.

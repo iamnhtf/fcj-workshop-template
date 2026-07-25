@@ -5,53 +5,36 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 11 Objectives
 
-### Week 11 Objectives:
+* Learn advanced IAM features, including IAM Role Conditions and granting application access using IAM Roles.
+* Understand best practices for securely granting AWS service permissions to applications.
+* Continue developing backend features for the Snaptics project.
+* Implement and test new backend modules while improving existing functionalities.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Activities Completed During This Week
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Tasks | Start Date | Completion Date | References |
+|------|---------|-------------|----------------|------------|
+| 2 | **Income Management Enhancement:** <br> • Review and update the income processing workflow <br> • Refine Income Source and Income History logic <br> • Update database migration and related backend services | 20/07/2026 | 20/07/2026 | |
+| 3 | **IAM Role & Condition:** <br> • Learn IAM Groups and IAM Users <br> • Configure IAM Role Conditions <br> • Explore least privilege principles and conditional access control | 21/07/2026 | 21/07/2026 | https://000030.awsstudygroup.com/ |
+| 4 | **Granting Application Access with IAM Roles:** <br> • Learn secure application authentication on AWS <br> • Compare Access Keys and IAM Roles <br> • Configure IAM Roles for EC2 applications | 22/07/2026 | 22/07/2026 | https://000048.awsstudygroup.com/ |
+| 5 | **Budget Income Source Development:** <br> • Design and implement the Budget Income Source module <br> • Develop CRUD APIs for Budget Income Sources <br> • Create Entity, DTO, Repository, Service, and Controller layers <br> • Add database migration and update entity fields <br> • Perform API testing and verify business logic | 23/07/2026 | 23/07/2026 | |
+| 6 | **Support Ticket Module Development:** <br> • Develop the Support Ticket module <br> • Implement CRUD APIs for tickets <br> • Add Support Messages and Attachments <br> • Develop ticket statistics functionalities <br> • Create database migration and perform API testing | 24/07/2026 | 24/07/2026 | |
 
+### Week 11 Achievements
 
-### Week 11 Achievements:
+* Understood how IAM Role Conditions can be used to implement fine-grained access control on AWS.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Learned best practices for granting applications secure access to AWS services using IAM Roles instead of long-term access keys.
 
-* Successfully created and configured an AWS Free Tier account.
+* Improved understanding of IAM security principles, including least privilege and role-based access management.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully refined the income processing workflow and updated related backend services for the Snaptics project.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Designed and implemented the Budget Income Source module, including database entities, business logic, and CRUD APIs.
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully developed the Support Ticket module with ticket management, message handling, attachment management, and statistical functionalities.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed database migrations, API testing, and feature verification for the newly implemented backend modules.

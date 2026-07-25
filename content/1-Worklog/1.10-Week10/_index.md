@@ -9,36 +9,33 @@ pre: " <b> 1.10. </b> "
 ### Week 10 Objectives
 
 * Learn how IAM Policies can be used to restrict access to AWS resources.
-* Practice creating IAM users with limited permissions.
-* Explore AWS security services, including AWS Key Management Service (AWS KMS) and AWS CloudTrail.
-* Learn how data encryption works on Amazon S3.
-* Continue contributing to the Snaptics project by developing the Income Source and Recurring Monthly Income features.
+* Explore AWS Key Management Service (AWS KMS), Amazon S3 encryption, and AWS CloudTrail.
+* Strengthen understanding of AWS security and auditing services.
+* Develop the Income Source and Recurring Monthly Income features for the Snaptics project.
 
-### Tasks Completed During the Week
+### Activities Completed During This Week
 
-| Day | Activities | Start Date | Completion Date | References |
-|------|-----------|-------------|----------------|-----------|
-| 2 | **Access Restriction:** <br> • Learn Restriction Policies <br> • Create IAM users with limited permissions <br> • Verify access permissions using IAM Policies | 13/07/2026 | 13/07/2026 | https://000030.awsstudygroup.com/ |
-| 3 | **AWS Data Security:** <br> • Learn AWS Key Management Service (AWS KMS) <br> • Explore Amazon S3 data encryption <br> • Practice data encryption options | 14/07/2026 | 14/07/2026 | https://000033.awsstudygroup.com/ |
-| 4 | **Income Management Development:** <br> • Design and implement the Income Source module <br> • Develop APIs for Income Source management <br> • Create Entity, DTO, Repository, Service and Controller <br> • Add the Income Module database migration <br> • Implement recurring monthly income processing | 15/07/2026 | 15/07/2026 | |
-| 5 | **AWS Activity Monitoring:** <br> • Learn AWS CloudTrail <br> • Explore account activity logging <br> • Understand the role of CloudTrail in auditing and monitoring AWS resources | 16/07/2026 | 16/07/2026 | https://000033.awsstudygroup.com/ |
-| 6 | **Testing and Feature Completion:** <br> • Test Income Source APIs <br> • Verify recurring monthly income processing <br> • Fix identified issues and finalize the implementation | 17/07/2026 | 17/07/2026 | |
-| 7 | **Project Review:** <br> • Review completed project features <br> • Evaluate AWS laboratory results <br> • Summarize the project development progress | 18/07/2026 | 18/07/2026 | |
+| Day | Tasks | Start Date | Completion Date | References |
+|------|---------|-------------|----------------|------------|
+| 2 | **Access Restriction with IAM Policies:** <br> • Learn IAM Restriction Policies <br> • Create IAM users with limited permissions <br> • Verify access permissions using IAM Policies | 13/07/2026 | 13/07/2026 | https://000030.awsstudygroup.com/ |
+| 3 | **AWS Data Security:** <br> • Learn AWS Key Management Service (AWS KMS) <br> • Explore Amazon S3 server-side encryption <br> • Practice different encryption options for data protection | 14/07/2026 | 14/07/2026 | https://000033.awsstudygroup.com/ |
+| 4 | **AWS CloudTrail:** <br> • Learn AWS CloudTrail <br> • Explore activity logging and auditing <br> • Understand how CloudTrail tracks AWS resource changes | 15/07/2026 | 15/07/2026 | https://000033.awsstudygroup.com/ |
+| 5 | **Income Management Feature:** <br> • Design and implement the Income Source module <br> • Develop RESTful APIs for Income Source management <br> • Create Entity, DTO, Repository, Service, and Controller layers | 16/07/2026 | 16/07/2026 | |
+| 6 | **Recurring Monthly Income:** <br> • Implement recurring monthly income processing <br> • Create database migrations <br> • Test APIs and verify business logic | 17/07/2026 | 17/07/2026 | |
+| 7 | **Snaptics Project Review:** <br> • Fix issues identified during API testing <br> • Review completed backend features with team members <br> • Prepare the project for the next development phase | 18/07/2026 | 18/07/2026 | |
 
-### Achievements
+### Week 10 Achievements
 
-* Understood how IAM Policies can be used to restrict access to AWS resources.
+* Understood how IAM Policies restrict access to AWS resources.
 
-* Practiced creating IAM users with limited permissions.
+* Learned the role of AWS KMS in protecting encryption keys and securing data.
 
-* Learned the role of AWS Key Management Service (AWS KMS) in protecting encryption keys and securing data.
-
-* Understood how AWS CloudTrail records and monitors activities within an AWS account.
+* Understood how AWS CloudTrail records and monitors AWS account activities.
 
 * Learned the fundamentals of Amazon S3 data encryption.
 
 * Successfully implemented the Income Source module for the Snaptics project.
 
-* Developed recurring monthly income processing for the system.
+* Completed the Recurring Monthly Income feature and corresponding database migration.
 
-* Completed testing and refinement of the Income Source and Recurring Monthly Income features.
+* Performed API testing, resolved implementation issues, and prepared the project for subsequent development.

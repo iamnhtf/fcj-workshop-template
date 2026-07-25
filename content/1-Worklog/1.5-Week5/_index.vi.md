@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 5"
+title: "Nhật ký tuần 5"
 date: 2024-01-01
 weight: 1
 chapter: false
@@ -8,30 +8,29 @@ pre: " <b> 1.5. </b> "
 
 ### Mục tiêu tuần 5
 
-* Tìm hiểu khái niệm VPC Peering và giao tiếp giữa nhiều VPC.
-* Tìm hiểu các thành phần mạng trên AWS như Route Tables, Security Groups, Network ACLs và DNS Resolution.
-* Khám phá kiến trúc và các trường hợp sử dụng của AWS Transit Gateway.
-* Tiếp tục tham gia phát triển dự án Snaptics.
+* Tìm hiểu khái niệm và kiến trúc của VPC Peering.
+* Nắm được các thành phần mạng trên AWS như Route Tables, Security Groups và DNS Resolution.
+* Tìm hiểu kiến trúc và các trường hợp sử dụng của AWS Transit Gateway.
+* Tiếp tục tham gia phát triển backend cho dự án Snaptics.
 
-### Công việc thực hiện trong tuần
+### Các hoạt động đã thực hiện trong tuần
 
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-|------|-----------|-------------|----------------|-------------------|
-| 2 | **Kiến thức cơ bản về VPC Peering:** <br> • Tìm hiểu khái niệm và kiến trúc VPC Peering <br> • Khám phá cơ chế giao tiếp giữa nhiều VPC <br> • Tìm hiểu các trường hợp sử dụng phổ biến của VPC Peering | 08/06/2026 | 08/06/2026 | https://000019.awsstudygroup.com/ |
-| 3 | **Cấu hình mạng:** <br> • Cấu hình Security Groups <br> • Tìm hiểu Route Tables <br> • Nghiên cứu DNS Resolution giữa các VPC | 09/06/2026 | 09/06/2026 | https://000019.awsstudygroup.com/ |
-| 4 | **Phát triển dự án:** <br> • Tiếp tục phát triển Backend cho dự án Snaptics <br> • Cập nhật API và các cấu hình hỗ trợ | 10/06/2026 | 10/06/2026 | |
-| 5 | **Phát triển dự án:** <br> • Rà soát cấu hình hệ thống <br> • Cải thiện các chức năng Backend và thành phần tích hợp | 11/06/2026 | 11/06/2026 | |
-| 6 | **Giới thiệu AWS Transit Gateway:** <br> • Tìm hiểu khái niệm AWS Transit Gateway <br> • So sánh Transit Gateway với VPC Peering <br> • Nghiên cứu kiến trúc mạng quy mô lớn | 12/06/2026 | 12/06/2026 | https://000020.awsstudygroup.com/ |
-| 7 | **Chuẩn bị triển khai Transit Gateway:** <br> • Tìm hiểu các yêu cầu triển khai <br> • Xem xét thiết kế mạng và định tuyến <br> • Chuẩn bị cho việc thực hành Transit Gateway | 13/06/2026 | 13/06/2026 | https://000020.awsstudygroup.com/ |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+|------|-----------|--------------|-----------------|--------------------|
+| 2 | **Kiến thức cơ bản về VPC Peering:** <br> • Tìm hiểu khái niệm và kiến trúc của VPC Peering <br> • Tìm hiểu cách nhiều VPC giao tiếp với nhau <br> • Nghiên cứu các trường hợp sử dụng phổ biến của VPC Peering | 08/06/2026 | 08/06/2026 | https://000019.awsstudygroup.com/ |
+| 3 | **Cấu hình mạng trên AWS:** <br> • Tìm hiểu Route Tables và định tuyến giữa các VPC <br> • Cấu hình Security Groups <br> • Tìm hiểu DNS Resolution cho việc giao tiếp giữa các VPC | 09/06/2026 | 09/06/2026 | https://000019.awsstudygroup.com/ |
+| 4 | **Kiến thức cơ bản về AWS Transit Gateway:** <br> • Tìm hiểu khái niệm và kiến trúc của AWS Transit Gateway <br> • So sánh Transit Gateway với VPC Peering <br> • Tìm hiểu mô hình mạng Hub-and-Spoke | 10/06/2026 | 10/06/2026 | https://000020.awsstudygroup.com/ |
+| 5 | **Triển khai AWS Transit Gateway:** <br> • Tìm hiểu Transit Gateway Attachments <br> • Nghiên cứu Route Propagation và Route Tables <br> • Tìm hiểu các kịch bản triển khai thực tế | 11/06/2026 | 11/06/2026 | https://000020.awsstudygroup.com/ |
+| 6 | **Phát triển dự án Snaptics:** <br> • Tiếp tục phát triển backend cho dự án Snaptics <br> • Rà soát thiết kế API và các cấu hình liên quan <br> • Chuẩn bị cho các chức năng sẽ triển khai trong giai đoạn tiếp theo | 12/06/2026 | 12/06/2026 | |
 
-### Kết quả đạt được trong tuần
+### Kết quả đạt được trong tuần 5
 
-* Hiểu được cách VPC Peering cho phép giao tiếp giữa nhiều VPC trên AWS.
+* Hiểu được cách VPC Peering cho phép nhiều VPC giao tiếp an toàn với nhau.
 
 * Nắm được vai trò của Route Tables, Security Groups và DNS Resolution trong hệ thống mạng AWS.
 
-* Có kiến thức nền tảng về AWS Transit Gateway và các lợi ích trong môi trường mạng quy mô lớn.
+* Có kiến thức nền tảng về AWS Transit Gateway và những lợi ích của dịch vụ này trong các kiến trúc mạng quy mô lớn.
 
-* Tiếp tục tham gia phát triển các chức năng Backend cho dự án Snaptics.
+* Tiếp tục chuẩn bị và phát triển các thành phần backend cho dự án Snaptics.
 
-* Nâng cao hiểu biết về kiến trúc mạng và các giải pháp kết nối trên AWS.
+* Củng cố kiến thức về các dịch vụ mạng trên AWS và các giải pháp kết nối trong môi trường Cloud.
