@@ -37,3 +37,12 @@ Trong thời gian thực tập, tôi đã tham gia hai sự kiện kỹ thuật 
 &emsp;**Vai trò:** Người tham dự
 
 &emsp;**Địa điểm:** Phòng LB 24 (Tầng 2) - Thư viện FPTU TP.HCM
+
+### [Sự kiện 4](4.4-Event4/)
+&emsp;**Sự ​​kiện:** FCAJ – Agentic AI Build Week
+
+&emsp;**Thời gian:** Ngày 4 tháng 7 năm 2026
+
+&emsp;**Vai trò:** Người tham dự
+
+&emsp;**Địa điểm:** Tòa nhà Bitexco Financial Tower, Quận 1, TP. Hồ Chí Minh

@@ -38,3 +38,12 @@ During my internship, I participated in two technical events related to AWS and 
 &emsp;**Role:** Attendee
 
 &emsp;**Location:** Room LB 24 (2nd Floor) - FPTU HCMC Library
+
+### [Event 4](4.4-Event4/)
+&emsp;**Event:** FCAJ – Agentic AI Build Week
+
+&emsp;**Date & Time:** July 4, 2026
+
+&emsp;**Role:** Attendee
+
+&emsp;**Location:** Bitexco Financial Tower, District 1, Ho Chi Minh City

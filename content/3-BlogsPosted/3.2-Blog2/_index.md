@@ -5,27 +5,86 @@ weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# BUILDING A SCALABLE E-COMMERCE WEBSITE ON AWS
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+Modern e-commerce websites often experience significant traffic fluctuations, especially during promotional campaigns, flash sales, and peak shopping seasons. If every request is handled by a single application server while directly accessing the database, the system can quickly become overloaded, resulting in slower response times or service interruptions.
 
-Key points to know:
+AWS provides a wide range of managed services that help organizations build scalable, secure, and highly available web applications. By combining networking, security, compute, caching, databases, and monitoring services, developers can design cloud-native architectures capable of handling dynamic workloads while maintaining a consistent user experience.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+### Architecture Overview
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+The overall request flow is illustrated below:
 
-...Image...
+**User → Amazon Route 53 → Amazon CloudFront → AWS WAF → Application Load Balancer → Amazon ECS (AWS Fargate) → Amazon ElastiCache / Amazon Aurora Serverless v2**
 
-...Link...
+Each AWS service plays a specific role within the architecture:
 
-...Guide...
+- **Amazon Route 53**
+  - Resolves domain names and routes user requests to the appropriate AWS resources.
+
+- **Amazon CloudFront**
+  - Delivers content from edge locations closer to users, reducing latency and improving website performance.
+
+- **AWS WAF**
+  - Protects the application against common web attacks such as SQL injection and cross-site scripting (XSS).
+
+- **Application Load Balancer**
+  - Distributes incoming requests across multiple backend containers to improve scalability and availability.
+
+- **Amazon ECS with AWS Fargate**
+  - Runs containerized backend services without requiring developers to manage servers.
+
+- **Amazon Cognito**
+  - Handles user registration, authentication, and authorization securely.
+
+- **Amazon ElastiCache**
+  - Stores frequently accessed data in memory to reduce database workload and improve response times.
+
+- **Amazon Aurora Serverless v2**
+  - Stores core application data while automatically scaling database capacity based on workload.
+
+### Monitoring and Alerting
+
+Monitoring plays an important role in maintaining application reliability.
+
+Amazon CloudWatch continuously collects metrics and logs from Amazon ECS and Amazon Aurora. When abnormal conditions are detected, such as high CPU utilization, application errors, or database performance degradation, **CloudWatch Alarm** automatically triggers **Amazon SNS** to send notifications via email or SMS.
+
+**Monitoring Flow**
+
+**Amazon CloudWatch → CloudWatch Alarm → Amazon SNS → Email / SMS**
+
+### Benefits of the Architecture
+
+This architecture offers several advantages:
+
+- Improved application performance through CloudFront and ElastiCache.
+- Enhanced security using AWS WAF and Amazon Cognito.
+- Automatic scalability with Amazon ECS, AWS Fargate, and Aurora Serverless v2.
+- High availability through Application Load Balancer.
+- Continuous monitoring and proactive alerting using CloudWatch and Amazon SNS.
+
+### What I learned
+
+This reference architecture demonstrates how multiple AWS managed services can be integrated to build a scalable and cloud-native e-commerce platform.
+
+By exploring this architecture, I gained a better understanding of the responsibilities of individual AWS services and how networking, security, container orchestration, caching, databases, and monitoring work together to support production-ready applications. It also reinforced the importance of designing systems that are scalable, secure, and resilient from the beginning.
+
+### Images
+
+<div style="text-align: center;">
+    <img src="/images/3-BlogsPosted/3.2-Blog2/blog2.jpg"
+         alt="Scalable E-commerce Architecture"
+         style="width: 900px; height: auto; border-radius: 8px;">
+    <p>Scalable E-commerce website architecture on AWS.</p>
+</div>
+
+### Original References
+
+This blog is based on the following AWS official guidance:
+
+- **Guidance for Web Store on AWS**
+  https://docs.aws.amazon.com/solutions/web-store-on-aws/
+
+- **Guidance for Building a Containerized and Scalable Web Application on AWS**
+  https://docs.aws.amazon.com/solutions/building-a-containerized-and-scalable-web-application-on-aws/
