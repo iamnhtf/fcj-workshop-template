@@ -10,30 +10,30 @@ pre: " <b> 1. </b> "
 
 Quá trình thực tập được chia thành bốn giai đoạn chính:
 
-#### Giai đoạn 1 (Tuần 1–4): Nền tảng AWS và Hạ tầng
+#### Giai đoạn 1 (Tuần 1–3): Nền tảng AWS và các dịch vụ cốt lõi
 
-* Tìm hiểu các khái niệm cơ bản về Điện toán đám mây (Cloud Computing) và các dịch vụ cốt lõi của AWS.
-* Thiết lập tài khoản AWS và quản lý quyền truy cập bằng AWS Identity and Access Management (IAM).
-* Xây dựng kiến thức nền tảng về mạng với Amazon VPC, Security Group và Amazon EC2.
-* Tìm hiểu các giải pháp mạng nâng cao như Route 53, Site-to-Site VPN, VPC Peering và Transit Gateway.
+* Tìm hiểu các khái niệm cơ bản về Điện toán đám mây và thiết lập tài khoản AWS với IAM.
+* Xây dựng kiến thức nền tảng về mạng với Amazon VPC, Subnets, Security Groups, EC2, NAT Gateway và Site-to-Site VPN.
+* Tìm hiểu triển khai EC2 nâng cao, Amazon RDS và các thao tác sao lưu, khôi phục cơ sở dữ liệu.
 
-#### Giai đoạn 2 (Tuần 5–6): Lập kế hoạch và Thiết kế kiến trúc dự án
+#### Giai đoạn 2 (Tuần 4–6): Khả năng mở rộng, Mạng và khởi động dự án
 
-* Phân tích yêu cầu và xác định mục tiêu của dự án.
-* Nghiên cứu các dịch vụ AWS phù hợp với bài toán thực tế.
-* Thiết kế kiến trúc hệ thống và xây dựng định hướng triển khai cho dự án.
+* Tìm hiểu các dịch vụ mở rộng hệ thống trên AWS bao gồm ELB, Auto Scaling, CloudWatch và AWS Budget.
+* Tìm hiểu Amazon Route 53, quản lý DNS và thao tác với AWS CLI.
+* Tìm hiểu các mô hình kết nối mạng nâng cao với VPC Peering và AWS Transit Gateway.
+* Bắt đầu phát triển Backend cho dự án Snaptics với các chức năng xử lý giao dịch và quản lý hàng hóa.
 
-#### Giai đoạn 3 (Tuần 7–10): Phát triển dự án
+#### Giai đoạn 3 (Tuần 7–10): Lưu trữ, Bảo mật và phát triển dự án
 
-* Tích hợp các dịch vụ AWS vào ứng dụng.
-* Triển khai các chức năng liên quan đến nền tảng đám mây và lưu trữ dữ liệu.
-* Kiểm thử quá trình tích hợp dịch vụ và luồng hoạt động của hệ thống.
+* Tìm hiểu Amazon S3, AWS Backup, AWS Storage Gateway, Amazon SNS, Amazon FSx, AWS Security Hub và AWS Lambda.
+* Tìm hiểu AWS Resource Tags, Resource Groups, IAM, AWS KMS, CloudTrail và các cơ chế bảo mật IAM Roles.
+* Phát triển các chức năng của dự án Snaptics như AI Assistant, tích hợp Amazon S3 và quản lý Income Source.
 
-#### Giai đoạn 4 (Tuần 11–12): Kiểm thử và Hoàn thiện
+#### Giai đoạn 4 (Tuần 11–12): Ôn tập bảo mật, hoàn thiện dự án và tài liệu
 
-* Thực hiện kiểm thử và tối ưu hệ thống.
-* Khắc phục lỗi và nâng cao tính ổn định của ứng dụng.
-* Hoàn thiện tài liệu dự án và chuẩn bị báo cáo cuối kỳ.
+* Nghiên cứu các thực hành bảo mật trên AWS và tìm hiểu IAM Roles dành cho ứng dụng chạy trên EC2.
+* Phát triển các chức năng Hangfire Job Scheduling, Budget Income Source và Support Ticket cho dự án Snaptics.
+* Hoàn thiện kiểm thử hệ thống, tài liệu dự án và chuẩn bị báo cáo cuối kỳ.
 
 ### Các cột mốc và mục tiêu theo tuần
 
@@ -41,22 +41,22 @@ Quá trình thực tập được chia thành bốn giai đoạn chính:
 
 **Tuần 2:** [Amazon VPC, bảo mật mạng, EC2 và Site-to-Site VPN](1.2-week2/)
 
-**Tuần 3:** [Route 53 và Hybrid DNS](1.3-week3/)
+**Tuần 3:** [EC2 nâng cao, triển khai ứng dụng và Amazon RDS](1.3-week3/)
 
-**Tuần 4:** [VPC Peering và Transit Gateway](1.4-week4/)
+**Tuần 4:** [ELB, Auto Scaling, CloudWatch, AWS Budget, Route 53 và AWS CLI](1.4-week4/)
 
-**Tuần 5:** [Lập kế hoạch dự án và nghiên cứu dịch vụ AWS](1.5-week5/)
+**Tuần 5:** [VPC Peering và phát triển Backend Snaptics](1.5-week5/)
 
-**Tuần 6:** [Thiết kế kiến trúc dự án](1.6-week6/)
+**Tuần 6:** [AWS Transit Gateway, Amazon S3 và Presigned URLs](1.6-week6/)
 
-**Tuần 7:** [Phát triển dự án và tích hợp AWS](1.7-week7/)
+**Tuần 7:** [AWS Backup, Storage Gateway, Usage Notifications và AI Assistant](1.7-week7/)
 
-**Tuần 8:** [Tích hợp Amazon S3](1.8-week8/)
+**Tuần 8:** [Amazon FSx, AWS Security Hub, AWS Lambda và tích hợp Amazon SNS](1.8-week8/)
 
-**Tuần 9:** [Presigned URL và tích hợp API](1.9-week9/)
+**Tuần 9:** [AWS Resource Tags, Resource Groups và IAM](1.9-week9/)
 
-**Tuần 10:** [Giám sát và ghi log với CloudWatch](1.10-week10/)
+**Tuần 10:** [IAM Security, AWS KMS, CloudTrail và phát triển Income Source](1.10-week10/)
 
-**Tuần 11:** [Kiểm thử và tối ưu hệ thống](1.11-week11/)
+**Tuần 11:** [Nghiên cứu AWS Security, IAM Roles và phát triển Backend](1.11-week11/)
 
-**Tuần 12:** [Hoàn thiện tài liệu và báo cáo cuối kỳ](1.12-week12/)
+**Tuần 12:** [Kiểm thử hệ thống, hoàn thiện tài liệu và tổng kết dự án](1.12-week12/)

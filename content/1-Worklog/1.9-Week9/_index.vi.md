@@ -8,35 +8,31 @@ pre: " <b> 1.9. </b> "
 
 ### Mục tiêu tuần 9
 
-* Tìm hiểu cách AWS Resource Tags hỗ trợ tổ chức và quản lý tài nguyên trên AWS.
-* Tìm hiểu AWS Resource Groups và phương pháp quản lý tài nguyên tập trung.
-* Nắm các khái niệm cơ bản về AWS Identity and Access Management (IAM).
-* Thực hành tạo IAM Users, IAM Policies và IAM Roles.
-* Tiếp tục phát triển backend và triển khai API cho dự án Snaptics.
+* Tìm hiểu khái niệm AWS Resource Tags và các phương pháp tổ chức tài nguyên trên AWS.
+* Học cách quản lý Resource Tags bằng AWS Management Console và AWS CLI.
+* Tìm hiểu AWS Resource Groups để quản lý tài nguyên tập trung.
+* Xây dựng kiến thức nền tảng về IAM Users, Policies và Roles nhằm kiểm soát quyền truy cập.
 
-### Các hoạt động đã thực hiện trong tuần
+### Công việc đã thực hiện trong tuần
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| 2 | **AWS Resource Tags:** <br> • Tạo Amazon EC2 Instances với Resource Tags <br> • Tìm hiểu cách tạo và quản lý Resource Tags <br> • Thực hành cập nhật Tags cho các tài nguyên AWS | 06/07/2026 | 06/07/2026 | https://000027.awsstudygroup.com/ |
-| 3 | **Quản lý tài nguyên AWS:** <br> • Lọc tài nguyên bằng Resource Tags <br> • Thực hành quản lý Tags bằng AWS CLI <br> • Tìm hiểu các phương pháp tổ chức tài nguyên | 07/07/2026 | 07/07/2026 | https://000027.awsstudygroup.com/ |
-| 4 | **AWS Resource Groups:** <br> • Tạo AWS Resource Groups <br> • Tổ chức tài nguyên bằng Resource Tags <br> • Tìm hiểu phương pháp quản lý tài nguyên tập trung | 08/07/2026 | 08/07/2026 | https://000027.awsstudygroup.com/ |
-| 5 | **AWS Identity and Access Management (IAM):** <br> • Tạo IAM Users <br> • Tạo IAM Policies <br> • Tìm hiểu cơ chế quản lý quyền truy cập trên AWS | 09/07/2026 | 09/07/2026 | https://000028.awsstudygroup.com/ |
-| 6 | **IAM Roles và Dự án Snaptics:** <br> • Tạo IAM Roles và thực hành chuyển đổi Role <br> • Kiểm tra cơ chế phân quyền IAM <br> • Triển khai các API backend cho dự án Snaptics <br> • Rà soát các API và chuẩn bị tích hợp dịch vụ AWS | 10/07/2026 | 10/07/2026 | |
-| 7 | **Phát triển dự án Snaptics:** <br> • Kiểm thử các API đã triển khai và khắc phục lỗi <br> • Rà soát các module backend cùng các thành viên trong nhóm <br> • Chuẩn bị dự án cho giai đoạn tích hợp Amazon S3 | 11/07/2026 | 11/07/2026 | |
+| 2 | **AWS Resource Tags:** <br> • Tìm hiểu khái niệm AWS Resource Tags <br> • Hiểu cấu trúc key-value và các chiến lược gắn thẻ tài nguyên <br> • Tìm hiểu cách sử dụng Tags để tổ chức tài nguyên và quản lý chi phí | 06/07/2026 | 06/07/2026 | https://000027.awsstudygroup.com/ |
+| 3 | **Quản lý AWS Resource Tags:** <br> • Thực hành tạo và quản lý Resource Tags bằng AWS Management Console và AWS CLI <br> • Cập nhật và xóa Resource Tags <br> • Lọc tài nguyên AWS dựa trên Tags | 07/07/2026 | 07/07/2026 | https://000027.awsstudygroup.com/ |
+| 4 | **AWS Resource Groups:** <br> • Tìm hiểu AWS Resource Groups <br> • Tạo Static và Dynamic Resource Groups <br> • Tìm hiểu cách quản lý tập trung tài nguyên trên nhiều dịch vụ AWS | 08/07/2026 | 08/07/2026 | https://000027.awsstudygroup.com/ |
+| 5 | **IAM Users and Policies:** <br> • Tạo IAM Users <br> • Gán Managed Policies và cấu hình Inline Policies <br> • Tìm hiểu nguyên tắc phân quyền tối thiểu (Least Privilege) | 09/07/2026 | 09/07/2026 | https://000028.awsstudygroup.com/ |
+| 6 | **IAM Roles:** <br> • Tìm hiểu IAM Roles và Trust Policies <br> • Hiểu cơ chế phân quyền dựa trên Role <br> • Tìm hiểu các trường hợp sử dụng IAM Roles trong AWS | 10/07/2026 | 10/07/2026 | https://000028.awsstudygroup.com/ |
 
-### Kết quả đạt được trong tuần 9
+### Kết quả đạt được trong tuần
 
-* Hiểu được vai trò của AWS Resource Tags trong việc tổ chức và quản lý tài nguyên.
+* Hiểu các khái niệm và phương pháp sử dụng AWS Resource Tags để tổ chức tài nguyên.
 
-* Nắm được cách AWS Resource Groups hỗ trợ quản lý tài nguyên tập trung.
+* Có kinh nghiệm thực hành quản lý Resource Tags bằng AWS Management Console và AWS CLI.
 
-* Có kinh nghiệm thực hành với IAM Users, IAM Policies và IAM Roles.
+* Hiểu cách AWS Resource Groups hỗ trợ quản lý tài nguyên tập trung trên nhiều dịch vụ AWS.
 
-* Hiểu cơ chế phân quyền và chuyển đổi Role trên AWS.
+* Xây dựng kiến thức nền tảng về IAM Users, Managed Policies, Inline Policies và nguyên tắc phân quyền tối thiểu.
 
-* Triển khai và rà soát các API backend cho dự án Snaptics.
+* Hiểu vai trò của IAM Roles và các trường hợp sử dụng trong việc kiểm soát quyền truy cập trên AWS.
 
-* Thực hiện kiểm thử API và chuẩn bị cho việc tích hợp các dịch vụ AWS.
-
-* Hoàn thành các bài thực hành về AWS Resource Tags, Resource Groups và Identity and Access Management.
+* Củng cố kiến thức về quản lý tài nguyên và quản lý danh tính, quyền truy cập trên nền tảng AWS.
