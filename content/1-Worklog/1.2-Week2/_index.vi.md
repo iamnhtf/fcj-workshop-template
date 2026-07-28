@@ -21,9 +21,9 @@ pre: " <b> 1.2. </b> "
 |------|-----------|-------------|----------------|---------------|
 | 2 | **Định hướng dự án:** <br> • Thảo luận ý tưởng dự án nhóm <br> • Tìm hiểu các dịch vụ AWS có thể áp dụng cho dự án <br> • Xác định bài toán và mục tiêu ban đầu của hệ thống | 18/05/2026 | 18/05/2026 | |
 | 3 | **Nền tảng mạng (VPC):** <br> • Tìm hiểu Amazon VPC <br> • Tìm hiểu Subnet, Route Table, Internet Gateway (IGW) <br> • Cấu hình Security Group và Network ACL (NACL) | 19/05/2026 | 19/05/2026 | https://000003.awsstudygroup.com/ |
-| 4 | **Triển khai EC2:** <br> • Tạo Amazon EC2 Instance <br> • Kiểm tra kết nối SSH <br> • Thực hành triển khai EC2 trong Public Subnet và Private Subnet | 20/05/2026 | 20/05/2026 | https://000003.awsstudygroup.com/4-createec2server/4.1-createec2/ |
-| 5 | **Triển khai NAT Gateway:** <br> • Tìm hiểu cơ chế truy cập Internet của Private Subnet <br> • Thiết lập NAT Gateway <br> • Kiểm tra kết nối từ Private EC2 ra Internet | 21/05/2026 | 21/05/2026 | https://000003.awsstudygroup.com/4-createec2server/4.3-natgateway/ |
-| 6 | **Kết nối Site-to-Site VPN:** <br> • Tìm hiểu AWS Site-to-Site VPN <br> • Tìm hiểu Virtual Private Gateway và Customer Gateway <br> • Thực hành cấu hình kết nối VPN cơ bản | 22/05/2026 | 22/05/2026 | https://000003.awsstudygroup.com/5-vpnsitetosite/ |
+| 4 | **Triển khai EC2:** <br> • Tạo Amazon EC2 Instance <br> • Kiểm tra kết nối SSH <br> • Thực hành triển khai EC2 trong Public Subnet và Private Subnet | 20/05/2026 | 20/05/2026 | https://000003.awsstudygroup.com/ |
+| 5 | **Triển khai NAT Gateway:** <br> • Tìm hiểu cơ chế truy cập Internet của Private Subnet <br> • Thiết lập NAT Gateway <br> • Kiểm tra kết nối từ Private EC2 ra Internet | 21/05/2026 | 21/05/2026 | https://000003.awsstudygroup.com/|
+| 6 | **Kết nối Site-to-Site VPN:** <br> • Tìm hiểu AWS Site-to-Site VPN <br> • Tìm hiểu Virtual Private Gateway và Customer Gateway <br> • Thực hành cấu hình kết nối VPN cơ bản | 22/05/2026 | 22/05/2026 | https://000003.awsstudygroup.com/|
 
 ### Kết quả đạt được
 

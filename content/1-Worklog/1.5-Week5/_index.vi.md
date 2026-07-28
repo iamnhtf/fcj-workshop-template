@@ -8,29 +8,28 @@ pre: " <b> 1.5. </b> "
 
 ### Mục tiêu tuần 5
 
-* Tìm hiểu khái niệm và kiến trúc của VPC Peering.
-* Nắm được các thành phần mạng trên AWS như Route Tables, Security Groups và DNS Resolution.
-* Tìm hiểu kiến trúc và các trường hợp sử dụng của AWS Transit Gateway.
-* Tiếp tục tham gia phát triển backend cho dự án Snaptics.
+* Tìm hiểu kiến thức về VPC Peering và mạng trên AWS.
+* Nắm được cách hoạt động của Route Tables, Security Groups và DNS Resolution.
+* Tiếp tục phát triển các chức năng Backend cho dự án Snaptics.
 
-### Các hoạt động đã thực hiện trong tuần
+### Công việc đã thực hiện trong tuần
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| 2 | **Kiến thức cơ bản về VPC Peering:** <br> • Tìm hiểu khái niệm và kiến trúc của VPC Peering <br> • Tìm hiểu cách nhiều VPC giao tiếp với nhau <br> • Nghiên cứu các trường hợp sử dụng phổ biến của VPC Peering | 08/06/2026 | 08/06/2026 | https://000019.awsstudygroup.com/ |
-| 3 | **Cấu hình mạng trên AWS:** <br> • Tìm hiểu Route Tables và định tuyến giữa các VPC <br> • Cấu hình Security Groups <br> • Tìm hiểu DNS Resolution cho việc giao tiếp giữa các VPC | 09/06/2026 | 09/06/2026 | https://000019.awsstudygroup.com/ |
-| 4 | **Kiến thức cơ bản về AWS Transit Gateway:** <br> • Tìm hiểu khái niệm và kiến trúc của AWS Transit Gateway <br> • So sánh Transit Gateway với VPC Peering <br> • Tìm hiểu mô hình mạng Hub-and-Spoke | 10/06/2026 | 10/06/2026 | https://000020.awsstudygroup.com/ |
-| 5 | **Triển khai AWS Transit Gateway:** <br> • Tìm hiểu Transit Gateway Attachments <br> • Nghiên cứu Route Propagation và Route Tables <br> • Tìm hiểu các kịch bản triển khai thực tế | 11/06/2026 | 11/06/2026 | https://000020.awsstudygroup.com/ |
-| 6 | **Phát triển dự án Snaptics:** <br> • Tiếp tục phát triển backend cho dự án Snaptics <br> • Rà soát thiết kế API và các cấu hình liên quan <br> • Chuẩn bị cho các chức năng sẽ triển khai trong giai đoạn tiếp theo | 12/06/2026 | 12/06/2026 | |
+| 2 | **VPC Peering Fundamentals:** <br> • Tìm hiểu khái niệm và kiến trúc của VPC Peering <br> • Tìm hiểu cách các VPC giao tiếp với nhau <br> • Nghiên cứu các trường hợp sử dụng của VPC Peering | 08/06/2026 | 08/06/2026 | https://000019.awsstudygroup.com/ |
+| 3 | **AWS Network Configuration:** <br> • Tìm hiểu Route Tables và định tuyến giữa các VPC <br> • Cấu hình Security Groups <br> • Tìm hiểu DNS Resolution trong giao tiếp giữa các VPC | 09/06/2026 | 09/06/2026 | https://000019.awsstudygroup.com/ |
+| 4 | **Phát triển Backend dự án Snaptics:** <br> • Cập nhật `TransactionService` để cải thiện xử lý giao dịch <br> • Điều chỉnh logic nghiệp vụ liên quan đến Transaction <br> • Kiểm thử luồng xử lý giao dịch sau khi cập nhật | 10/06/2026 | 10/06/2026 | |
+| 5 | **Phát triển Backend dự án Snaptics:** <br> • Cập nhật chức năng đánh giá Item Inventory <br> • Cải thiện Need Review API <br> • Kiểm thử quy trình đánh giá sau khi cập nhật API | 11/06/2026 | 11/06/2026 | |
+| 6 | **Phát triển Backend dự án Snaptics:** <br> • Thêm cấu hình số ngày đánh giá cho Item Inventory <br> • Cập nhật logic nghiệp vụ liên quan <br> • Kiểm thử chức năng sau khi triển khai | 12/06/2026 | 12/06/2026 | |
 
-### Kết quả đạt được trong tuần 5
+### Kết quả đạt được trong tuần
 
-* Hiểu được cách VPC Peering cho phép nhiều VPC giao tiếp an toàn với nhau.
+* Nắm được các kiến thức cơ bản về VPC Peering, Route Tables, Security Groups và DNS Resolution trong AWS.
 
-* Nắm được vai trò của Route Tables, Security Groups và DNS Resolution trong hệ thống mạng AWS.
+* Hoàn thiện việc cập nhật Transaction Service để cải thiện quá trình xử lý giao dịch.
 
-* Có kiến thức nền tảng về AWS Transit Gateway và những lợi ích của dịch vụ này trong các kiến trúc mạng quy mô lớn.
+* Nâng cấp chức năng đánh giá Item Inventory và cải thiện Need Review API.
 
-* Tiếp tục chuẩn bị và phát triển các thành phần backend cho dự án Snaptics.
+* Bổ sung khả năng cấu hình thời gian đánh giá cho Item Inventory, giúp chức năng linh hoạt hơn.
 
-* Củng cố kiến thức về các dịch vụ mạng trên AWS và các giải pháp kết nối trong môi trường Cloud.
+* Tiếp tục tích lũy kinh nghiệm phát triển Backend thông qua việc triển khai và kiểm thử các chức năng thực tế của dự án.

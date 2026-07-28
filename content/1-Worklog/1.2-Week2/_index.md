@@ -21,9 +21,9 @@ pre: " <b> 1.2. </b> "
 |------|---------|-------------|----------------|------------|
 | 2 | **Project Orientation:** <br> • Discussed group project ideas <br> • Researched AWS services suitable for the project <br> • Identified initial business objectives and system scope | 18/05/2026 | 18/05/2026 | |
 | 3 | **VPC Fundamentals:** <br> • Learned Amazon VPC concepts <br> • Studied Subnets, Route Tables, and Internet Gateway (IGW) <br> • Configured Security Groups and Network ACLs (NACLs) | 19/05/2026 | 19/05/2026 | https://000003.awsstudygroup.com/ |
-| 4 | **EC2 Deployment:** <br> • Created Amazon EC2 Instances <br> • Tested SSH connectivity <br> • Practiced deploying EC2 instances in both Public and Private Subnets | 20/05/2026 | 20/05/2026 | https://000003.awsstudygroup.com/4-createec2server/4.1-createec2/ |
-| 5 | **NAT Gateway Deployment:** <br> • Learned Internet access architecture for Private Subnets <br> • Configured NAT Gateway <br> • Tested outbound connectivity from Private EC2 instances | 21/05/2026 | 21/05/2026 | https://000003.awsstudygroup.com/4-createec2server/4.3-natgateway/ |
-| 6 | **Site-to-Site VPN:** <br> • Learned AWS Site-to-Site VPN concepts <br> • Studied Virtual Private Gateway and Customer Gateway <br> • Practiced basic VPN configuration | 22/05/2026 | 22/05/2026 | https://000003.awsstudygroup.com/5-vpnsitetosite/ |
+| 4 | **EC2 Deployment:** <br> • Created Amazon EC2 Instances <br> • Tested SSH connectivity <br> • Practiced deploying EC2 instances in both Public and Private Subnets | 20/05/2026 | 20/05/2026 | https://000003.awsstudygroup.com/ |
+| 5 | **NAT Gateway Deployment:** <br> • Learned Internet access architecture for Private Subnets <br> • Configured NAT Gateway <br> • Tested outbound connectivity from Private EC2 instances | 21/05/2026 | 21/05/2026 | https://000003.awsstudygroup.com/|
+| 6 | **Site-to-Site VPN:** <br> • Learned AWS Site-to-Site VPN concepts <br> • Studied Virtual Private Gateway and Customer Gateway <br> • Practiced basic VPN configuration | 22/05/2026 | 22/05/2026 | https://000003.awsstudygroup.com/ |
 
 ### Week 2 Achievements
 

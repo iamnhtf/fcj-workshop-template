@@ -8,37 +8,29 @@ pre: " <b> 1.7. </b> "
 
 ### Mục tiêu tuần 7
 
-* Tìm hiểu dịch vụ AWS Backup và các giải pháp sao lưu, khôi phục dữ liệu.
-* Khám phá giải pháp lưu trữ lai (Hybrid Storage) với AWS Storage Gateway.
-* Tìm hiểu Amazon S3, Static Website Hosting và Amazon CloudFront.
-* Tiếp tục tham gia phát triển backend cho dự án Snaptics.
+* Tìm hiểu AWS Backup và các quy trình sao lưu, khôi phục dữ liệu.
+* Tìm hiểu giải pháp lưu trữ lai thông qua AWS Storage Gateway.
+* Tiếp tục phát triển các chức năng Backend của dự án Snaptics.
+* Vận dụng kiến thức AWS vào quá trình phát triển Backend trong dự án thực tế.
 
-### Các hoạt động đã thực hiện trong tuần
+### Công việc đã thực hiện trong tuần
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| 2 | **Kiến thức cơ bản về AWS Backup:** <br> • Tìm hiểu khái niệm AWS Backup <br> • Triển khai hạ tầng sao lưu <br> • Tạo Backup Plans | 22/06/2026 | 22/06/2026 | https://000013.awsstudygroup.com/ |
-| 3 | **Khôi phục dữ liệu:** <br> • Thực hành sao lưu và khôi phục dữ liệu <br> • Tìm hiểu quy trình quản lý Backup <br> • Dọn dẹp tài nguyên AWS sau khi hoàn thành bài thực hành | 23/06/2026 | 23/06/2026 | https://000013.awsstudygroup.com/ |
+| 2 | **AWS Backup Fundamentals:** <br> • Tìm hiểu các khái niệm về AWS Backup <br> • Triển khai hạ tầng sao lưu <br> • Tạo Backup Plans | 22/06/2026 | 22/06/2026 | https://000013.awsstudygroup.com/ |
+| 3 | **Phát triển Backend dự án Snaptics:** <br> • Cập nhật chức năng UsageReview để tạo thông báo cho từng mục được đánh giá <br> • Cải thiện quy trình tạo thông báo trong hệ thống <br> • Kiểm thử việc tạo thông báo thông qua Backend API | 23/06/2026 | 23/06/2026 | |
 | 4 | **AWS Storage Gateway:** <br> • Tạo Amazon S3 Bucket cho Storage Gateway <br> • Triển khai EC2 Instance <br> • Cấu hình AWS Storage Gateway | 24/06/2026 | 24/06/2026 | https://000024.awsstudygroup.com/ |
-| 5 | **Storage Gateway & Dự án Snaptics:** <br> • Cấu hình File Shares bằng AWS Storage Gateway <br> • Tìm hiểu kiến trúc Hybrid Storage <br> • Tiếp tục phát triển backend cho dự án Snaptics <br> • Rà soát luồng API và các module hỗ trợ | 25/06/2026 | 25/06/2026 | |
-| 6 | **Amazon S3 và CloudFront:** <br> • Tạo và quản lý Amazon S3 Buckets <br> • Cấu hình Static Website Hosting <br> • Tìm hiểu Amazon CloudFront <br> • Nghiên cứu Bucket Versioning và Replication | 26/06/2026 | 26/06/2026 | https://000057.awsstudygroup.com/ |
+| 5 | **AWS Storage Gateway:** <br> • Cấu hình File Shares bằng AWS Storage Gateway <br> • Tìm hiểu kiến trúc lưu trữ lai (Hybrid Storage) <br> • Kiểm thử việc chia sẻ dữ liệu giữa hệ thống cục bộ và Amazon S3 | 25/06/2026 | 25/06/2026 | https://000024.awsstudygroup.com/ |
+| 6 | **Phát triển Backend dự án Snaptics:** <br> • Phát triển chức năng AI Assistant Financial Summary <br> • Tạo bản tóm tắt tình hình tài chính từ dữ liệu giao dịch của người dùng <br> • Kiểm thử kết quả tóm tắt thông qua Backend API | 26/06/2026 | 26/06/2026 | |
 
-### Kết quả đạt được trong tuần 7
+### Kết quả đạt được trong tuần
 
-* Nắm được các khái niệm về AWS Backup và chiến lược sao lưu dữ liệu.
+* Nắm được các khái niệm và quy trình sao lưu dữ liệu với AWS Backup.
 
-* Thực hành quy trình sao lưu và khôi phục dữ liệu trên AWS.
+* Hiểu kiến trúc và các trường hợp sử dụng của AWS Storage Gateway.
 
-* Hiểu được kiến trúc và các trường hợp sử dụng của AWS Storage Gateway.
+* Hoàn thiện quy trình tạo thông báo cho từng mục trong chức năng UsageReview.
 
-* Cấu hình thành công AWS Storage Gateway và File Shares tích hợp với Amazon S3.
+* Phát triển chức năng AI Assistant Financial Summary cho dự án Snaptics.
 
-* Có kinh nghiệm thực hành trong việc quản lý Amazon S3 Buckets.
-
-* Tìm hiểu cách triển khai Static Website Hosting và phân phối nội dung bằng Amazon CloudFront.
-
-* Nắm được các tính năng Versioning và Replication của Amazon S3.
-
-* Tiếp tục tham gia phát triển backend và chuẩn bị API cho dự án Snaptics.
-
-* Mở rộng kiến thức về các dịch vụ sao lưu, lưu trữ và phân phối nội dung trên AWS.
+* Tiếp tục nâng cao kỹ năng phát triển Backend đồng thời vận dụng kiến thức AWS vào dự án thực tế.
