@@ -18,11 +18,11 @@ pre: " <b> 1.11. </b> "
 
 | Day | Tasks | Start Date | Completion Date | References |
 |------|---------|-------------|----------------|------------|
-| 2 | **AWS Security Research:** <br> • Research AWS security services and identity management concepts <br> • Review IAM, IAM Roles, Policies, AWS KMS, and CloudTrail <br> • Study AWS security best practices for secure backend application development | 20/07/2026 | 20/07/2026 | |
-| 3 | **IAM Roles for EC2:** <br> • Learn IAM Roles for EC2 instances <br> • Understand Instance Profiles and temporary credentials <br> • Explore best practices for granting AWS service permissions without hardcoded credentials | 21/07/2026 | 21/07/2026 | https://000048.awsstudygroup.com/ |
-| 4 | **Snaptics Backend Development:** <br> • Implement a runtime API for updating Hangfire recurring job schedules <br> • Support dynamic schedule updates without restarting the application <br> • Verify recurring job execution after updating schedules | 22/07/2026 | 22/07/2026 | |
-| 5 | **Snaptics Backend Development:** <br> • Implement BudgetIncomeSource for budget creation <br> • Develop BudgetIncomeSource CRUD APIs <br> • Add the CreatedAt field for tracking record creation time <br> • Verify the new APIs through backend testing | 23/07/2026 | 23/07/2026 | |
-| 6 | **Snaptics Backend Development:** <br> • Develop Support Ticket APIs for end users <br> • Implement CRUD operations, ticket messages, and attachment support <br> • Add ticket statistics APIs <br> • Verify the new APIs through backend testing | 24/07/2026 | 24/07/2026 | |
+| 2 | **AWS Security Research:** <br> - Research AWS security services and identity management concepts <br> - Review IAM, IAM Roles, Policies, AWS KMS, and CloudTrail <br> - Study AWS security best practices for secure backend application development | 20/07/2026 | 20/07/2026 | |
+| 3 | **IAM Roles for EC2:** <br> - Learn IAM Roles for EC2 instances <br> - Understand Instance Profiles and temporary credentials <br> - Explore best practices for granting AWS service permissions without hardcoded credentials | 21/07/2026 | 21/07/2026 | https://000048.awsstudygroup.com/ |
+| 4 | **Snaptics Backend Development:** <br> - Implement a runtime API for updating Hangfire recurring job schedules <br> - Support dynamic schedule updates without restarting the application <br> - Verify recurring job execution after updating schedules | 22/07/2026 | 22/07/2026 | |
+| 5 | **Snaptics Backend Development:** <br> - Implement BudgetIncomeSource for budget creation <br> - Develop BudgetIncomeSource CRUD APIs <br> - Add the CreatedAt field for tracking record creation time <br> - Verify the new APIs through backend testing | 23/07/2026 | 23/07/2026 | |
+| 6 | **Snaptics Backend Development:** <br> - Develop Support Ticket APIs for end users <br> - Implement CRUD operations, ticket messages, and attachment support <br> - Add ticket statistics APIs <br> - Verify the new APIs through backend testing | 24/07/2026 | 24/07/2026 | |
 
 ### Week 11 Achievements
 

@@ -23,35 +23,16 @@ pre: " <b> 1.1. </b> "
 | 5 | - Tìm hiểu AWS IAM <br> - Tạo IAM User và IAM Group <br> - Tìm hiểu IAM Policy và phân quyền người dùng | 14/05/2026 | 14/05/2026 | https://000002.awsstudygroup.com/ |
 | 6 | - Tìm hiểu IAM Role <br> - Thực hành Switch Role <br> - Dọn dẹp tài nguyên thực hành và tổng kết kiến thức tuần | 15/05/2026 | 15/05/2026 | https://000002.awsstudygroup.com/ |
 
-### Kết quả đạt được
+### Kết quả đạt được trong tuần 1
 
-* Hiểu được các khái niệm cơ bản về Điện toán đám mây (Cloud Computing).
+* Nắm được các khái niệm cơ bản về Điện toán đám mây và các nhóm dịch vụ chính trên AWS.
 
-* Nắm được các nhóm dịch vụ chính trên AWS:
-  * Compute
-  * Storage
-  * Database
-  * Networking
+* Hiểu kiến trúc hạ tầng toàn cầu của AWS, bao gồm Regions, Availability Zones và Edge Locations.
 
-* Hiểu được cấu trúc hạ tầng toàn cầu của AWS:
-  * Region
-  * Availability Zone
-  * Edge Location
+* Hoàn thành việc tạo tài khoản AWS và tăng cường bảo mật bằng cách kích hoạt Virtual MFA.
 
-* Tạo thành công tài khoản AWS phục vụ cho học tập và thực hành.
+* Nắm được các khái niệm cốt lõi của AWS Identity and Access Management (IAM), bao gồm Users, Groups, Policies, Roles và Switch Roles.
 
-* Kích hoạt Virtual MFA nhằm tăng cường bảo mật tài khoản AWS.
+* Hiểu các nguyên tắc cơ bản về quản lý quyền truy cập và bảo mật tài khoản trên AWS.
 
-* Hiểu được vai trò của AWS Identity and Access Management (IAM).
-
-* Thực hành thành công:
-  * IAM User
-  * IAM Group
-  * IAM Policy
-  * IAM Role
-  * Switch Role
-
-* Nắm được các nguyên tắc cơ bản về quản lý quyền truy cập và bảo mật tài khoản trên AWS.
-
-* Hoàn thành giai đoạn chuẩn bị kiến thức nền tảng cho các nội dung Networking và Infrastructure ở các tuần tiếp theo.
-
+* Hoàn thành giai đoạn học tập nền tảng, tạo tiền đề cho các nội dung về mạng và hạ tầng AWS trong các tuần tiếp theo.

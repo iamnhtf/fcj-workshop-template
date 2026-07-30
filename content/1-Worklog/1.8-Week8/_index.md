@@ -17,11 +17,11 @@ pre: " <b> 1.8. </b> "
 
 | Day | Tasks | Start Date | Completion Date | References |
 |------|---------|-------------|----------------|------------|
-| 2 | **Snaptics Backend Development:** <br> • Complete the AI Assistant Active and Passive Insights feature <br> • Learn the fundamentals of Amazon SNS for email notifications <br> • Integrate Amazon SNS into the backend notification workflow for budget and spending insights <br> • Verify insight generation and email delivery through backend APIs | 29/06/2026 | 29/06/2026 | |
-| 3 | **Amazon FSx Fundamentals:** <br> • Learn Amazon FSx for Windows File Server <br> • Create SSD Multi-AZ and HDD Multi-AZ File Systems <br> • Explore managed file storage architecture on AWS | 30/06/2026 | 30/06/2026 | https://000025.awsstudygroup.com/ |
-| 4 | **Managing Amazon FSx:** <br> • Create and manage File Shares <br> • Learn Data Deduplication and Shadow Copies <br> • Configure Storage Quotas and monitor file system performance | 01/07/2026 | 01/07/2026 | https://000025.awsstudygroup.com/ |
-| 5 | **AWS Security Hub:** <br> • Enable AWS Security Hub <br> • Review Security Findings and Security Scores <br> • Learn security monitoring and compliance recommendations | 02/07/2026 | 02/07/2026 | https://000018.awsstudygroup.com/ |
-| 6 | **AWS Lambda Fundamentals:** <br> • Create networking resources for practice <br> • Learn infrastructure automation using AWS Lambda <br> • Explore event-driven automation workflows through hands-on practice | 03/07/2026 | 03/07/2026 | https://000022.awsstudygroup.com/ |
+| 2 | **Snaptics Backend Development:** <br> - Complete the AI Assistant Active and Passive Insights feature <br> - Learn the fundamentals of Amazon SNS for email notifications <br> - Integrate Amazon SNS into the backend notification workflow for budget and spending insights <br> - Verify insight generation and email delivery through backend APIs | 29/06/2026 | 29/06/2026 | |
+| 3 | **Amazon FSx Fundamentals:** <br> - Learn Amazon FSx for Windows File Server <br> - Create SSD Multi-AZ and HDD Multi-AZ File Systems <br> - Explore managed file storage architecture on AWS | 30/06/2026 | 30/06/2026 | https://000025.awsstudygroup.com/ |
+| 4 | **Managing Amazon FSx:** <br> - Create and manage File Shares <br> - Learn Data Deduplication and Shadow Copies <br> - Configure Storage Quotas and monitor file system performance | 01/07/2026 | 01/07/2026 | https://000025.awsstudygroup.com/ |
+| 5 | **AWS Security Hub:** <br> - Enable AWS Security Hub <br> - Review Security Findings and Security Scores <br> - Learn security monitoring and compliance recommendations | 02/07/2026 | 02/07/2026 | https://000018.awsstudygroup.com/ |
+| 6 | **AWS Lambda Fundamentals:** <br> - Create networking resources for practice <br> - Learn infrastructure automation using AWS Lambda <br> - Explore event-driven automation workflows through hands-on practice | 03/07/2026 | 03/07/2026 | https://000022.awsstudygroup.com/ |
 
 ### Week 8 Achievements
 

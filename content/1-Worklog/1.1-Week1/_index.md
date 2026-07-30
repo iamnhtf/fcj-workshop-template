@@ -25,32 +25,14 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Achievements
 
-* Gained a fundamental understanding of Cloud Computing concepts.
+* Gained a fundamental understanding of Cloud Computing concepts and the major categories of AWS services.
 
-* Learned the major AWS service categories:
-  * Compute
-  * Storage
-  * Database
-  * Networking
+* Understood the AWS Global Infrastructure, including Regions, Availability Zones, and Edge Locations.
 
-* Understood AWS Global Infrastructure, including:
-  * Regions
-  * Availability Zones
-  * Edge Locations
+* Successfully created and secured an AWS account by enabling Virtual MFA.
 
-* Successfully created an AWS account for learning and hands-on practice.
+* Learned the core concepts of AWS Identity and Access Management (IAM), including Users, Groups, Policies, Roles, and Switch Roles.
 
-* Enabled Virtual MFA to improve AWS account security.
+* Developed a basic understanding of AWS access control and account security best practices.
 
-* Understood the purpose of AWS Identity and Access Management (IAM).
-
-* Successfully practiced:
-  * IAM Users
-  * IAM Groups
-  * IAM Policies
-  * IAM Roles
-  * Switch Roles
-
-* Learned basic AWS access control and account security principles.
-
-* Completed the foundation phase for upcoming Networking and Infrastructure topics.
+* Completed the foundational AWS learning phase in preparation for networking and infrastructure topics.

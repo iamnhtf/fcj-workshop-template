@@ -18,11 +18,11 @@ pre: " <b> 1.10. </b> "
 
 | Day | Tasks | Start Date | Completion Date | References |
 |------|---------|-------------|----------------|------------|
-| 2 | **IAM Restriction Policies:** <br> • Learn permission boundaries and Service Control Policies (SCPs) <br> • Understand session policies <br> • Explore how restriction policies control effective permissions | 13/07/2026 | 13/07/2026 | https://000030.awsstudygroup.com/ |
-| 3 | **AWS KMS and Amazon S3 Encryption:** <br> • Learn AWS KMS key management <br> • Explore SSE-S3, SSE-KMS, and SSE-C encryption methods <br> • Understand data protection for Amazon S3 objects | 14/07/2026 | 14/07/2026 | https://000033.awsstudygroup.com/ |
-| 4 | **Snaptics Backend Development:** <br> • Implement the Income Source feature <br> • Add recurring monthly income processing <br> • Update the income management workflow <br> • Verify the new functionality through backend API testing | 15/07/2026 | 15/07/2026 | |
-| 5 | **AWS CloudTrail:** <br> • Learn AWS CloudTrail for logging and auditing <br> • Configure CloudTrail trails <br> • Explore log monitoring and activity analysis | 16/07/2026 | 16/07/2026 | https://000033.awsstudygroup.com/ |
-| 6 | **IAM Roles and Conditions:** <br> • Create IAM Groups and IAM Users with different permission levels <br> • Configure IAM Roles and Trust Relationships <br> • Practice AssumeRole using AWS STS <br> • Apply IP address and time-based conditions to restrict role access | 17/07/2026 | 17/07/2026 | https://000044.awsstudygroup.com/ |
+| 2 | **IAM Restriction Policies:** <br> - Learn permission boundaries and Service Control Policies (SCPs) <br> - Understand session policies <br> - Explore how restriction policies control effective permissions | 13/07/2026 | 13/07/2026 | https://000030.awsstudygroup.com/ |
+| 3 | **AWS KMS and Amazon S3 Encryption:** <br> - Learn AWS KMS key management <br> - Explore SSE-S3, SSE-KMS, and SSE-C encryption methods <br> - Understand data protection for Amazon S3 objects | 14/07/2026 | 14/07/2026 | https://000033.awsstudygroup.com/ |
+| 4 | **Snaptics Backend Development:** <br> - Implement the Income Source feature <br> - Add recurring monthly income processing <br> - Update the income management workflow <br> - Verify the new functionality through backend API testing | 15/07/2026 | 15/07/2026 | |
+| 5 | **AWS CloudTrail:** <br> - Learn AWS CloudTrail for logging and auditing <br> - Configure CloudTrail trails <br> - Explore log monitoring and activity analysis | 16/07/2026 | 16/07/2026 | https://000033.awsstudygroup.com/ |
+| 6 | **IAM Roles and Conditions:** <br> - Create IAM Groups and IAM Users with different permission levels <br> - Configure IAM Roles and Trust Relationships <br> - Practice AssumeRole using AWS STS <br> - Apply IP address and time-based conditions to restrict role access | 17/07/2026 | 17/07/2026 | https://000044.awsstudygroup.com/ |
 
 ### Week 10 Achievements
 

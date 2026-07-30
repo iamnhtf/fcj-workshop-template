@@ -1,5 +1,5 @@
 ---
-title: "Nhật ký tuần 10"
+title: "Worklog tuần 10"
 date: 2024-01-01
 weight: 2
 chapter: false
@@ -18,11 +18,11 @@ pre: " <b> 1.10. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| 2 | **IAM Restriction Policies:** <br> • Tìm hiểu Permission Boundaries và Service Control Policies (SCPs) <br> • Tìm hiểu Session Policies <br> • Hiểu cách Restriction Policies giới hạn quyền truy cập hiệu quả | 13/07/2026 | 13/07/2026 | https://000030.awsstudygroup.com/ |
-| 3 | **AWS KMS và Amazon S3 Encryption:** <br> • Tìm hiểu quản lý khóa bằng AWS KMS <br> • Tìm hiểu các phương thức mã hóa SSE-S3, SSE-KMS và SSE-C <br> • Hiểu cách bảo vệ dữ liệu trên Amazon S3 | 14/07/2026 | 14/07/2026 | https://000033.awsstudygroup.com/ |
-| 4 | **Phát triển Backend dự án Snaptics:** <br> • Phát triển chức năng quản lý Income Source <br> • Bổ sung xử lý thu nhập định kỳ hằng tháng <br> • Cập nhật quy trình quản lý nguồn thu nhập <br> • Kiểm thử chức năng mới thông qua Backend API | 15/07/2026 | 15/07/2026 | |
-| 5 | **AWS CloudTrail:** <br> • Tìm hiểu AWS CloudTrail phục vụ ghi log và kiểm tra hoạt động <br> • Cấu hình CloudTrail Trails <br> • Thực hành theo dõi và phân tích nhật ký hoạt động | 16/07/2026 | 16/07/2026 | https://000033.awsstudygroup.com/ |
-| 6 | **IAM Roles and Conditions:** <br> • Tạo IAM Groups và IAM Users với các mức quyền khác nhau <br> • Cấu hình IAM Roles và Trust Relationships <br> • Thực hành AssumeRole thông qua AWS STS <br> • Áp dụng điều kiện theo địa chỉ IP và thời gian để giới hạn quyền truy cập Role | 17/07/2026 | 17/07/2026 | https://000044.awsstudygroup.com/ |
+| 2 | **IAM Restriction Policies:** <br> - Tìm hiểu Permission Boundaries và Service Control Policies (SCPs) <br> - Tìm hiểu Session Policies <br> - Hiểu cách Restriction Policies giới hạn quyền truy cập hiệu quả | 13/07/2026 | 13/07/2026 | https://000030.awsstudygroup.com/ |
+| 3 | **AWS KMS và Amazon S3 Encryption:** <br> - Tìm hiểu quản lý khóa bằng AWS KMS <br> - Tìm hiểu các phương thức mã hóa SSE-S3, SSE-KMS và SSE-C <br> - Hiểu cách bảo vệ dữ liệu trên Amazon S3 | 14/07/2026 | 14/07/2026 | https://000033.awsstudygroup.com/ |
+| 4 | **Phát triển Backend dự án Snaptics:** <br> - Phát triển chức năng quản lý Income Source <br> - Bổ sung xử lý thu nhập định kỳ hằng tháng <br> - Cập nhật quy trình quản lý nguồn thu nhập <br> - Kiểm thử chức năng mới thông qua Backend API | 15/07/2026 | 15/07/2026 | |
+| 5 | **AWS CloudTrail:** <br> - Tìm hiểu AWS CloudTrail phục vụ ghi log và kiểm tra hoạt động <br> - Cấu hình CloudTrail Trails <br> - Thực hành theo dõi và phân tích nhật ký hoạt động | 16/07/2026 | 16/07/2026 | https://000033.awsstudygroup.com/ |
+| 6 | **IAM Roles and Conditions:** <br> - Tạo IAM Groups và IAM Users với các mức quyền khác nhau <br> - Cấu hình IAM Roles và Trust Relationships <br> - Thực hành AssumeRole thông qua AWS STS <br> - Áp dụng điều kiện theo địa chỉ IP và thời gian để giới hạn quyền truy cập Role | 17/07/2026 | 17/07/2026 | https://000044.awsstudygroup.com/ |
 
 ### Kết quả đạt được trong tuần
 

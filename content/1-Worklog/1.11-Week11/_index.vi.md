@@ -1,5 +1,5 @@
 ---
-title: "Nhật ký tuần 11"
+title: "Worklog tuần 11"
 date: 2024-01-01
 weight: 2
 chapter: false
@@ -18,11 +18,11 @@ pre: " <b> 1.11. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |------|-----------|--------------|-----------------|--------------------|
-| 2 | **Nghiên cứu AWS Security:** <br> • Nghiên cứu các dịch vụ bảo mật và quản lý danh tính trên AWS <br> • Ôn tập IAM, IAM Roles, Policies, AWS KMS và CloudTrail <br> • Tìm hiểu các thực hành bảo mật nhằm hỗ trợ phát triển ứng dụng Backend an toàn | 20/07/2026 | 20/07/2026 | |
-| 3 | **IAM Roles for EC2:** <br> • Tìm hiểu IAM Roles dành cho EC2 <br> • Hiểu Instance Profiles và Temporary Credentials <br> • Tìm hiểu cách cấp quyền cho ứng dụng trên EC2 mà không cần lưu Access Keys | 21/07/2026 | 21/07/2026 | https://000048.awsstudygroup.com/ |
-| 4 | **Phát triển Backend dự án Snaptics:** <br> • Phát triển Runtime API để cập nhật lịch chạy Hangfire Recurring Jobs <br> • Hỗ trợ thay đổi lịch chạy tác vụ mà không cần khởi động lại hệ thống <br> • Kiểm thử việc cập nhật lịch chạy của các Background Jobs | 22/07/2026 | 22/07/2026 | |
-| 5 | **Phát triển Backend dự án Snaptics:** <br> • Phát triển chức năng BudgetIncomeSource phục vụ tạo ngân sách <br> • Xây dựng các API CRUD cho BudgetIncomeSource <br> • Bổ sung trường CreatedAt để theo dõi thời gian tạo dữ liệu <br> • Kiểm thử các API mới trên Backend | 23/07/2026 | 23/07/2026 | |
-| 6 | **Phát triển Backend dự án Snaptics:** <br> • Phát triển các API Support Ticket dành cho người dùng <br> • Xây dựng CRUD, quản lý tin nhắn và tệp đính kèm <br> • Bổ sung API thống kê Support Ticket <br> • Kiểm thử các API mới trên Backend | 24/07/2026 | 24/07/2026 | |
+| 2 | **Nghiên cứu AWS Security:** <br> - Nghiên cứu các dịch vụ bảo mật và quản lý danh tính trên AWS <br> - Ôn tập IAM, IAM Roles, Policies, AWS KMS và CloudTrail <br> - Tìm hiểu các thực hành bảo mật nhằm hỗ trợ phát triển ứng dụng Backend an toàn | 20/07/2026 | 20/07/2026 | |
+| 3 | **IAM Roles for EC2:** <br> - Tìm hiểu IAM Roles dành cho EC2 <br> - Hiểu Instance Profiles và Temporary Credentials <br> - Tìm hiểu cách cấp quyền cho ứng dụng trên EC2 mà không cần lưu Access Keys | 21/07/2026 | 21/07/2026 | https://000048.awsstudygroup.com/ |
+| 4 | **Phát triển Backend dự án Snaptics:** <br> - Phát triển Runtime API để cập nhật lịch chạy Hangfire Recurring Jobs <br> - Hỗ trợ thay đổi lịch chạy tác vụ mà không cần khởi động lại hệ thống <br> - Kiểm thử việc cập nhật lịch chạy của các Background Jobs | 22/07/2026 | 22/07/2026 | |
+| 5 | **Phát triển Backend dự án Snaptics:** <br> - Phát triển chức năng BudgetIncomeSource phục vụ tạo ngân sách <br> - Xây dựng các API CRUD cho BudgetIncomeSource <br> - Bổ sung trường CreatedAt để theo dõi thời gian tạo dữ liệu <br> - Kiểm thử các API mới trên Backend | 23/07/2026 | 23/07/2026 | |
+| 6 | **Phát triển Backend dự án Snaptics:** <br> - Phát triển các API Support Ticket dành cho người dùng <br> - Xây dựng CRUD, quản lý tin nhắn và tệp đính kèm <br> - Bổ sung API thống kê Support Ticket <br> - Kiểm thử các API mới trên Backend | 24/07/2026 | 24/07/2026 | |
 
 ### Kết quả đạt được trong tuần
 

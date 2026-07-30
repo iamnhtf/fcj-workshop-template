@@ -19,34 +19,24 @@ pre: " <b> 1.2. </b> "
 
 | Day | Tasks | Start Date | Completion Date | References |
 |------|---------|-------------|----------------|------------|
-| 2 | **Project Orientation:** <br> • Discussed group project ideas <br> • Researched AWS services suitable for the project <br> • Identified initial business objectives and system scope | 18/05/2026 | 18/05/2026 | |
-| 3 | **VPC Fundamentals:** <br> • Learned Amazon VPC concepts <br> • Studied Subnets, Route Tables, and Internet Gateway (IGW) <br> • Configured Security Groups and Network ACLs (NACLs) | 19/05/2026 | 19/05/2026 | https://000003.awsstudygroup.com/ |
-| 4 | **EC2 Deployment:** <br> • Created Amazon EC2 Instances <br> • Tested SSH connectivity <br> • Practiced deploying EC2 instances in both Public and Private Subnets | 20/05/2026 | 20/05/2026 | https://000003.awsstudygroup.com/ |
-| 5 | **NAT Gateway Deployment:** <br> • Learned Internet access architecture for Private Subnets <br> • Configured NAT Gateway <br> • Tested outbound connectivity from Private EC2 instances | 21/05/2026 | 21/05/2026 | https://000003.awsstudygroup.com/|
-| 6 | **Site-to-Site VPN:** <br> • Learned AWS Site-to-Site VPN concepts <br> • Studied Virtual Private Gateway and Customer Gateway <br> • Practiced basic VPN configuration | 22/05/2026 | 22/05/2026 | https://000003.awsstudygroup.com/ |
+| 2 | **Project Orientation:** <br> - Discussed group project ideas <br> - Researched AWS services suitable for the project <br> - Identified initial business objectives and system scope | 18/05/2026 | 18/05/2026 | |
+| 3 | **VPC Fundamentals:** <br> - Learned Amazon VPC concepts <br> - Studied Subnets, Route Tables, and Internet Gateway (IGW) <br> - Configured Security Groups and Network ACLs (NACLs) | 19/05/2026 | 19/05/2026 | https://000003.awsstudygroup.com/ |
+| 4 | **EC2 Deployment:** <br> - Created Amazon EC2 Instances <br> - Tested SSH connectivity <br> - Practiced deploying EC2 instances in both Public and Private Subnets | 20/05/2026 | 20/05/2026 | https://000003.awsstudygroup.com/ |
+| 5 | **NAT Gateway Deployment:** <br> - Learned Internet access architecture for Private Subnets <br> - Configured NAT Gateway <br> - Tested outbound connectivity from Private EC2 instances | 21/05/2026 | 21/05/2026 | https://000003.awsstudygroup.com/|
+| 6 | **Site-to-Site VPN:** <br> - Learned AWS Site-to-Site VPN concepts <br> - Studied Virtual Private Gateway and Customer Gateway <br> - Practiced basic VPN configuration | 22/05/2026 | 22/05/2026 | https://000003.awsstudygroup.com/ |
 
 ### Week 2 Achievements
 
-* Understood the role of Amazon Virtual Private Cloud (VPC) in AWS network architecture.
+* Understood the role of Amazon Virtual Private Cloud (VPC) and its core networking components, including Subnets, Route Tables, and Internet Gateway.
 
-* Learned key AWS networking components:
-  * VPC
-  * Subnets
-  * Route Tables
-  * Internet Gateway (IGW)
+* Gained practical knowledge of AWS network security through Security Groups and Network ACLs (NACLs).
 
-* Gained practical knowledge of network security mechanisms:
-  * Security Groups
-  * Network ACLs (NACLs)
+* Successfully deployed Amazon EC2 instances and established SSH connectivity within a VPC environment.
 
-* Successfully deployed Amazon EC2 instances within a VPC environment.
+* Learned how NAT Gateway enables Internet access for resources located in Private Subnets.
 
-* Established and tested SSH connectivity between AWS resources.
+* Understood the fundamentals of AWS Site-to-Site VPN and hybrid network connectivity.
 
-* Understood the purpose of NAT Gateway for enabling Internet access from Private Subnets.
+* Defined the initial scope and development direction of the Snaptics group project.
 
-* Learned the fundamentals of AWS Site-to-Site VPN and related networking components.
-
-* Defined the initial direction and scope of the group project.
-
-* Completed hands-on labs related to VPC, EC2 deployment, and AWS networking connectivity.
+* Completed hands-on labs related to VPC configuration, EC2 deployment, and AWS networking services.
