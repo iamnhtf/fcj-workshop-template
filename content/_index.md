@@ -8,10 +8,6 @@ chapter: false
     
 # Internship Report
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
 ### Student Information:
 &emsp; **Full Name:** Nguyen Hung Thai
 
@@ -31,7 +27,13 @@ chapter: false
 
 &emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
 
-![Your profile picture](/images/avatar.png)
+<div style="text-align: center; margin: 30px 0;">
+    <img src="/images/avatar.png"
+         alt="Ảnh đại diện"
+         style="width:500px;
+                border-radius:12px;
+                box-shadow: 400px rgba(0,0,0,.15);">
+</div>
 
 ### Report Content
 

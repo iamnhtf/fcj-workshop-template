@@ -25,7 +25,13 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+<div style="text-align: center; margin: 30px 0;">
+    <img src="/images/avatar.png"
+         alt="Ảnh đại diện"
+         style="width:500px;
+                border-radius:12px;
+                box-shadow: 400px rgba(0,0,0,.15);">
+</div>
 
 
 

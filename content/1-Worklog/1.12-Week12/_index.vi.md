@@ -1,58 +1,32 @@
 ---
-title: "Worklog Tuần 12"
+title: "Worklog tuần 12"
 date: 2024-01-01
 weight: 2
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-### Mục tiêu tuần 12:
+### Mục tiêu tuần 12
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thiện các hạng mục backend còn lại của dự án Snaptics.
+* Rà soát và kiểm tra các chức năng đã triển khai trước khi kết thúc dự án.
+* Chuẩn bị cho buổi demo và nội dung thuyết trình của nhóm.
+* Hoàn thiện tài liệu thực tập và workshop.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các hoạt động đã thực hiện trong tuần
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+|------|-----------|--------------|-----------------|-------------------|
+| 2 | Rà soát tiến độ tổng thể của dự án, xác định các hạng mục còn lại và trao đổi với các thành viên trong nhóm về kế hoạch hoàn thiện trước khi nộp | 27/07/2026 | 27/07/2026 | |
+| 3 | Kiểm tra các API và luồng xử lý backend đã triển khai, xác minh các chức năng chính và ghi nhận các điểm cần cải thiện | 28/07/2026 | 28/07/2026 | |
+| 4 | Phối hợp với các thành viên trong nhóm để thống nhất các hạng mục còn lại, chuẩn bị cho buổi demo hệ thống và sắp xếp các công việc cuối của dự án | 29/07/2026 | 29/07/2026 | |
+| 5 | Cập nhật S3Service và các dịch vụ backend liên quan, cải thiện quá trình xử lý tệp và kiểm tra lại thông qua API | 30/07/2026 | 30/07/2026 | |
+| 6 | Cập nhật AiAssistantService, tham gia buổi họp nhóm trực tiếp để demo hệ thống, quay video demo và xây dựng kịch bản thuyết trình | 01/08/2026 | 01/08/2026 | |
 
-### Kết quả đạt được tuần 12:
+### Kết quả đạt được
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành việc rà soát tiến độ dự án và thống nhất kế hoạch hoàn thiện với các thành viên trong nhóm.
+* Kiểm tra các chức năng backend chính và xác định các điểm cần cải thiện trước khi kết thúc dự án.
+* Hoàn thành việc cập nhật S3Service và AiAssistantService để hoàn thiện các hạng mục backend còn lại.
+* Tham gia buổi demo trực tiếp của nhóm, hoàn thành việc quay video demo và chuẩn bị nội dung thuyết trình.
+* Hoàn tất giai đoạn chuẩn bị cuối trước khi kết thúc dự án thực tập và hoàn thiện tài liệu.
