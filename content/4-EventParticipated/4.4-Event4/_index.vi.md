@@ -119,28 +119,28 @@ Sự kiện cũng tạo thêm động lực để mình tiếp tục học AWS, 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-top: 20px;">
 
   <div style="width: 360px; text-align: center;">
-    <img src="/images/4-EventParticipated/4.4-Event4/event4.3.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.4-Event4/event4.3.jpg"
          alt="Kiến trúc hệ thống AWS"
          style="width:100%; height:230px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
     <p>Kiến trúc hệ thống Agentic AI được một trong các đội Build Week trình bày.</p>
   </div>
 
   <div style="width: 360px; text-align: center;">
-    <img src="/images/4-EventParticipated/4.4-Event4/event4.2.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.4-Event4/event4.2.jpg"
          alt="Phiên khai mạc"
          style="width:100%; height:230px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
     <p>Phần mở đầu của buổi chia sẻ FCAJ – Agentic AI Build Week Sharing Session.</p>
   </div>
 
   <div style="width: 360px; text-align: center;">
-    <img src="/images/4-EventParticipated/4.4-Event4/event4.1.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.4-Event4/event4.1.jpg"
          alt="Người tham gia sự kiện"
          style="width:100%; height:230px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
     <p>Chụp ảnh lưu niệm cùng các bạn tham gia sau buổi chia sẻ.</p>
   </div>
 
   <div style="width: 360px; text-align: center;">
-    <img src="/images/4-EventParticipated/4.4-Event4/event4.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.4-Event4/event4.jpg"
          alt="Ảnh tập thể"
          style="width:100%; height:230px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
     <p>Ảnh lưu niệm cùng các thành viên tham dự tại địa điểm tổ chức sự kiện.</p>

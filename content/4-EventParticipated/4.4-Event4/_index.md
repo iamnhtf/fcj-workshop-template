@@ -119,28 +119,28 @@ The event also motivated me to continue strengthening my AWS knowledge and backe
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-top: 20px;">
 
   <div style="width: 360px; text-align: center;">
-    <img src="/images/4-EventParticipated/4.4-Event4/event4.3.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.4-Event4/event4.3.jpg"
          alt="AWS Architecture"
          style="width:100%; height:230px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
     <p>Agentic AI system architecture presented by one of the Build Week teams.</p>
   </div>
 
   <div style="width: 360px; text-align: center;">
-    <img src="/images/4-EventParticipated/4.4-Event4/event4.2.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.4-Event4/event4.2.jpg"
          alt="Opening Session"
          style="width:100%; height:230px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
     <p>Opening session of the FCAJ – Agentic AI Build Week Sharing Session.</p>
   </div>
 
   <div style="width: 360px; text-align: center;">
-    <img src="/images/4-EventParticipated/4.4-Event4/event4.1.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.4-Event4/event4.1.jpg"
          alt="Event Participants"
          style="width:100%; height:230px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
     <p>Taking photos with fellow participants after the sharing session.</p>
   </div>
 
   <div style="width: 360px; text-align: center;">
-    <img src="/images/4-EventParticipated/4.4-Event4/event4.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.4-Event4/event4.jpg"
          alt="Group Photo"
          style="width:100%; height:230px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
     <p>Group photo with FCAJ participants at the event venue.</p>

@@ -96,14 +96,14 @@ Attending the first AWS First Cloud Journey technical sharing session was a valu
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
 
   <div style="text-align: center;">
-    <img src="/images/4-EventParticipated/4.1-Event1/event1.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.1-Event1/event1.jpg"
          alt="Event Participation"
          style="width: 320px; height: auto; border-radius: 8px;">
     <p>Event Participation</p>
   </div>
 
   <div style="text-align: center;">
-    <img src="/images/4-EventParticipated/4.1-Event1/event1.2.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.1-Event1/event1.2.jpg"
          alt="Technical Sharing Session"
          style="width: 320px; height: auto; border-radius: 8px;">
     <p>Memorize moments</p>

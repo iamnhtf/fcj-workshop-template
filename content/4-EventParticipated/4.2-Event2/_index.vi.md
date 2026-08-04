@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần cảnh báo này.
-{{% /notice %}}
-
 # Báo cáo tổng kết: “AWS: Enterprise Cloud Architectures and Industry Application featuring Cloud Kinetics & Renova Cloud”
 
 ### Mục tiêu sự kiện
@@ -113,14 +109,14 @@ Tham gia sự kiện **"AWS: Enterprise Cloud Architectures and Industry Applica
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
 
   <div style="text-align: center;">
-    <img src="/images/4-EventParticipated/4.2-Event2/event2.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.2-Event2/event2.jpg"
          alt="Event Participation"
          style="width: 320px; height: auto; border-radius: 8px;">
     <p>Event Participation</p>
   </div>
 
   <div style="text-align: center;">
-    <img src="/images/4-EventParticipated/4.2-Event2/event2.1.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.2-Event2/event2.1.jpg"
          alt="Technical Sharing Session"
          style="width: 320px; height: auto; border-radius: 8px;">
     <p>Memorize moments</p>

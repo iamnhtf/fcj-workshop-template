@@ -105,21 +105,21 @@ Attending the **"AI From Scratch"** seminar gave me a broader understanding of h
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
 
   <div style="text-align: center;">
-    <img src="/images/4-EventParticipated/4.3-Event3/event3.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.3-Event3/event3.jpg"
          alt="AI From Scratch Seminar"
          style="width: 320px; height: auto; border-radius: 8px;">
     <p>Event Participation</p>
   </div>
 
   <div style="text-align: center;">
-    <img src="/images/4-EventParticipated/4.3-Event3/event3.1.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.3-Event3/event3.1.jpg"
          alt="Technical Sharing Session"
          style="width: 320px; height: auto; border-radius: 8px;">
     <p>Technical Sharing Session</p>
   </div>
 
   <div style="text-align: center;">
-    <img src="/images/4-EventParticipated/4.3-Event3/event3.2.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.3-Event3/event3.2.jpg"
          alt="Interactive Activity"
          style="width: 320px; height: auto; border-radius: 8px;">
     <p>Interactive Activity</p>

@@ -96,14 +96,14 @@ Buổi chia sẻ kỹ thuật đầu tiên của AWS First Cloud Journey mang l�
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
 
   <div style="text-align: center;">
-    <img src="/images/4-EventParticipated/4.1-Event1/event1.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.1-Event1/event1.jpg"
          alt="Tham gia sự kiện"
          style="width: 320px; height: auto; border-radius: 8px;">
     <p>Tham gia sự kiện</p>
   </div>
 
   <div style="text-align: center;">
-    <img src="/images/4-EventParticipated/4.1-Event1/event1.2.jpg"
+    <img src="/fcj-workshop-template/images/4-EventParticipated/4.1-Event1/event1.2.jpg"
          alt="Khoảnh khắc tại sự kiện"
          style="width: 320px; height: auto; border-radius: 8px;">
     <p>Khoảnh khắc tại sự kiện</p>

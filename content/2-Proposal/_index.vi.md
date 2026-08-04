@@ -77,7 +77,7 @@ Xây dựng nền tảng quản lý chi tiêu thông minh Snaptics dựa trên �
 
 Snaptics sử dụng kiến trúc AWS Cloud-Native kết hợp Single Page Application (SPA), microservices đóng gói container, cơ sở dữ liệu quan hệ, lưu trữ đối tượng, hàng đợi bất đồng bộ và các dịch vụ AI bên ngoài chuyên biệt. Kiến trúc duy trì sự tách biệt rõ ràng giữa Frontend, Backend API và AI Worker để triển khai, mở rộng và giám sát độc lập.
 
-![Sơ đồ kiến trúc hệ thống Snaptics trên AWS Cloud](/images/2-Proposal/platform_architecture.jpg)
+![Sơ đồ kiến trúc hệ thống Snaptics trên AWS Cloud](/fcj-workshop-template/images/2-Proposal/platform_architecture.jpg)
 
 #### 4.1. Các Thành phần Chính
 
