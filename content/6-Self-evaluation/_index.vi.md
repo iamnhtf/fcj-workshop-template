@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **Amazon Web Services Vietnam Co., Ltd.** từ **11/05/2026** đến **05/08/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
+Trong suốt thời gian thực tập tại **Amazon Web Services Vietnam Co., Ltd.** từ **11/05/2026** đến **07/08/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
 Tôi đã tham gia chương trình **First Cloud AI Journey (FCAJ)** và dự án **Snaptics**, qua đó cải thiện kỹ năng về điện toán đám mây (AWS), phát triển full-stack và làm việc nhóm.
 
 Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
