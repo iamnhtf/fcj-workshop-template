@@ -41,7 +41,7 @@ Trong thời gian thực tập, tôi đã tham gia hai sự kiện kỹ thuật 
 ### [Sự kiện 4](4.4-Event4/)
 &emsp;**Sự ​​kiện:** FCAJ – Agentic AI Build Week
 
-&emsp;**Thời gian:** Ngày 4 tháng 7 năm 2026
+&emsp;**Thời gian:** Ngày 25 tháng 7 năm 2026
 
 &emsp;**Vai trò:** Người tham dự
 

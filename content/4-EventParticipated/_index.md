@@ -42,7 +42,7 @@ During my internship, I participated in two technical events related to AWS and 
 ### [Event 4](4.4-Event4/)
 &emsp;**Event:** FCAJ – Agentic AI Build Week
 
-&emsp;**Date & Time:** July 4, 2026
+&emsp;**Date & Time:** July 25, 2026
 
 &emsp;**Role:** Attendee
 
