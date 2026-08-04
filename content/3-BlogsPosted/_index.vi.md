@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-Phần này giới thiệu các chủ đề bài viết được chia sẻ trong khuôn khổ chương trình AWS First Cloud Journey. Nội dung tập trung vào hạ tầng AWS, kiến trúc Cloud-Native và những kinh nghiệm thực tế trong quá trình học tập cũng như thực tập, qua đó tổng hợp các kiến thức và thực hành tiêu biểu trên nền tảng AWS.
+>Phần này giới thiệu các chủ đề bài viết được chia sẻ trong khuôn khổ chương trình AWS First Cloud Journey. Nội dung tập trung vào hạ tầng AWS, kiến trúc Cloud-Native và những kinh nghiệm thực tế trong quá trình học tập cũng như thực tập, qua đó tổng hợp các kiến thức và thực hành tiêu biểu trên nền tảng AWS.
 
 ### [Blog 1 - How AWS Upgraded Amazon Cognito with Nearly Zero Downtime](3.1-Blog1/)
 

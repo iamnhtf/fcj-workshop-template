@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-This section introduces the blog topics shared during the AWS First Cloud Journey program. The blogs cover AWS infrastructure, cloud-native architecture, and practical experiences gained throughout the learning journey and internship. Together, they summarize key concepts, best practices, and real-world applications of AWS services.
+>This section introduces the blog topics shared during the AWS First Cloud Journey program. The blogs cover AWS infrastructure, cloud-native architecture, and practical experiences gained throughout the learning journey and internship. Together, they summarize key concepts, best practices, and real-world applications of AWS services.
 
 ### [Blog 1 - How AWS Upgraded Amazon Cognito with Nearly Zero Downtime](3.1-Blog1/)
 
