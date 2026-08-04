@@ -26,7 +26,7 @@ chapter: false
 &emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
 
 <div style="text-align: center; margin: 30px 0;">
-    <img src="/images/avatar.png"
+    <img src="/fcj-workshop-template/images/avatar.png"
          alt="Ảnh đại diện"
          style="width:500px;
                 border-radius:12px;

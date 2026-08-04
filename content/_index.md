@@ -28,8 +28,8 @@ chapter: false
 &emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
 
 <div style="text-align: center; margin: 30px 0;">
-    <img src="/images/avatar.png"
-         alt="Ảnh đại diện"
+    <img src="/fcj-workshop-template/images/avatar.png"
+         alt="Avatar Student"
          style="width:500px;
                 border-radius:12px;
                 box-shadow: 400px rgba(0,0,0,.15);">
