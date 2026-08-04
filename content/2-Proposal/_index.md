@@ -77,7 +77,7 @@ Build the Snaptics intelligent expense management platform powered by cloud comp
 
 Snaptics utilizes an AWS Cloud-Native architecture combining a Single Page Application (SPA), containerized microservices, relational databases, object storage, asynchronous queues, and specialized external AI services. The architecture maintains clear separation between Frontend, Backend API, and AI Workers for independent deployment, scaling, and monitoring.
 
-![Snaptics AWS Cloud Architecture](/fcj-workshop-template/images/2-Proposal/platform_architecture.jpg)
+![Snaptics AWS Cloud Architecture](/fcj-workshop-template/images/2-Proposal/snaptics_architecture.jpg)
 
 #### 4.1. Key Components
 
