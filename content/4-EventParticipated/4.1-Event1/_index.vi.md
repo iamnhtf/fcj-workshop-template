@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# AWS First Cloud Journey – Technical Sharing Session
+# Saturday Meetup
 
 ### Mục tiêu sự kiện
 

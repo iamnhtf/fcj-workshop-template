@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# AWS Technical Sharing Session
+# Saturday Meetup
 
 ### Event Objectives
 

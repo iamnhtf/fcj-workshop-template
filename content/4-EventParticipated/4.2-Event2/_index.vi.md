@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# Báo cáo tổng kết: “AWS: Enterprise Cloud Architectures and Industry Application featuring Cloud Kinetics & Renova Cloud”
+# AWS: Enterprise Cloud Architectures and Industry Application featuring Cloud Kinetics & Renova Cloud
 
 ### Mục tiêu sự kiện
 
