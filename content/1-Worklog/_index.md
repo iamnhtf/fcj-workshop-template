@@ -26,7 +26,7 @@ The internship journey can be divided into four major phases:
    * Developing major Snaptics features including AI Assistant, Amazon S3 integration, OCR processing, and Income Source management.
 
 4. **Phase 4 (Week 11–13): Deployment, Documentation & Project Completion**
-   * Implementing Amazon SQS, Hangfire background jobs, Budget Income Source, and Support Ticket modules.
+   * Implementing Hangfire background jobs, Budget Income Source, and Support Ticket modules.
    * Deploying the system on AWS, testing the complete workflow, resolving integration issues, and preparing the final project demonstration.
    * Completing the Proposal, Workshop, internship documentation, and final project submission.
 

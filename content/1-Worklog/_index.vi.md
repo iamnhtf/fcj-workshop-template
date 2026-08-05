@@ -26,7 +26,7 @@ Quá trình thực tập được chia thành bốn giai đoạn chính:
    * Phát triển các chức năng chính của Snaptics như AI Assistant, tích hợp Amazon S3, xử lý OCR và quản lý Income Source.
 
 4. **Giai đoạn 4 (Tuần 11–13): Triển khai, Hoàn thiện tài liệu & Kết thúc dự án**
-   * Triển khai Amazon SQS, Hangfire Background Jobs, Budget Income Source và Support Ticket.
+   * Triển khai Hangfire Background Jobs, Budget Income Source và Support Ticket.
    * Triển khai hệ thống trên AWS, kiểm thử toàn bộ quy trình, xử lý các lỗi tích hợp và chuẩn bị demo sản phẩm.
    * Hoàn thiện Proposal, Workshop, báo cáo thực tập và nộp sản phẩm cuối kỳ.
 
