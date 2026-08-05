@@ -1,242 +1,99 @@
 ---
-title : "Các bước chuẩn bị"
-date : 2024-01-01 
-weight : 2
-chapter : false
-pre : " <b> 5.2. </b> "
+title: "Chuẩn bị Môi trường"
+date: 2024-01-01
+weight: 2
+chapter: false
+pre: " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
-Gắn IAM permission policy sau vào tài khoản aws user của bạn để triển khai và dọn dẹp tài nguyên trong workshop này.
-```
+
+Để triển khai kiến trúc Enterprise khổng lồ của Snaptics một cách mượt mà, bạn cần thiết lập kỹ lưỡng các quyền hạn trên Cloud. Khác với cách làm thủ công cũ, chúng ta sẽ dùng CI/CD hoàn toàn tự động, do đó bạn không cần phải cài đặt Docker hay AWS CLI ở máy tính local nữa. Trọng tâm bây giờ là **Phân quyền**.
+
+## 1. Các Tài khoản & APIS
+
+Trước khi đụng vào AWS, hãy chuẩn bị sẵn 3 thứ sau:
+
+1. **Tài khoản GitHub:** Chúng ta sẽ sử dụng **GitHub Actions** làm CI/CD Pipeline. Bạn cần một tài khoản GitHub để Fork (sao chép) mã nguồn Snaptics về kho của mình.
+2. **Google Gemini API Key:** Cần thiết cho tính năng AI tư vấn tài chính. Đăng ký miễn phí tại [Google AI Studio](https://aistudio.google.com/app/apikey).
+3. **Azure Document Intelligence Key:** Dùng để quét hóa đơn (OCR). Đăng nhập vào [Azure Portal](https://portal.azure.com/), tạo tài nguyên **Document Intelligence**, sau đó copy **Endpoint URL** và **Key 1**.
+
+## 2. Tạo IAM User cho GitHub Actions
+
+Vì GitHub Actions đóng vai trò là một "con robot" tự động đẩy code lên AWS thay bạn, nó cần được cấp quyền truy cập vào tài khoản AWS của bạn bằng khóa API.
+
+### A. Khởi tạo User
+1. Vào AWS Console, mở dịch vụ **IAM ➔ Users ➔ Create user**.
+2. Đặt tên: `github-actions-snaptics`.
+3. **KHÔNG** tick chọn ô "Provide user access to the AWS Management Console" (Con bot này chỉ gọi API, không cần đăng nhập giao diện web).
+4. Bấm Next. Ở mục Permissions, chọn **Attach policies directly**.
+5. Gắn quyền `AdministratorAccess`. *(Lưu ý: Trong dự án công ty thực tế, bạn chỉ nên cấp quyền ECS/ECR/S3 vừa đủ dùng. Ở workshop này, ta dùng Admin để rút ngắn rào cản kỹ thuật cấu hình Pipeline).*
+6. Bấm Create user.
+
+### B. Cấp phát Khóa (Access Keys)
+1. Bấm vào user `github-actions-snaptics` vừa tạo.
+2. Chuyển sang tab **Security credentials**.
+3. Cuộn xuống phần **Access keys**, bấm **Create access key**.
+4. Chọn Use case là **Command Line Interface (CLI)**, xác nhận và bấm Next.
+5. Copy hai chuỗi **Access key ID** và **Secret access key**. **Hãy lưu 2 chuỗi này vào Notepad ngay lập tức!** Chút nữa ta sẽ phải dán nó vào GitHub.
+
+## 3. Phân quyền IAM Roles cho ECS
+
+Khi mã nguồn C# .NET chạy bên trong Container trên ECS Fargate, nó cần quyền để kết nối tới S3, SQS và lấy mật khẩu DB từ Parameter Store. Thay vì nhúng Access Key vào code rất nguy hiểm, AWS sử dụng IAM Roles.
+
+Vào **IAM ➔ Roles ➔ Create role** và tạo lần lượt 2 Role sau:
+
+### A. ECS Task Execution Role (`ecsTaskExecutionRole`)
+Role này cấp quyền cho nền tảng phần cứng ECS để nó tự động tải Docker Image từ ECR và tạo Log trong CloudWatch.
+- **Trusted Entity:** `Elastic Container Service Task`
+- **Managed Policy:** Tìm và gắn `AmazonECSTaskExecutionRolePolicy`.
+- Gắn thêm quyền `AmazonSSMReadOnlyAccess` để ECS có quyền đọc mật khẩu DB khi khởi động.
+
+### B. Snaptics ECS Task Role (`snaptics-ecs-task-role`)
+Role này cấp quyền cho **chính mã nguồn C#** của bạn.
+- **Trusted Entity:** `Elastic Container Service Task`
+- **Inline Policy (JSON):** Tạo một policy dạng JSON và dán đoạn code sau vào. Nó chỉ cho phép C# gọi S3, SQS, SNS và đọc Parameter Store.
+
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "VisualEditor0",
+            "Sid": "AllowParameterStore",
             "Effect": "Allow",
             "Action": [
-                "cloudformation:*",
-                "cloudwatch:*",
-                "ec2:AcceptTransitGatewayPeeringAttachment",
-                "ec2:AcceptTransitGatewayVpcAttachment",
-                "ec2:AllocateAddress",
-                "ec2:AssociateAddress",
-                "ec2:AssociateIamInstanceProfile",
-                "ec2:AssociateRouteTable",
-                "ec2:AssociateSubnetCidrBlock",
-                "ec2:AssociateTransitGatewayRouteTable",
-                "ec2:AssociateVpcCidrBlock",
-                "ec2:AttachInternetGateway",
-                "ec2:AttachNetworkInterface",
-                "ec2:AttachVolume",
-                "ec2:AttachVpnGateway",
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:CreateClientVpnEndpoint",
-                "ec2:CreateClientVpnRoute",
-                "ec2:CreateCustomerGateway",
-                "ec2:CreateDhcpOptions",
-                "ec2:CreateFlowLogs",
-                "ec2:CreateInternetGateway",
-                "ec2:CreateLaunchTemplate",
-                "ec2:CreateNetworkAcl",
-                "ec2:CreateNetworkInterface",
-                "ec2:CreateNetworkInterfacePermission",
-                "ec2:CreateRoute",
-                "ec2:CreateRouteTable",
-                "ec2:CreateSecurityGroup",
-                "ec2:CreateSubnet",
-                "ec2:CreateSubnetCidrReservation",
-                "ec2:CreateTags",
-                "ec2:CreateTransitGateway",
-                "ec2:CreateTransitGatewayPeeringAttachment",
-                "ec2:CreateTransitGatewayPrefixListReference",
-                "ec2:CreateTransitGatewayRoute",
-                "ec2:CreateTransitGatewayRouteTable",
-                "ec2:CreateTransitGatewayVpcAttachment",
-                "ec2:CreateVpc",
-                "ec2:CreateVpcEndpoint",
-                "ec2:CreateVpcEndpointConnectionNotification",
-                "ec2:CreateVpcEndpointServiceConfiguration",
-                "ec2:CreateVpnConnection",
-                "ec2:CreateVpnConnectionRoute",
-                "ec2:CreateVpnGateway",
-                "ec2:DeleteCustomerGateway",
-                "ec2:DeleteFlowLogs",
-                "ec2:DeleteInternetGateway",
-                "ec2:DeleteNetworkInterface",
-                "ec2:DeleteNetworkInterfacePermission",
-                "ec2:DeleteRoute",
-                "ec2:DeleteRouteTable",
-                "ec2:DeleteSecurityGroup",
-                "ec2:DeleteSubnet",
-                "ec2:DeleteSubnetCidrReservation",
-                "ec2:DeleteTags",
-                "ec2:DeleteTransitGateway",
-                "ec2:DeleteTransitGatewayPeeringAttachment",
-                "ec2:DeleteTransitGatewayPrefixListReference",
-                "ec2:DeleteTransitGatewayRoute",
-                "ec2:DeleteTransitGatewayRouteTable",
-                "ec2:DeleteTransitGatewayVpcAttachment",
-                "ec2:DeleteVpc",
-                "ec2:DeleteVpcEndpoints",
-                "ec2:DeleteVpcEndpointServiceConfigurations",
-                "ec2:DeleteVpnConnection",
-                "ec2:DeleteVpnConnectionRoute",
-                "ec2:Describe*",
-                "ec2:DetachInternetGateway",
-                "ec2:DisassociateAddress",
-                "ec2:DisassociateRouteTable",
-                "ec2:GetLaunchTemplateData",
-                "ec2:GetTransitGatewayAttachmentPropagations",
-                "ec2:ModifyInstanceAttribute",
-                "ec2:ModifySecurityGroupRules",
-                "ec2:ModifyTransitGatewayVpcAttachment",
-                "ec2:ModifyVpcAttribute",
-                "ec2:ModifyVpcEndpoint",
-                "ec2:ReleaseAddress",
-                "ec2:ReplaceRoute",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:RunInstances",
-                "ec2:StartInstances",
-                "ec2:StopInstances",
-                "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
-                "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
-                "iam:AddRoleToInstanceProfile",
-                "iam:AttachRolePolicy",
-                "iam:CreateInstanceProfile",
-                "iam:CreatePolicy",
-                "iam:CreateRole",
-                "iam:DeleteInstanceProfile",
-                "iam:DeletePolicy",
-                "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:DetachRolePolicy",
-                "iam:GetInstanceProfile",
-                "iam:GetPolicy",
-                "iam:GetRole",
-                "iam:GetRolePolicy",
-                "iam:ListPolicyVersions",
-                "iam:ListRoles",
-                "iam:PassRole",
-                "iam:PutRolePolicy",
-                "iam:RemoveRoleFromInstanceProfile",
-                "lambda:CreateFunction",
-                "lambda:DeleteFunction",
-                "lambda:DeleteLayerVersion",
-                "lambda:GetFunction",
-                "lambda:GetLayerVersion",
-                "lambda:InvokeFunction",
-                "lambda:PublishLayerVersion",
-                "logs:CreateLogGroup",
-                "logs:DeleteLogGroup",
-                "logs:DescribeLogGroups",
-                "logs:PutRetentionPolicy",
-                "route53:ChangeTagsForResource",
-                "route53:CreateHealthCheck",
-                "route53:CreateHostedZone",
-                "route53:CreateTrafficPolicy",
-                "route53:DeleteHostedZone",
-                "route53:DisassociateVPCFromHostedZone",
-                "route53:GetHostedZone",
-                "route53:ListHostedZones",
-                "route53domains:ListDomains",
-                "route53domains:ListOperations",
-                "route53domains:ListTagsForDomain",
-                "route53resolver:AssociateResolverEndpointIpAddress",
-                "route53resolver:AssociateResolverRule",
-                "route53resolver:CreateResolverEndpoint",
-                "route53resolver:CreateResolverRule",
-                "route53resolver:DeleteResolverEndpoint",
-                "route53resolver:DeleteResolverRule",
-                "route53resolver:DisassociateResolverEndpointIpAddress",
-                "route53resolver:DisassociateResolverRule",
-                "route53resolver:GetResolverEndpoint",
-                "route53resolver:GetResolverRule",
-                "route53resolver:ListResolverEndpointIpAddresses",
-                "route53resolver:ListResolverEndpoints",
-                "route53resolver:ListResolverRuleAssociations",
-                "route53resolver:ListResolverRules",
-                "route53resolver:ListTagsForResource",
-                "route53resolver:UpdateResolverEndpoint",
-                "route53resolver:UpdateResolverRule",
-                "s3:AbortMultipartUpload",
-                "s3:CreateBucket",
-                "s3:DeleteBucket",
-                "s3:DeleteObject",
-                "s3:GetAccountPublicAccessBlock",
-                "s3:GetBucketAcl",
-                "s3:GetBucketOwnershipControls",
-                "s3:GetBucketPolicy",
-                "s3:GetBucketPolicyStatus",
-                "s3:GetBucketPublicAccessBlock",
-                "s3:GetObject",
-                "s3:GetObjectVersion",
-                "s3:GetBucketVersioning",
-                "s3:ListAccessPoints",
-                "s3:ListAccessPointsForObjectLambda",
-                "s3:ListAllMyBuckets",
-                "s3:ListBucket",
-                "s3:ListBucketMultipartUploads",
-                "s3:ListBucketVersions",
-                "s3:ListJobs",
-                "s3:ListMultipartUploadParts",
-                "s3:ListMultiRegionAccessPoints",
-                "s3:ListStorageLensConfigurations",
-                "s3:PutAccountPublicAccessBlock",
-                "s3:PutBucketAcl",
-                "s3:PutBucketPolicy",
-                "s3:PutBucketPublicAccessBlock",
+                "ssm:GetParameter",
+                "ssm:GetParametersByPath"
+            ],
+            "Resource": "arn:aws:ssm:ap-southeast-1:*:parameter/Snaptics/Production/*"
+        },
+        {
+            "Sid": "AllowS3Storage",
+            "Effect": "Allow",
+            "Action": [
                 "s3:PutObject",
-                "secretsmanager:CreateSecret",
-                "secretsmanager:DeleteSecret",
-                "secretsmanager:DescribeSecret",
-                "secretsmanager:GetSecretValue",
-                "secretsmanager:ListSecrets",
-                "secretsmanager:ListSecretVersionIds",
-                "secretsmanager:PutResourcePolicy",
-                "secretsmanager:TagResource",
-                "secretsmanager:UpdateSecret",
-                "sns:ListTopics",
-                "ssm:DescribeInstanceProperties",
-                "ssm:DescribeSessions",
-                "ssm:GetConnectionStatus",
-                "ssm:GetParameters",
-                "ssm:ListAssociations",
-                "ssm:ResumeSession",
-                "ssm:StartSession",
-                "ssm:TerminateSession"
+                "s3:GetObject",
+                "s3:DeleteObject",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::s3-bucket-snaptics",
+                "arn:aws:s3:::s3-bucket-snaptics/*"
+            ]
+        },
+        {
+            "Sid": "AllowSQSSNS",
+            "Effect": "Allow",
+            "Action": [
+                "sqs:SendMessage",
+                "sqs:ReceiveMessage",
+                "sqs:DeleteMessage",
+                "sns:Publish"
             ],
             "Resource": "*"
         }
     ]
 }
-
 ```
 
-#### Khởi tạo tài nguyên bằng CloudFormation
-
-Trong lab này, chúng ta sẽ dùng N.Virginia region (us-east-1).
-
-Để chuẩn bị cho môi trường làm workshop, chúng ta deploy CloudFormation template sau (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Để nguyên các lựa chọn mặc định.
-
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack1.png)
-
-+ Lựa chọn 2 mục acknowledgement 
-+ Chọn Create stack
-
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack2.png)
-
-Quá trình triển khai CloudFormation cần khoảng 15 phút để hoàn thành.
-
-![complete](/images/5-Workshop/5.2-Prerequisite/complete.png)
-
-+ 2 VPCs đã được tạo
-
-![vpcs](/images/5-Workshop/5.2-Prerequisite/vpcs.png)
-
-+ 3 EC2s đã được tạo
-
-![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
+> [!TIP]
+> Việc cấu hình Role khắt khe như thế này là tuân thủ nguyên tắc **Đặc quyền tối thiểu (Least Privilege)** của các hệ thống ngân hàng. Giả sử hacker có chiếm được quyền điều khiển Container của bạn, hắn cũng không thể xóa Database vì Role này hoàn toàn không có quyền đụng vào RDS!

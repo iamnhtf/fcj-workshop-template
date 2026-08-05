@@ -12,6 +12,7 @@ Trong thời gian thực tập, tôi đã tham gia hai sự kiện kỹ thuật 
 
 ### [Sự kiện 1](4.1-Event1/)
 &emsp;**Sự ​​kiện:** AWS Technical Sharing Session
+
 &emsp;**Thời gian:** Ngày 5 tháng 6 năm 2026
 
 &emsp;**Vai trò:** Người tham dự
