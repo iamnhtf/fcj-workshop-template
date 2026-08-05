@@ -17,12 +17,12 @@ pre: " <b> 4.1. </b> "
 
 ### Diễn giả
 
-- Bảo Huỳnh – Docker: Công nghệ Container hóa
-- Lê Hoàng Gia Đại – WAF kết hợp Hệ thống phát hiện xâm nhập mạng sử dụng Machine Learning trên AWS
-- Trần Trung Vinh – Hành trình từ IT Helpdesk đến Senior System Administrator
-- Việt Phát – GraphRAG: Xây dựng ứng dụng GraphRAG với Amazon Bedrock và Amazon Neptune
-- Trương Huy Phước – Nghệ thuật làm việc nhóm hiệu quả
-- Nguyễn Quốc Bảo – Multiplayer in the Cloud: Kết nối Godot Clients với AWS WebSockets
+- Bảo Huỳnh – Docker: A Containerization Technology
+- Lê Hoàng Gia Đại – WAF + Machine Learning-based Network Intrusion Detection System on AWS
+- Trần Trung Vinh – From IT Helpdesk to Senior Sysadmin
+- Việt Phát – GraphRAG: Build GraphRAG Applications using Amazon Bedrock & Amazon Neptune
+- Trương Huy Phước – The Art of Effective Teamwork
+- Nguyễn Quốc Bảo – Multiplayer in the Cloud: Connecting Godot Clients with AWS WebSockets
 
 ### Nội dung nổi bật
 
