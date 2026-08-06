@@ -17,7 +17,7 @@ pre: " <b> 1.13. </b> "
 
 | Ngày | Nội dung công việc | Ngày bắt đầu | Ngày hoàn thành | Ghi chú |
 |------|---------------------|--------------|-----------------|----------|
-| 2 | **Demo hệ thống & sửa lỗi cuối kỳ:** <br> - Họp nhóm để demo hệ thống và rà soát các chức năng còn thiếu sót <br> - Sửa lỗi liên quan đến xử lý ảnh hóa đơn <br> - Chuyển sang sử dụng Google Gemini thay cho GPT trong chức năng đọc ảnh | 03/08/2026 | 03/08/2026 | |
+| 2 | **Demo hệ thống & sửa lỗi cuối kỳ:** <br> - Họp nhóm để demo hệ thống và rà soát các chức năng còn thiếu sót <br> - Sửa lỗi liên quan đến xử lý ảnh hóa đơn <br> | 03/08/2026 | 03/08/2026 | |
 | 3 | **Góp ý kiến trúc:** <br> - Tham gia buổi họp góp ý sơ đồ kiến trúc và thu thập phản hồi <br> - Cập nhật lại kiến trúc hệ thống <br> - Tiếp tục hoàn thiện tài liệu Workshop | 04/08/2026 | 04/08/2026 | |
 | 4 | **Hoàn thiện tài liệu:** <br> - Hoàn thiện các nội dung còn lại của Workshop và Proposal <br> - Rà soát tài liệu và kiểm tra lại các chức năng trước khi nộp | 05/08/2026 | 05/08/2026 | |
 | 5 | **Rà soát & nộp sản phẩm cuối kỳ:** <br> - Kiểm tra lại toàn bộ sản phẩm <br> - Hoàn thiện báo cáo thực tập và thực hiện nộp dự án | 06/08/2026 | 06/08/2026 | |

@@ -17,7 +17,7 @@ pre: " <b> 1.13. </b> "
 
 | Day | Tasks | Start Date | Completion Date | References |
 |------|---------|-------------|----------------|------------|
-| 2 | **Final System Demo & Bug Fixes:** <br> - Conduct a team meeting to demonstrate the current system and identify remaining issues <br> - Fix receipt image processing bugs <br> - Replace GPT with Google Gemini for image analysis | 03/08/2026 | 03/08/2026 | |
+| 2 | **Final System Demo & Bug Fixes:** <br> - Conduct a team meeting to demonstrate the current system and identify remaining issues <br> - Fix receipt image processing bugs <br> | 03/08/2026 | 03/08/2026 | |
 | 3 | **Architecture Review:** <br> - Participate in the architecture review meeting and collect feedback <br> - Update the system architecture diagram <br> - Continue completing the Workshop documentation | 04/08/2026 | 04/08/2026 | |
 | 4 | **Documentation Finalization:** <br> - Finalize the remaining Workshop and Proposal contents <br> - Review project documentation and verify the implemented system before submission | 05/08/2026 | 05/08/2026 | |
 | 5 | **Final Review & Submission:** <br> - Review the final project deliverables <br> - Prepare the internship report and complete the project submission | 06/08/2026 | 06/08/2026 | |
