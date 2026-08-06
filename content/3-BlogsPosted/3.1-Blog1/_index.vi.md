@@ -89,7 +89,7 @@ Những kinh nghiệm này là nguồn tham khảo hữu ích khi xây dựng c�
     <p>Kiến trúc hạ tầng thế hệ mới của Amazon Cognito</p>
 </div>
 
-### Bài viết tham khảo
+### Tài liệu tham khảo
 
 Bài viết này được tổng hợp và phát triển dựa trên bài viết của **AWS Security Blog**:
 

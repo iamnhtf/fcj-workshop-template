@@ -89,7 +89,7 @@ These engineering practices are valuable references for building reliable cloud 
     <p>Architecture</p>
 </div>
 
-### Original Article
+### Reference Material
 
 This blog was inspired by the following AWS Security Blog article:
 

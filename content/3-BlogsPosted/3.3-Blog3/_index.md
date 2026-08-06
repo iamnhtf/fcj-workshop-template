@@ -75,10 +75,8 @@ Learning from a real-world project also gave me a better understanding of how AW
 
 </div>
 
-### References
+### Reference Material
 
 The knowledge summarized in this blog was learned through:
-
-- Participating in a real-world internship project.
-- AWS Official Documentation  
-  https://docs.aws.amazon.com/
+* [Amazon S3 Developer Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+* [AWS SDK for .NET Documentation](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/welcome.html)

@@ -79,7 +79,7 @@ By exploring this architecture, I gained a better understanding of the responsib
     <p>Scalable E-commerce website architecture on AWS.</p>
 </div>
 
-### Original References
+### Reference Material
 
 This blog is based on the following AWS official guidance:
 

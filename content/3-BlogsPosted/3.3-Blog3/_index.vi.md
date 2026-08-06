@@ -78,7 +78,5 @@ Thông qua việc tham gia dự án thực tế, mình hiểu rõ hơn cách cá
 ### Tài liệu tham khảo
 
 Những kiến thức được tổng hợp trong bài viết này được học hỏi từ:
-
-- Quá trình tham gia dự án thực tế trong kỳ thực tập.
-- AWS Official Documentation  
-  https://docs.aws.amazon.com/
+* [Amazon S3 Developer Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+* [AWS SDK for .NET Documentation](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/welcome.html)
