@@ -59,56 +59,24 @@ Since GitHub Actions will be deploying infrastructure on your behalf, it needs p
 
 ## 3. AWS IAM Roles for ECS Containers
 
-When the .NET code runs inside the ECS Fargate container, it needs permissions to talk to S3, SQS, SNS, and Parameter Store. We must create **2 specific IAM Roles**.
+When the .NET code runs inside the ECS Fargate container, it needs permissions to talk to S3, SQS, and Parameter Store. We must create 2 specific IAM Roles.
 
-### A. Create ECS Task Execution Role (`ecsTaskExecutionRole`)
+Go to **IAM ➔ Roles ➔ Create role**:
 
-1. Open **IAM ➔ Roles ➔ Create role**.
-2. Click **Choose a service or use case**.
-3. Search for and select **Elastic Container Service**.
-4. In the **Use case** section, select exactly **Elastic Container Service Task**. Do **NOT** select "EC2 Role for Elastic Container Service".
-5. Click **Next**.
+### A. ECS Task Execution Role (`ecsTaskExecutionRole`)
+This role allows the underlying ECS platform to pull your Docker image from ECR and stream logs to CloudWatch.
+- **Trusted Entity:** `Elastic Container Service Task`
+- **Managed Policy:** Search for and attach `AmazonECSTaskExecutionRolePolicy`.
+- Also attach `AmazonSSMReadOnlyAccess` so it can fetch the DB password during container startup.
 
-**In the Add permissions step:**
 
-6. Search for `AmazonECSTaskExecutionRolePolicy` and tick that policy.
-7. If you are passing the DB password from Parameter Store into the **Secrets** section of your ECS Task Definition, also search for and tick `AmazonSSMReadOnlyAccess`.
-8. Click **Next**.
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3a_ecs_role_create.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3a_ecs_role_create_1.png" >
 
-**Name, review, and create:**
-
-9. Set the role name to `ecsTaskExecutionRole`.
-10. Click **Create role**.
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3a_ecs_role_create.jpg" >
-  </div>
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3a_ecs_role_create_1.jpg" >
-  </div>
-
-> [!NOTE]
-> AWS confirms that the task execution role is used by ECS to **pull the image from ECR**, **write logs to CloudWatch**, and **retrieve Parameter Store/Secrets Manager** when the task definition references a secret.
->
-> `AmazonSSMReadOnlyAccess` is quite broad. You can use it to get your deployment working first, then later replace it with an inline policy that only reads the `/Snaptics/Production/*` path.
-
-### B. Create Snaptics ECS Task Role (`snaptics-ecs-task-role`)
-
-1. Go back to **IAM ➔ Roles ➔ Create role**.
-2. **Trusted entity type:** AWS service.
-3. **Service or use case:** Elastic Container Service.
-4. **Use case:** Elastic Container Service Task.
-5. Click **Next**.
-6. At **Add permissions**, you don't need to select any policy yet; click **Next**.
-7. Set the role name to `snaptics-ecs-task-role`.
-8. Click **Create role**.
-
-**After the role is created:**
-
-9. Open the `snaptics-ecs-task-role` role.
-10. Select the **Permissions** tab.
-11. Click **Add permissions ➔ Create inline policy**.
-12. Switch to the **JSON** tab.
-13. Delete the old content and paste the policy below. Replace `<ACCOUNT_ID>` with your AWS Account ID.
+### B. Snaptics ECS Task Role (`snaptics-ecs-task-role`)
+This role grants permissions to your **C# code** executing inside the container.
+- **Trusted Entity:** `Elastic Container Service Task`
+- **Inline Policy (JSON):** Create an inline policy and paste the following JSON to grant access to S3, SQS, SNS, and Parameter Store.
 
 ```json
 {
@@ -119,28 +87,23 @@ When the .NET code runs inside the ECS Fargate container, it needs permissions t
             "Effect": "Allow",
             "Action": [
                 "ssm:GetParameter",
-                "ssm:GetParameters",
                 "ssm:GetParametersByPath"
             ],
-            "Resource": "arn:aws:ssm:ap-southeast-1:<ACCOUNT_ID>:parameter/Snaptics/Production/*"
+            "Resource": "arn:aws:ssm:ap-southeast-1:*:parameter/Snaptics/Production/*"
         },
         {
-            "Sid": "AllowS3BucketListing",
-            "Effect": "Allow",
-            "Action": [
-                "s3:ListBucket"
-            ],
-            "Resource": "arn:aws:s3:::s3-bucket-snaptics"
-        },
-        {
-            "Sid": "AllowS3Objects",
+            "Sid": "AllowS3Storage",
             "Effect": "Allow",
             "Action": [
                 "s3:PutObject",
                 "s3:GetObject",
-                "s3:DeleteObject"
+                "s3:DeleteObject",
+                "s3:ListBucket"
             ],
-            "Resource": "arn:aws:s3:::s3-bucket-snaptics/*"
+            "Resource": [
+                "arn:aws:s3:::s3-bucket-snaptics",
+                "arn:aws:s3:::s3-bucket-snaptics/*"
+            ]
         },
         {
             "Sid": "AllowSQSSNS",
@@ -157,53 +120,16 @@ When the .NET code runs inside the ECS Fargate container, it needs permissions t
 }
 ```
 
-14. Click **Next**.
-15. Set the policy name to `SnapticsRuntimePolicy`.
-16. Click **Create policy**.
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_1.jpg" >
-  </div>
-
-<div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_2.jpg" >
-  </div>
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_3.jpg" >
-  </div>  
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_4.jpg" >
-  </div>  
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_5.jpg" >
-  </div>  
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_6.jpg" >
-  </div>  
-
-> [!NOTE]
-> The task role is the permission your **C# code inside the container** uses to call S3, SQS, SNS, or Parameter Store. It is separate from the permissions ECS itself uses to start the container.
-
-### C. Assign the Roles in the ECS Task Definition
-
-When creating your ECS Task Definition, fill in these two fields correctly:
-
-| Field | Value |
-|-------|-------|
-| **Task role** | `snaptics-ecs-task-role` |
-| **Task execution role** | `ecsTaskExecutionRole` |
-
-The difference is:
-
-- `ecsTaskExecutionRole` ➔ ECS **pulls the image**, **creates logs**, and **injects secrets** when the container starts.
-- `snaptics-ecs-task-role` ➔ The **running C# code** calls S3, SQS, SNS, SSM.
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_1.jpg" >
-  </div>
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_2.jpg" >
-  </div> 
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_3.jpg" >
-  </div>   
-
 > [!TIP]
-> If Parameter Store uses a **SecureString with a customer-managed KMS key**, the role that actually reads the parameter also needs `kms:Decrypt` permission for that KMS key. If the password is configured in the **Secrets** section of the task definition, this permission belongs to the **execution role**; if C# calls SSM itself using the AWS SDK, it belongs to the **task role**.
+> By strictly defining these roles, we follow the **Principle of Least Privilege**. If a hacker somehow gains access to the container, they still cannot delete your SQL Server database because this role has no RDS deletion permissions!
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_1.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_2.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_3.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_4.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_5.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_6.png" >
+
+### C. Assign Role
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_1.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_2.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_3.png" >

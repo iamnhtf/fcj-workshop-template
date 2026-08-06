@@ -59,56 +59,24 @@ Vì GitHub Actions đóng vai trò là một "con robot" tự động đẩy cod
 
 ## 3. Phân quyền IAM Roles cho ECS
 
-Khi mã nguồn C# .NET chạy bên trong Container trên ECS Fargate, nó cần quyền để kết nối tới S3, SQS, SNS và lấy mật khẩu DB từ Parameter Store. Thay vì nhúng Access Key vào code rất nguy hiểm, AWS sử dụng IAM Roles. Chúng ta cần tạo **2 Role** riêng biệt.
+Khi mã nguồn C# .NET chạy bên trong Container trên ECS Fargate, nó cần quyền để kết nối tới S3, SQS và lấy mật khẩu DB từ Parameter Store. Thay vì nhúng Access Key vào code rất nguy hiểm, AWS sử dụng IAM Roles.
 
-### A. Tạo ECS Task Execution Role (`ecsTaskExecutionRole`)
+Vào **IAM ➔ Roles ➔ Create role** và tạo lần lượt 2 Role sau:
 
-1. Mở **IAM ➔ Roles ➔ Create role**.
-2. Bấm vào **Choose a service or use case**.
-3. Tìm và chọn **Elastic Container Service**.
-4. Ở phần **Use case**, chọn chính xác **Elastic Container Service Task**. Không chọn "EC2 Role for Elastic Container Service".
-5. Bấm **Next**.
+### A. ECS Task Execution Role (`ecsTaskExecutionRole`)
+Role này cấp quyền cho nền tảng phần cứng ECS để nó tự động tải Docker Image từ ECR và tạo Log trong CloudWatch.
+- **Trusted Entity:** `Elastic Container Service Task`
+- **Managed Policy:** Tìm và gắn `AmazonECSTaskExecutionRolePolicy`.
+- Gắn thêm quyền `AmazonSSMReadOnlyAccess` để ECS có quyền đọc mật khẩu DB khi khởi động.
 
-**Ở bước Add permissions:**
 
-6. Tìm `AmazonECSTaskExecutionRolePolicy` và tick chọn policy đó.
-7. Nếu bạn đang đưa mật khẩu DB từ Parameter Store vào mục **Secrets** của ECS Task Definition, tìm và tick thêm `AmazonSSMReadOnlyAccess`.
-8. Bấm **Next**.
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3a_ecs_role_create.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3a_ecs_role_create_1.png" >
 
-**Đặt tên và tạo role:**
-
-9. Đặt tên role là `ecsTaskExecutionRole`.
-10. Bấm **Create role**.
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3a_ecs_role_create.jpg" >
-  </div>
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3a_ecs_role_create_1.jpg" >
-  </div>
-
-> [!NOTE]
-> AWS xác nhận task execution role dùng để ECS **kéo image từ ECR**, **ghi log vào CloudWatch** và **lấy Parameter Store/Secrets Manager** khi task definition tham chiếu secret.
->
-> `AmazonSSMReadOnlyAccess` khá rộng. Có thể dùng trước để triển khai, sau đó thay bằng inline policy chỉ đọc đúng đường dẫn `/Snaptics/Production/*`.
-
-### B. Tạo Snaptics ECS Task Role (`snaptics-ecs-task-role`)
-
-1. Quay lại **IAM ➔ Roles ➔ Create role**.
-2. **Trusted entity type:** AWS service.
-3. **Service or use case:** Elastic Container Service.
-4. **Use case:** Elastic Container Service Task.
-5. Bấm **Next**.
-6. Tại **Add permissions**, chưa cần chọn policy nào; bấm **Next**.
-7. Đặt tên role là `snaptics-ecs-task-role`.
-8. Bấm **Create role**.
-
-**Sau khi role được tạo:**
-
-9. Mở role `snaptics-ecs-task-role`.
-10. Chọn tab **Permissions**.
-11. Chọn **Add permissions ➔ Create inline policy**.
-12. Chuyển sang tab **JSON**.
-13. Xóa nội dung cũ và dán policy dưới đây. Nên thay `<ACCOUNT_ID>` bằng AWS Account ID của bạn.
+### B. Snaptics ECS Task Role (`snaptics-ecs-task-role`)
+Role này cấp quyền cho **chính mã nguồn C#** của bạn.
+- **Trusted Entity:** `Elastic Container Service Task`
+- **Inline Policy (JSON):** Tạo một policy dạng JSON và dán đoạn code sau vào. Nó chỉ cho phép C# gọi S3, SQS, SNS và đọc Parameter Store.
 
 ```json
 {
@@ -119,28 +87,23 @@ Khi mã nguồn C# .NET chạy bên trong Container trên ECS Fargate, nó cần
             "Effect": "Allow",
             "Action": [
                 "ssm:GetParameter",
-                "ssm:GetParameters",
                 "ssm:GetParametersByPath"
             ],
-            "Resource": "arn:aws:ssm:ap-southeast-1:<ACCOUNT_ID>:parameter/Snaptics/Production/*"
+            "Resource": "arn:aws:ssm:ap-southeast-1:*:parameter/Snaptics/Production/*"
         },
         {
-            "Sid": "AllowS3BucketListing",
-            "Effect": "Allow",
-            "Action": [
-                "s3:ListBucket"
-            ],
-            "Resource": "arn:aws:s3:::s3-bucket-snaptics"
-        },
-        {
-            "Sid": "AllowS3Objects",
+            "Sid": "AllowS3Storage",
             "Effect": "Allow",
             "Action": [
                 "s3:PutObject",
                 "s3:GetObject",
-                "s3:DeleteObject"
+                "s3:DeleteObject",
+                "s3:ListBucket"
             ],
-            "Resource": "arn:aws:s3:::s3-bucket-snaptics/*"
+            "Resource": [
+                "arn:aws:s3:::s3-bucket-snaptics",
+                "arn:aws:s3:::s3-bucket-snaptics/*"
+            ]
         },
         {
             "Sid": "AllowSQSSNS",
@@ -157,54 +120,16 @@ Khi mã nguồn C# .NET chạy bên trong Container trên ECS Fargate, nó cần
 }
 ```
 
-14. Bấm **Next**.
-15. Policy name nhập `SnapticsRuntimePolicy`.
-16. Bấm **Create policy**.
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_1.jpg" >
-  </div>
-
-<div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_2.jpg" >
-  </div>
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_3.jpg" >
-  </div>  
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_4.jpg" >
-  </div>  
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_5.jpg" >
-  </div>  
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_6.jpg" >
-  </div>  
-
-
-> [!NOTE]
-> Task role chính là quyền mà **mã C# bên trong container** sử dụng để gọi S3, SQS, SNS hoặc Parameter Store; nó tách biệt với quyền ECS dùng để khởi động container.
-
-### C. Khi tạo ECS Task Definition
-
-Khi tạo ECS Task Definition, gán đúng hai trường:
-
-| Field | Value |
-|-------|-------|
-| **Task role** | `snaptics-ecs-task-role` |
-| **Task execution role** | `ecsTaskExecutionRole` |
-
-Phân biệt như sau:
-
-- `ecsTaskExecutionRole` ➔ ECS **kéo image**, **tạo log**, **inject secret** khi container khởi động.
-- `snaptics-ecs-task-role` ➔ **Code C# đang chạy** gọi S3, SQS, SNS, SSM.
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_1.jpg" >
-  </div>
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_2.jpg" >
-  </div> 
-
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_3.jpg" >
-  </div>  
-
 > [!TIP]
-> Nếu Parameter Store sử dụng **SecureString với customer-managed KMS key**, role thực sự đọc parameter còn cần thêm quyền `kms:Decrypt` đối với KMS key đó. Nếu mật khẩu được cấu hình trong mục **Secrets** của task definition thì quyền này thuộc **execution role**; nếu C# tự gọi SSM bằng AWS SDK thì thuộc **task role**.
+> Việc cấu hình Role khắt khe như thế này là tuân thủ nguyên tắc **Đặc quyền tối thiểu (Least Privilege)** của các hệ thống ngân hàng. Giả sử hacker có chiếm được quyền điều khiển Container của bạn, hắn cũng không thể xóa Database vì Role này hoàn toàn không có quyền đụng vào RDS!
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_1.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_2.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_3.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_4.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_5.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3b_ecs_role_create_6.png" >
+
+### C. Assign Role
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_1.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_2.png" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/3c_ecs_assign_role_3.png" >
