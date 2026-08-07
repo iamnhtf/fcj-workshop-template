@@ -48,13 +48,13 @@ Since GitHub Actions will be deploying infrastructure on your behalf, it needs p
 4. Choose **Command Line Interface (CLI)**, check the confirmation box, and click Next.
 5. Copy the **Access key ID** and **Secret access key**. **Save them securely!** You will need to paste these into GitHub Repository Secrets later.
 
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_security_credentials.jpg" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_security_credentials.png" >
   </div>
 
-<div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_security_credentials_2.jpg" >
+<div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_security_credentials_2.png" >
   </div>
 
-<div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_security_credentials_3.jpg" >
+<div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_security_credentials_3.png" >
   </div>
 
 ## 3. AWS IAM Roles for ECS Containers
