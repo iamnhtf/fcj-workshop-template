@@ -29,16 +29,16 @@ Since GitHub Actions will be deploying infrastructure on your behalf, it needs p
 5. Attach the `AdministratorAccess` policy. *(Note: In a real strict enterprise environment, you should only grant specific ECS/ECR/S3 permissions. For the sake of this workshop, Admin access simplifies the pipeline setup).*
 6. Complete the creation.
 
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iamuser_create_1.jpg" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iamuser_create_1.png" >
   </div>
 
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_permission.jpg" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_permission.png" >
   </div>
 
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_create_2.jpg" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_create_2.png" >
   </div>
 
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_create_complete.jpg" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_create_complete.png" >
   </div>
 
 ### B. Generate Access Keys
