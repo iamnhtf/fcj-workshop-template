@@ -29,16 +29,16 @@ Vì GitHub Actions đóng vai trò là một "con robot" tự động đẩy cod
 5. Gắn quyền `AdministratorAccess`. *(Lưu ý: Trong dự án công ty thực tế, bạn chỉ nên cấp quyền ECS/ECR/S3 vừa đủ dùng. Ở workshop này, ta dùng Admin để rút ngắn rào cản kỹ thuật cấu hình Pipeline).*
 6. Bấm Create user.
 
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iamuser_create_1.jpg" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iamuser_create_1.png" >
   </div>
 
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_permission.jpg" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_permission.png" >
   </div>
 
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_create_2.jpg" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_create_2.png" >
   </div>
 
-  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_create_complete.jpg" >
+  <div> <img src="/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/iam_user_create_complete.png" >
   </div>
 
 ### B. Cấp phát Khóa (Access Keys)
